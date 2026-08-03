@@ -13,7 +13,7 @@ export const profile = {
   avatar: avatarImage,
   octocat: "https://bikram-dot-dev.vercel.app/octocat.png",
   intro:
-    "a 3rd year B.Tech Information Technology student who loves turning ideas into working products. Frontend developer exploring backend, learning by building — programming isn't just my course, it's my craft.",
+    ", 3rd year B.Tech Information Technology student who loves turning ideas into working products. Frontend developer exploring backend, learning by building — programming isn't just my course, it's my craft.",
 };
 
 export const socials = [
@@ -24,17 +24,13 @@ export const socials = [
     href: "https://www.linkedin.com/in/snehasish-dey",
   },
   { label: "LeetCode", icon: Code2, href: "https://leetcode.com/u/snehasishdey02" },
-  { label: "CodeChef", icon: Trophy, href: "https://www.codechef.com/users/snehasishdey02" },
+  
   { label: "Email", icon: Mail, href: "mailto:snehasishdey02@gmail.com" },
-  {
-    label: "GeeksforGeeks",
-    icon: BookOpen,
-    href: "https://www.geeksforgeeks.org/user/snehasishdey02",
-  },
+  
   {
     label: "Resume",
     icon: FileText,
-    href: "https://github.com/Snehasish-tech",
+    href: "#############",
   },
 ];
 
@@ -67,21 +63,8 @@ export const miniProjects = [
     desc: "A human-centric platform to assess open-source project health, maintainer workload and sustainability risk.",
     tags: ["TypeScript", "Next.js", "Data Viz"],
   },
-  {
-    title: "LexAid",
-    desc: "Legal awareness platform offering lawyer directories, letter templates and AI-based legal guidance.",
-    tags: ["React", "AI", "Node.js"],
-  },
-  {
-    title: "WorkLin",
-    desc: "A lightweight open-source Notion-style notes workspace with block editing and client-side persistence.",
-    tags: ["React", "Vite", "Tailwind"],
-  },
-  {
-    title: "GreenPass",
-    desc: "Tourist flow management system enforcing capacity limits with real-time monitoring and slot automation.",
-    tags: ["JavaScript", "Node.js", "Realtime"],
-  },
+ 
+
 ];
 
 export const techSlugs: Record<string, string> = {
@@ -101,16 +84,16 @@ export const techSlugs: Record<string, string> = {
   "Node.js": "nodedotjs",
   "Express.js": "express",
   Django: "django",
-  Flask: "flask",
+  
   "REST APIs": "swagger",
   PostgreSQL: "postgresql",
-  MongoDB: "mongodb",
+ 
   Supabase: "supabase",
   MySQL: "mysql",
   Git: "git",
   GitHub: "github",
   "VS Code": "vscodium",
-  Postman: "postman",
+  
   Vercel: "vercel",
   Figma: "figma",
 };
@@ -129,21 +112,21 @@ export const techGroups: { group: string; note: string; items: string[] }[] = [
   {
     group: "Backend",
     note: "Server-side APIs, authentication and business logic — the layer I'm actively deepening.",
-    items: ["Node.js", "Express.js", "Django", "Flask", "REST APIs"],
+    items: ["Node.js", "Express.js", "Django", "REST APIs"],
   },
   {
     group: "Database",
     note: "Modelling and querying relational and document data for production apps.",
-    items: ["PostgreSQL", "MongoDB", "Supabase", "MySQL"],
+    items: ["PostgreSQL", "Supabase", "MySQL"],
   },
   {
     group: "Tools",
     note: "Everyday tooling for version control, testing, deployment and design handoff.",
-    items: ["Git", "GitHub", "VS Code", "Postman", "Vercel", "Figma"],
+    items: ["Git", "GitHub", "VS Code", "Vercel", "Figma"],
   },
 ];
 
-export const learning = ["System Design", "Cloud & DevOps", "AI Integrations", "Application Security"];
+export const learning = ["System Design", "AI Integrations", "Machine Learning"];
 
 export type Project = {
   name: string;
@@ -203,7 +186,7 @@ export const projects: Project[] = [
     live: "https://agri-companion.vercel.app/",
   },
   {
-    name: "OSS Sustainability Intelligence",
+    name: "OSSI — Open Source Sustainability Intelligence",
     tagline: "Open-Source Health & Risk Analytics",
     image: shot("https://open-source-sustainability-intellig.vercel.app/"),
     desc: "A human-centric platform that assesses open-source project health, maintainer workload, sustainability risk and trust — so communities and companies can act before projects burn out.",
@@ -418,20 +401,20 @@ export const education: EducationItem[] = [
   },
   {
     degree: "Higher Secondary (WBCHSE) — Science",
-    institution: "West Bengal Council of Higher Secondary Education",
+    institution: "Digha Vidyabhawan High School",
     location: "West Bengal",
     period: "2022 — 2024",
-    grade: "Science (PCM + CS)",
+    grade: "Science (PCMB) — 80.2%",
     status: "Completed",
-    desc: "Studied Physics, Chemistry, Mathematics and Computer Science — where programming first became a habit.",
-    coursework: ["Mathematics", "Physics", "Chemistry", "Computer Science"],
+    desc: "Studied Physics, Chemistry, Mathematics",
+    coursework: ["Mathematics", "Physics", "Chemistry"],
   },
   {
     degree: "Secondary (WBBSE)",
-    institution: "West Bengal Board of Secondary Education",
+    institution: "Digha Vidyabhawan High School",
     location: "West Bengal",
     period: "2021 — 2022",
-    grade: "Distinction",
+    grade: "90.06 %",
     status: "Completed",
     desc: "Built strong fundamentals across mathematics and science alongside consistent extracurricular participation.",
     coursework: ["Mathematics", "Science", "English", "Computer Applications"],
@@ -450,7 +433,7 @@ export const badges = [
 
 /* ---------------- Resume ---------------- */
 export const resume = {
-  href: "https://github.com/Snehasish-tech",
+  href: "",
   pdf: "src/assets/resume/Snehasish-Resume.pdf",
   updated: "Updated Aug 2026",
   highlights: [
