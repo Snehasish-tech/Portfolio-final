@@ -80,11 +80,11 @@ export function Ideas() {
                 </span>
               </div>
 
-              <div className="relative my-6 grid flex-1 place-items-center">
+              <div className="relative my-6 grid flex-1 place-items-center overflow-hidden">
                 <motion.div
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-                  className="relative h-[260px] w-[260px]"
+                  className="relative max-w-[260px] aspect-square mx-auto"
                 >
                   <div className="absolute inset-6 rounded-full glow-lime-strong" />
                   <Earth3D className="relative h-full w-full transition-transform duration-700 group-hover:scale-105" />
@@ -92,7 +92,7 @@ export function Ideas() {
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{ duration: 26, repeat: Infinity, ease: "linear" }}
-                  className="pointer-events-none absolute h-[300px] w-[300px] rounded-full border border-dashed border-lime/25"
+                  className="pointer-events-none absolute max-w-[300px] aspect-square h-full w-full rounded-full border border-dashed border-lime/25"
                 >
                   <span className="absolute left-1/2 top-0 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lime glow-lime" />
                 </motion.div>
@@ -110,19 +110,22 @@ export function Ideas() {
 
           {/* Orbit card */}
           <Reveal delay={0.12} className="lg:col-start-2 lg:row-start-2">
-            <div className="card-surface relative grid h-full min-h-[300px] place-items-center overflow-hidden rounded-3xl p-8">
-              <div className="relative h-56 w-56">
+            <div className="card-surface relative grid h-full min-h-[300px] place-items-center overflow-hidden rounded-3xl p-8"
+                 style={{ '--orbit-radius': '50%' } as React.CSSProperties}>
+              <div className="relative max-w-[224px] aspect-square h-full w-full">
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{ duration: 24, repeat: Infinity, ease: "linear" }}
-                  className="absolute inset-0 rounded-full border border-dashed border-lime/25"
+                  className="absolute inset-0 rounded-full border border-dashed border-lime/25" // This is the orbit path
                 >
                   {["⚛", "◆", "🐍", "TS", "▲"].map((t, i) => (
                     <span
                       key={i}
-                      className="absolute left-1/2 top-1/2 -ml-4 -mt-4 grid h-8 w-8 place-items-center rounded-lg border border-border bg-secondary text-xs"
+                      className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 grid h-8 w-8 place-items-center rounded-lg border border-border bg-secondary text-xs"
                       style={{
-                        transform: `rotate(${i * 72}deg) translateY(-112px) rotate(-${i * 72}deg)`,
+                        // translateY moves the item away from the center of the orbit.
+                        // 50% of parent's height (224px) is 112px.
+                        transform: `rotate(${i * 72}deg) translateY(calc(-1 * var(--orbit-radius))) rotate(-${i * 72}deg)`,
                       }}
                     >
                       {t}
@@ -130,7 +133,7 @@ export function Ideas() {
                   ))}
                 </motion.div>
                 <div className="absolute inset-[26%] grid place-items-center rounded-full border border-lime/50 bg-lime/5 glow-lime">
-                  <img src={profile.octocat} alt="" className="h-14 w-14 object-contain" />
+                  <img src={profile.octocat} alt="" className="h-[25%] w-[25%] object-contain" />
                 </div>
               </div>
             </div>
