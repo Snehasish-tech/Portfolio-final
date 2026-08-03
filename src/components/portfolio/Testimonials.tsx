@@ -38,7 +38,7 @@ export function Testimonials() {
           {[...testimonials, ...testimonials].map((t, i) => (
             <article
               key={i}
-              className="card-surface relative flex w-[380px] shrink-0 flex-col rounded-2xl p-7"
+              className="card-surface relative flex w-[90vw] max-w-[380px] shrink-0 flex-col rounded-2xl p-7"
             >
               <Quote className="absolute right-6 top-6 h-8 w-8 text-muted-foreground/25" />
               <div className="flex items-center gap-3">

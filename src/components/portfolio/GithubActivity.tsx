@@ -100,7 +100,7 @@ export function GithubActivity() {
         />
 
         <Reveal>
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
             {cards.map((c) => (
               <div
                 key={c.label}
@@ -113,10 +113,10 @@ export function GithubActivity() {
           </div>
         </Reveal>
 
-        <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)]">
-          <Reveal delay={0.05}>
-            <div className="card-surface h-full rounded-2xl p-6">
-              <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4">
+        <div className="mt-10 grid gap-6 md:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)]">
+          <Reveal delay={0.05} className="min-w-0">
+            <div className="card-surface h-full rounded-2xl p-5 sm:p-6">
+              <div className="flex items-start justify-between gap-4">
                 <p className="flex min-w-0 items-center gap-2 font-mono text-[11px] uppercase tracking-[0.25em] text-lime">
                   <Activity className="h-3.5 w-3.5 shrink-0" /> Contribution rhythm
                 </p>
@@ -130,7 +130,7 @@ export function GithubActivity() {
                 </a>
               </div>
 
-              <div className="mt-5 overflow-hidden rounded-2xl border border-border bg-background/35 p-4">
+              <div className="mt-5 overflow-hidden rounded-2xl border border-border bg-background/35 p-3 sm:p-4">
                 <div className="flex items-center justify-between gap-3">
                   <span className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.25em] text-lime">
                     <span className="h-2 w-2 animate-pulse-glow rounded-full bg-lime" />
@@ -146,7 +146,7 @@ export function GithubActivity() {
                     src={CONTRIBUTION_CHART_URL}
                     alt={`${USERNAME} GitHub contribution chart`}
                     loading="lazy"
-                    className="min-w-[640px] rounded-xl border border-border bg-background/40"
+                    className="min-w-[520px] rounded-xl border border-border bg-background/40 sm:min-w-[640px]"
                   />
                 </div>
               </div>
@@ -185,7 +185,7 @@ export function GithubActivity() {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <div className="card-surface h-full rounded-2xl p-6">
+            <div className="card-surface h-full rounded-2xl p-5 sm:p-6">
               <div className="flex items-center justify-between gap-4">
                 <p className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.25em] text-lime">
                   <Code2 className="h-3.5 w-3.5 shrink-0" /> Language share

@@ -41,14 +41,14 @@ export function Projects() {
               className="card-surface grid gap-10 rounded-3xl p-8 md:p-12 lg:grid-cols-2"
             >
               <div className="flex flex-col items-center text-center">
-                <div className="relative grid h-56 w-56 place-items-center">
+                <div className="relative grid size-48 place-items-center sm:size-56">
                   <div className="absolute inset-0 rounded-full bg-lime/15 blur-3xl" />
                   {p.logo ? (
                     <img
                       src={p.logo}
                       alt={`${p.name} logo`}
                       loading="lazy"
-                      className="relative h-44 w-44 rounded-full object-contain"
+                      className="relative size-44 rounded-full object-contain"
                     />
                   ) : (
                     <div className="relative grid h-44 w-44 place-items-center rounded-full border border-lime/30 bg-background/60 text-center shadow-[0_0_50px_rgba(163,230,53,0.12)]">
@@ -93,7 +93,7 @@ export function Projects() {
               </div>
 
               <div>
-                <h3 className="text-4xl font-bold text-lime">{p.name}</h3>
+                <h3 className="text-3xl font-bold text-lime sm:text-4xl">{p.name}</h3>
                 <p className="mt-5 leading-relaxed text-muted-foreground">{p.desc}</p>
                 <ul className="mt-7 space-y-4">
                   {p.points.map((pt) => (
