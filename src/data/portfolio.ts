@@ -12,8 +12,7 @@ export const profile = {
   location: "Kolkata · West Bengal, India",
   avatar: avatarImage,
   octocat: "https://bikram-dot-dev.vercel.app/octocat.png",
-  intro:
-    ", 3rd year B.Tech Information Technology student who loves turning ideas into working products. Frontend developer exploring backend, learning by building — programming isn't just my course, it's my craft.",
+  intro: "a 3rd year B.Tech Information Technology student who loves turning ideas into working products. Frontend developer exploring backend, learning by building — programming isn't just my course, it's my craft.",
 };
 
 export const socials = [
@@ -24,13 +23,12 @@ export const socials = [
     href: "https://www.linkedin.com/in/snehasish-dey",
   },
   { label: "LeetCode", icon: Code2, href: "https://leetcode.com/u/snehasishdey02" },
-  
   { label: "Email", icon: Mail, href: "mailto:snehasishdey02@gmail.com" },
-  
   {
     label: "Resume",
     icon: FileText,
-    href: "#############",
+    // PDF is available in the resume section
+    href: "https://github.com/Snehasish-tech/Resume/blob/main/Snehasish_Dey_Resume.pdf",
   },
 ];
 
@@ -63,8 +61,6 @@ export const miniProjects = [
     desc: "A human-centric platform to assess open-source project health, maintainer workload and sustainability risk.",
     tags: ["TypeScript", "Next.js", "Data Viz"],
   },
- 
-
 ];
 
 export const techSlugs: Record<string, string> = {
@@ -84,16 +80,13 @@ export const techSlugs: Record<string, string> = {
   "Node.js": "nodedotjs",
   "Express.js": "express",
   Django: "django",
-  
   "REST APIs": "swagger",
   PostgreSQL: "postgresql",
- 
   Supabase: "supabase",
   MySQL: "mysql",
   Git: "git",
   GitHub: "github",
   "VS Code": "vscodium",
-  
   Vercel: "vercel",
   Figma: "figma",
 };
@@ -186,7 +179,7 @@ export const projects: Project[] = [
     live: "https://agri-companion.vercel.app/",
   },
   {
-    name: "OSSI — Open Source Sustainability Intelligence",
+    name: "OSS Sustainability Intelligence",
     tagline: "Open-Source Health & Risk Analytics",
     image: shot("https://open-source-sustainability-intellig.vercel.app/"),
     desc: "A human-centric platform that assesses open-source project health, maintainer workload, sustainability risk and trust — so communities and companies can act before projects burn out.",
@@ -206,6 +199,46 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/Snehasish-tech/OpenSource-Sustainability-Intelligence",
     live: "https://open-source-sustainability-intellig.vercel.app/",
+  },
+  {
+    name: "New Project One",
+    tagline: "A Catchy Tagline for Your Project",
+    image: shot("https://example.com"),
+    desc: "A brief but compelling description of what this project does, who it's for, and the problem it solves. Keep it to a couple of sentences.",
+    points: [
+      "Key feature or accomplishment number one.",
+      "Another standout feature or technical achievement.",
+      "A third point highlighting a specific skill or technology used.",
+      "Fourth point, perhaps about the user experience or design.",
+      "Final point, maybe about deployment or performance.",
+    ],
+    stack: [
+      { label: "Tech 1", color: "#000000" },
+      { label: "Tech 2", color: "#000000" },
+      { label: "Tech 3", color: "#000000" },
+    ],
+    github: "https://github.com/Snehasish-tech/your-repo-name",
+    live: "https://your-live-url.com",
+  },
+  {
+    name: "New Project Two",
+    tagline: "Another Great Tagline Here",
+    image: shot("https://example.com"),
+    desc: "Describe your second project here. What makes it special? What technologies did you use? What did you learn from building it?",
+    points: [
+      "Implemented a cool feature using a specific library.",
+      "Designed and built a REST API for data management.",
+      "Focused on creating a responsive and accessible user interface.",
+      "Deployed the application using a modern CI/CD pipeline.",
+      "Achieved a high performance score on web vitals.",
+    ],
+    stack: [
+      { label: "Tech A", color: "#000000" },
+      { label: "Tech B", color: "#000000" },
+      { label: "Tech C", color: "#000000" },
+    ],
+    github: "https://github.com/Snehasish-tech/your-other-repo",
+    live: "https://your-other-live-url.com",
   },
 ];
 
@@ -298,6 +331,86 @@ export const certificates: Certificate[] = [
     imageAlt: "Elite Coders Winter of Code certificate",
     asset: "src/assets/certificates/ecwoc-2026.jpg",
     ribbon: "Contributor",
+    category: "Extracurricular",
+  },
+  {
+    title: "New Hackathon Win 1",
+    date: "YYYY",
+    desc: "Description of the hackathon achievement.",
+    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=70",
+    imageAlt: "New Hackathon certificate",
+    asset: "src/assets/certificates/new-hackathon-1.jpg",
+    ribbon: "Winner",
+    category: "Hackathon",
+  },
+  {
+    title: "New Hackathon Win 2",
+    date: "YYYY",
+    desc: "Description of the hackathon achievement.",
+    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=70",
+    imageAlt: "New Hackathon certificate",
+    asset: "src/assets/certificates/new-hackathon-2.jpg",
+    ribbon: "Finalist",
+    category: "Hackathon",
+  },
+  {
+    title: "New Hackathon Win 3",
+    date: "YYYY",
+    desc: "Description of the hackathon achievement.",
+    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=70",
+    imageAlt: "New Hackathon certificate",
+    asset: "src/assets/certificates/new-hackathon-3.jpg",
+    ribbon: "Participant",
+    category: "Hackathon",
+  },
+  {
+    title: "New Skill Certification 1",
+    date: "Mon YYYY",
+    desc: "Description of the skill certification.",
+    image: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=1200&q=70",
+    imageAlt: "New skill certificate",
+    asset: "src/assets/certificates/new-skill-1.jpg",
+    ribbon: "Certified",
+    category: "Skills",
+  },
+  {
+    title: "New Skill Certification 2",
+    date: "Mon YYYY",
+    desc: "Description of the skill certification.",
+    image: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=1200&q=70",
+    imageAlt: "New skill certificate",
+    asset: "src/assets/certificates/new-skill-2.jpg",
+    ribbon: "Certified",
+    category: "Skills",
+  },
+  {
+    title: "New Extracurricular Activity 1",
+    date: "YYYY",
+    desc: "Description of the extracurricular activity.",
+    image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?auto=format&fit=crop&w=1200&q=70",
+    imageAlt: "New extracurricular certificate",
+    asset: "src/assets/certificates/new-extracurricular-1.jpg",
+    ribbon: "Member",
+    category: "Extracurricular",
+  },
+  {
+    title: "New Extracurricular Activity 2",
+    date: "YYYY",
+    desc: "Description of the extracurricular activity.",
+    image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?auto=format&fit=crop&w=1200&q=70",
+    imageAlt: "New extracurricular certificate",
+    asset: "src/assets/certificates/new-extracurricular-2.jpg",
+    ribbon: "Volunteer",
+    category: "Extracurricular",
+  },
+  {
+    title: "New Extracurricular Activity 3",
+    date: "YYYY",
+    desc: "Description of the extracurricular activity.",
+    image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?auto=format&fit=crop&w=1200&q=70",
+    imageAlt: "New extracurricular certificate",
+    asset: "src/assets/certificates/new-extracurricular-3.jpg",
+    ribbon: "Coordinator",
     category: "Extracurricular",
   },
 ];
@@ -433,7 +546,7 @@ export const badges = [
 
 /* ---------------- Resume ---------------- */
 export const resume = {
-  href: "",
+  href: "https://github.com/Snehasish-tech/Resume/blob/main/Snehasish_Dey_Resume.pdf",
   pdf: "src/assets/resume/Snehasish-Resume.pdf",
   updated: "Updated Aug 2026",
   highlights: [
