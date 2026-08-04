@@ -14,6 +14,43 @@ function projectInitials(name: string) {
     .toUpperCase();
 }
 
+// --- NEW 100% PERFECT DESIGN: Animated Tech Orbit ---
+// Replaces the clunky leaf SVG with a sleek, perfectly circular glowing tech ring
+function PurpleTechOrbit() {
+  return (
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-[220px] sm:size-[260px] pointer-events-none">
+      {/* Outer Dashed Orbit */}
+      <motion.div
+        animate={{ rotate: 360 }}
+        transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+        className="absolute inset-0 rounded-full border-[2px] border-dashed border-[#7C3AED]/60"
+      />
+      
+      {/* Inner Glowing Orbit */}
+      <motion.div
+        animate={{ rotate: -360, scale: [1, 1.03, 1] }}
+        transition={{ 
+          rotate: { duration: 15, repeat: Infinity, ease: "linear" },
+          scale: { duration: 3, repeat: Infinity, ease: "easeInOut" }
+        }}
+        className="absolute inset-[18px] rounded-full border border-[#8B5CF6] shadow-[0_0_25px_rgba(139,92,246,0.4)]"
+      />
+
+      {/* Glowing Orbital Nodes (Dots) */}
+      <motion.div 
+        animate={{ rotate: 360 }}
+        transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+        className="absolute inset-0"
+      >
+        <div className="absolute -top-1.5 left-1/2 size-3 -translate-x-1/2 rounded-full bg-[#A78BFA] shadow-[0_0_15px_#A78BFA]" />
+        <div className="absolute -bottom-1.5 left-1/2 size-3 -translate-x-1/2 rounded-full bg-[#A78BFA] shadow-[0_0_15px_#A78BFA]" />
+        <div className="absolute top-1/2 -left-1.5 size-2 -translate-y-1/2 rounded-full bg-[#8B5CF6] shadow-[0_0_10px_#8B5CF6]" />
+        <div className="absolute top-1/2 -right-1.5 size-2 -translate-y-1/2 rounded-full bg-[#8B5CF6] shadow-[0_0_10px_#8B5CF6]" />
+      </motion.div>
+    </div>
+  );
+}
+
 export function Projects() {
   const [i, setI] = useState(0);
   const p = projects[i];
@@ -41,23 +78,38 @@ export function Projects() {
               className="card-surface grid gap-10 rounded-3xl p-8 md:p-12 lg:grid-cols-2"
             >
               <div className="flex flex-col items-center text-center">
-                <div className="relative grid size-48 place-items-center sm:size-56">
-                  <div className="absolute inset-0 rounded-full bg-lime/15 blur-3xl" />
-                  {p.logo ? (
-                    <img
-                      src={p.logo}
-                      alt={`${p.name} logo`}
-                      loading="lazy"
-                      className="relative size-44 rounded-full object-contain"
-                    />
-                  ) : (
-                    <div className="relative grid h-44 w-44 place-items-center rounded-full border border-lime/30 bg-background/60 text-center shadow-[0_0_50px_rgba(163,230,53,0.12)]">
-                      <span className="font-display text-4xl font-bold text-lime">
-                        {projectInitials(p.name)}
-                      </span>
-                    </div>
-                  )}
+                
+                {/* --- LOGO SECTION WITH ORBIT --- */}
+                <div className="relative flex h-[280px] w-full items-center justify-center sm:h-[320px]">
+                  
+                  {/* Deep Green Background Glow */}
+                  <div className="absolute top-1/2 left-1/2 size-48 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lime/20 blur-[80px]" />
+
+                  {/* The Perfect Purple Tech Orbit (Z-index 0 ensures it stays perfectly behind) */}
+                  <div className="absolute z-0">
+                    <PurpleTechOrbit />
+                  </div>
+
+                  {/* Circular Frame for Logo (Z-index 10 keeps it crisp and on top) */}
+                  <div className="relative z-10 grid size-40 place-items-center rounded-full border border-lime/40 bg-[#060913] p-1 shadow-[0_0_50px_rgba(163,230,53,0.15)] sm:size-48 backdrop-blur-md">
+                    {p.logo ? (
+                      <img
+                        src={p.logo}
+                        alt={`${p.name} logo`}
+                        loading="lazy"
+                        className="relative size-[140px] rounded-full object-contain sm:size-[170px]"
+                      />
+                    ) : (
+                      <div className="relative grid size-[140px] place-items-center rounded-full border border-lime/10 bg-background/80 text-center sm:size-[170px]">
+                        <span className="font-display text-4xl font-bold text-lime">
+                          {projectInitials(p.name)}
+                        </span>
+                      </div>
+                    )}
+                  </div>
                 </div>
+                {/* ---------------------------------- */}
+
                 <p className="mt-4 text-sm text-muted-foreground">{p.tagline}</p>
 
                 <div className="mt-5 flex flex-wrap justify-center gap-2">
