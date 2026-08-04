@@ -31,8 +31,15 @@ const iconUrl = (name: string) =>
 
 function TechCard({ name }: { name: string }) {
   return (
-    <div className="card-surface group relative flex h-[60px] items-center gap-3 overflow-hidden rounded-xl px-3.5 transition-[border-color,transform] duration-200 will-change-transform hover:-translate-y-0.5 hover:border-lime/50">
-      <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg border border-border bg-background/60 transition-colors duration-200 group-hover:border-lime/40">
+    <div className="card-surface group relative flex h-[60px] items-center gap-3 overflow-hidden rounded-xl px-3.5 shadow-md transition-[border-color,transform,box-shadow] duration-300 will-change-transform hover:-translate-y-1 hover:border-lime/70 hover:shadow-xl">
+      <div
+        className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        style={{
+          background:
+            "radial-gradient(circle at center, color-mix(in oklab, var(--lime) 15%, transparent), transparent 70%)",
+        }}
+      />
+      <span className="relative grid h-9 w-9 shrink-0 place-items-center rounded-lg border border-border bg-background/60 transition-colors duration-200 group-hover:border-lime/50 group-hover:bg-lime/10">
         <img
           src={iconUrl(name)}
           alt=""
@@ -46,7 +53,7 @@ function TechCard({ name }: { name: string }) {
           }}
         />
       </span>
-      <span className="min-w-0 truncate text-sm font-medium">{name}</span>
+      <span className="relative min-w-0 truncate text-sm font-medium">{name}</span>
     </div>
   );
 }
@@ -156,8 +163,8 @@ export function TechStack() {
             <div className="flex flex-wrap gap-2">
               {learning.map((l) => (
                 <span
-                  key={l}
-                  className="rounded-full border border-border bg-secondary/40 px-3 py-1.5 text-xs text-foreground/80 transition-transform duration-200 will-change-transform hover:-translate-y-0.5"
+                  key={l} // Changed styling for learning items to be more prominent
+                  className="rounded-full border border-lime/30 bg-lime/10 px-3 py-1.5 text-xs text-lime transition-[border-color,background-color,transform,box-shadow] duration-200 will-change-transform hover:-translate-y-0.5 hover:border-lime/50 hover:bg-lime/20 hover:shadow-sm"
                 >
                   {l}
                 </span>
