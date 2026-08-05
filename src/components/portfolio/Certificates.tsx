@@ -76,12 +76,21 @@ export function Certificates() {
                   </p>
                   <p className="mt-3 line-clamp-2 text-sm text-muted-foreground">{c.desc}</p>
                   <div className="mt-5 grid grid-cols-2 gap-3">
-                    <button className="inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-secondary/60 py-2 text-sm transition-colors hover:border-lime/50 hover:text-lime">
+                    <a
+                      href={c.image}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-secondary/60 py-2 text-sm transition-colors hover:border-lime/50 hover:text-lime"
+                    >
                       <Eye className="h-4 w-4" /> View in Full
-                    </button>
-                    <button className="inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-secondary/60 py-2 text-sm transition-colors hover:border-lime/50 hover:text-lime">
+                    </a>
+                    <a
+                      href={c.asset}
+                      download
+                      className="inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-secondary/60 py-2 text-sm transition-colors hover:border-lime/50 hover:text-lime"
+                    >
                       <Download className="h-4 w-4" /> Download
-                    </button>
+                    </a>
                   </div>
                 </div>
             </motion.article>

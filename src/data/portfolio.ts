@@ -1,5 +1,10 @@
 import { Github, Linkedin, Code2, Trophy, Mail, BookOpen, FileText } from "lucide-react";
 import avatarImage from "@/assets/Snehasish.jpeg";
+import agriCompanionImg from "@/assets/agri-companion.jpg";
+import ChhatroBondhuImg from "@/assets/ChhatroBondhu.jpg";
+import OSSIImg from "@/assets/OSSI.png";
+import hackverseImg from "@/assets/certificates/hackverse-2026.jpg";
+import SIHImg from "@/assets/certificates/SIH.jpg";
 
 const shot = (url: string) =>
   `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false&embed=screenshot.url`;
@@ -134,54 +139,11 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
-    name: "ChhatroBondhu 2.0",
-    tagline: "AI-Powered Student Assistance Platform",
-    image: shot("https://chhatrobondhu-20.vercel.app/"),
-    desc: "ChhatroBondhu is an AI-powered study companion that helps students find notes, track progress and stay motivated through gamification and collaborative learning tools.",
-    points: [
-      "Developed an AI-powered student assistance platform with personalised course recommendations",
-      "Implemented intelligent note search with an advanced filtering system",
-      "Added gamification and collaboration features to boost consistent study habits",
-      "Built interactive UI components for a smoother learning experience",
-      "Persisted user data and academic records with PostgreSQL",
-    ],
-    stack: [
-      { label: "React", color: "#53C1DE" },
-      { label: "TypeScript", color: "#3178C6" },
-      { label: "Tailwind CSS", color: "#38BDF8" },
-      { label: "PostgreSQL", color: "#336791" },
-      { label: "Supabase", color: "#34B27B" },
-    ],
-    github: "https://github.com/Snehasish-tech/ChhatroBondhu-2.0",
-    live: "https://chhatrobondhu-20.vercel.app/",
-  },
-  {
-    name: "Agri-Companion",
-    tagline: "AI-Driven Smart Farming Platform",
-    image: shot("https://agri-companion.vercel.app/"),
-    desc: "Agri-Companion (KrishiGrowAI) is an AI-driven agricultural platform that gives farmers smart crop recommendations, live market intelligence and weather-aware guidance in one place.",
-    points: [
-      "Built a crop advisor that recommends crops from soil, season and regional data",
-      "Integrated real-time weather insights for field-level decision making",
-      "Added market price analysis so farmers can time their sales better",
-      "Implemented an intelligent chatbot for instant farming support",
-      "Shipped a farmer-friendly marketplace with a responsive, low-friction UI",
-    ],
-    stack: [
-      { label: "React", color: "#53C1DE" },
-      { label: "TypeScript", color: "#3178C6" },
-      { label: "Tailwind CSS", color: "#38BDF8" },
-      { label: "PostgreSQL", color: "#336791" },
-      { label: "AI APIs", color: "#8A5CF5" },
-    ],
-    github: "https://github.com/Snehasish-tech/Agri-Companion",
-    live: "https://agri-companion.vercel.app/",
-  },
-  {
-    name: "OSS Sustainability Intelligence",
+   {
+    name: "OSSI- Open Source Sustainability Intelligence",
     tagline: "Open-Source Health & Risk Analytics",
     image: shot("https://open-source-sustainability-intellig.vercel.app/"),
+    logo: OSSIImg,
     desc: "A human-centric platform that assesses open-source project health, maintainer workload, sustainability risk and trust — so communities and companies can act before projects burn out.",
     points: [
       "Aggregated repository activity signals into a single project health score",
@@ -200,46 +162,57 @@ export const projects: Project[] = [
     github: "https://github.com/Snehasish-tech/OpenSource-Sustainability-Intelligence",
     live: "https://open-source-sustainability-intellig.vercel.app/",
   },
+ 
+ 
   {
-    name: "New Project One",
-    tagline: "A Catchy Tagline for Your Project",
-    image: shot("https://example.com"),
-    desc: "A brief but compelling description of what this project does, who it's for, and the problem it solves. Keep it to a couple of sentences.",
+    name: "Agri-Companion",
+    tagline: "AI-Driven Smart Farming Platform",
+    image: shot("https://agri-companion.vercel.app/"),
+    logo: agriCompanionImg,
+    desc: "Agri-Companion (KrishiGrowAI) is an AI-driven agricultural platform that gives farmers smart crop recommendations, live market intelligence and weather-aware guidance in one place.",
     points: [
-      "Key feature or accomplishment number one.",
-      "Another standout feature or technical achievement.",
-      "A third point highlighting a specific skill or technology used.",
-      "Fourth point, perhaps about the user experience or design.",
-      "Final point, maybe about deployment or performance.",
+      "Built a crop advisor that recommends crops from soil, season and regional data",
+      "Integrated real-time weather insights for field-level decision making",
+      "Added market price analysis so farmers can time their sales better",
+      "Implemented an intelligent chatbot for instant farming support",
+      "Shipped a farmer-friendly marketplace with a responsive, low-friction UI",
     ],
     stack: [
-      { label: "Tech 1", color: "#A755F7" },
-      { label: "Tech 2", color: "#EC4899" },
-      { label: "Tech 3", color: "#F97316" },
+      { label: "React", color: "#53C1DE" },
+      { label: "TypeScript", color: "#3178C6" },
+      { label: "Tailwind CSS", color: "#38BDF8" },
+      { label: "PostgreSQL", color: "#336791" },
+      { label: "AI APIs", color: "#8A5CF5" },
     ],
-    github: "https://github.com/Snehasish-tech/your-repo-name",
-    live: "https://your-live-url.com",
+    github: "https://github.com/Snehasish-tech/Agri-Companion",
+    live: "https://agri-companion.vercel.app/",
   },
-  {
-    name: "New Project Two",
-    tagline: "Another Great Tagline Here",
-    image: shot("https://example.com"),
-    desc: "Describe your second project here. What makes it special? What technologies did you use? What did you learn from building it?",
+ 
+   {
+    name: "ChhatroBondhu 2.0",
+    tagline: "AI-Powered Student Assistance Platform",
+    image: shot("https://chhatrobondhu-20.vercel.app/"),
+    logo: ChhatroBondhuImg,
+    desc: "ChhatroBondhu is an AI-powered study companion that helps students find notes, track progress and stay motivated through gamification and collaborative learning tools.",
     points: [
-      "Implemented a cool feature using a specific library.",
-      "Designed and built a REST API for data management.",
-      "Focused on creating a responsive and accessible user interface.",
-      "Deployed the application using a modern CI/CD pipeline.",
-      "Achieved a high performance score on web vitals.",
+      "Developed an AI-powered student assistance platform with personalised course recommendations",
+      "Implemented intelligent note search with an advanced filtering system",
+      "Added gamification and collaboration features to boost consistent study habits",
+      "Built interactive UI components for a smoother learning experience",
+      "Persisted user data and academic records with PostgreSQL",
     ],
     stack: [
-      { label: "Tech A", color: "#10B981" },
-      { label: "Tech B", color: "#14B8A6" },
-      { label: "Tech C", color: "#0EA5E9" },
+      { label: "React", color: "#53C1DE" },
+      { label: "TypeScript", color: "#3178C6" },
+      { label: "Tailwind CSS", color: "#38BDF8" },
+      { label: "PostgreSQL", color: "#336791" },
+      { label: "Supabase", color: "#34B27B" },
     ],
-    github: "https://github.com/Snehasish-tech/your-other-repo",
-    live: "https://your-other-live-url.com",
+    github: "https://github.com/Snehasish-tech/ChhatroBondhu-2.0",
+    live: "https://chhatrobondhu-20.vercel.app/",
   },
+
+  
 ];
 
 export type Experience = {
@@ -293,23 +266,22 @@ export type Certificate = {
 };
 
 export const certificates: Certificate[] = [
-  {
+ {
     title: "Hack&Verse Hackathon 2026 — GDG on Campus, SATI Vidisha",
     date: "2026",
-    desc: "Secured 3rd position among participating teams by building an innovative solution during the hackathon.",
-    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=70",
+    desc: "Secured 3rd position by building an innovative solution during the hackathon.",
+    image: hackverseImg,
     imageAlt: "Hack&Verse Hackathon certificate",
-    asset: "src/assets/certificates/hackverse-2026.jpg",
     ribbon: "3rd",
     category: "Hackathon",
-  },
+},
   {
     title: "Smart India Hackathon 2025 — Internal College Round",
     date: "2025",
     desc: "Qualified through the institute-level selection process and represented the college team for SIH 2025.",
-    image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=70",
+    image: SIHImg,
     imageAlt: "Smart India Hackathon certificate",
-    asset: "src/assets/certificates/sih-2025.jpg",
+  
     ribbon: "Selected",
     category: "Hackathon",
   },

@@ -4,6 +4,7 @@ import { Briefcase, Github, Globe, ChevronLeft, ChevronRight, Sparkles } from "l
 import { projects } from "@/data/portfolio";
 import { SectionBadge, SectionHeading } from "./Section";
 
+
 function projectInitials(name: string) {
   return name
     .split(/\s+/)

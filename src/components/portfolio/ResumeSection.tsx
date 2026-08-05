@@ -39,6 +39,7 @@ export function ResumeSection() {
                 <a
                   href={resumeFile}
                   target="_blank"
+                  download="Snehasish_Dey_Resume.pdf"
                   rel="noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-lime px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-transform duration-200 will-change-transform hover:-translate-y-0.5"
                 >
