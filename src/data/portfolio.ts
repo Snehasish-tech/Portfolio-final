@@ -3,8 +3,8 @@ import avatarImage from "@/assets/Snehasish.jpeg";
 import agriCompanionImg from "@/assets/agri-companion.jpg";
 import ChhatroBondhuImg from "@/assets/ChhatroBondhu.jpg";
 import OSSIImg from "@/assets/OSSI.png";
-import hackverseImg from "@/assets/certificates/hackverse-2026.jpg";
-import SIHImg from "@/assets/certificates/SIH.jpg";
+import hackverseImg from "@/assets/Certificates/hackverse-2026.jpg";
+import SIHImg from "@/assets/Certificates/SIH.jpg";
 
 const shot = (url: string) =>
   `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false&embed=screenshot.url`;
