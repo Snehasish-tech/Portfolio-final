@@ -1,5 +1,5 @@
 import { useMemo, useState, ElementType } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, type Variants } from "framer-motion";
 import {
   Layers,
   Brain,
@@ -35,7 +35,7 @@ const iconUrl = (name: string) => {
 };
 
 // --- Framer Motion Variants for Smooth Staggered Animations ---
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
@@ -47,7 +47,7 @@ const containerVariants = {
   },
 };
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 20, scale: 0.95 },
   show: { 
     opacity: 1, 

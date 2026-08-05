@@ -100,12 +100,12 @@ export const techGroups: { group: string; note: string; items: string[] }[] = [
   {
     group: "Languages",
     note: "Core languages I use for problem solving, DSA practice and application development.",
-    items: ["C", "C++", "Java", "Python", "JavaScript", "TypeScript", "SQL"],
+    items: ["C", "Java", "Python", "JavaScript", "TypeScript", "SQL"],
   },
   {
     group: "Frontend",
     note: "Building accessible, responsive interfaces with a component-driven workflow.",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML5", "CSS3", "Vite"],
+    items: ["React", "TypeScript", "Tailwind CSS", "HTML5", "CSS3", "Vite"],
   },
   {
     group: "Backend",
