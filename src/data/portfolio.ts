@@ -387,72 +387,72 @@ export const certificates: Certificate[] = [
   },
 ];
 
-export const testimonials = [
-  {
-    name: "Ananyo Dasgupta",
-    role: "SENIOR & HACKATHON PARTNER",
-    avatar: "https://i.pravatar.cc/150?u=ananyo",
-    quote:
-      "Snehasish is a disciplined, reliable developer who moves from idea to implementation quickly, backed by a rare ability to dissect complex logic manually.",
-    tag: "STUDENT",
-  },
-  {
-    name: "Piyush Kumar",
-    role: "FRIEND / HACKATHON TEAMMATE",
-    avatar: "https://i.pravatar.cc/150?u=piyush",
-    quote:
-      "Loved working with Snehasish! Truly an all-rounder who thrives in a collaborative environment and brings out the best in each of his teammates.",
-    tag: "STUDENT",
-  },
-  {
-    name: "Sahil Kumar",
-    role: "SENIOR & HACKATHON TEAMMATE",
-    avatar: "https://i.pravatar.cc/150?u=sahil",
-    quote:
-      "He has in-depth knowledge across many technologies, and even in areas he isn't familiar with, he knows how to figure things out and get the work done.",
-    tag: "STUDENT",
-  },
-  {
-    name: "Soumyadip Roy",
-    role: "SENIOR & HACKATHON PARTNER",
-    avatar: "https://i.pravatar.cc/150?u=soumyadip",
-    quote:
-      "Snehasish is a genuinely talented developer who contributes sincerely to any team and brings positive energy to finish projects before deadlines.",
-    tag: "STUDENT",
-  },
-  {
-    name: "Amit Verma",
-    role: "PROJECT PARTNER",
-    avatar: "https://i.pravatar.cc/150?u=amit",
-    quote:
-      "He has a great sense of UI and interaction design. His projects aren't just functional — they feel modern and well-crafted.",
-    tag: "PARTNER",
-  },
-  {
-    name: "Arijit Sen",
-    role: "SENIOR",
-    avatar: "https://i.pravatar.cc/150?u=arijit",
-    quote:
-      "A strong problem-solving mindset and genuine curiosity for learning. He consistently took ownership of challenging tasks.",
-    tag: "SENIOR",
-  },
-  {
-    name: "Rohit Sharma",
-    role: "HACKATHON TEAMMATE",
-    avatar: "https://i.pravatar.cc/150?u=rohit",
-    quote:
-      "Working with Snehasish during the hackathon was a great experience. His ability to stay calm under pressure helped our team a lot.",
-    tag: "TEAMMATE",
-  },
-  {
-    name: "Priyanka Mukherjee",
-    role: "SENIOR",
-    avatar: "https://i.pravatar.cc/150?u=priyanka",
-    quote:
-      "Extremely consistent and disciplined in his work. His attention to detail makes his projects feel polished and professional.",
-    tag: "SENIOR",
-  },
-];
+// export const testimonials = [
+//   {
+//     name: "Ananyo Dasgupta",
+//     role: "SENIOR & HACKATHON PARTNER",
+//     avatar: "https://i.pravatar.cc/150?u=ananyo",
+//     quote:
+//       "Snehasish is a disciplined, reliable developer who moves from idea to implementation quickly, backed by a rare ability to dissect complex logic manually.",
+//     tag: "STUDENT",
+//   },
+//   {
+//     name: "Piyush Kumar",
+//     role: "FRIEND / HACKATHON TEAMMATE",
+//     avatar: "https://i.pravatar.cc/150?u=piyush",
+//     quote:
+//       "Loved working with Snehasish! Truly an all-rounder who thrives in a collaborative environment and brings out the best in each of his teammates.",
+//     tag: "STUDENT",
+//   },
+//   {
+//     name: "Sahil Kumar",
+//     role: "SENIOR & HACKATHON TEAMMATE",
+//     avatar: "https://i.pravatar.cc/150?u=sahil",
+//     quote:
+//       "He has in-depth knowledge across many technologies, and even in areas he isn't familiar with, he knows how to figure things out and get the work done.",
+//     tag: "STUDENT",
+//   },
+//   {
+//     name: "Soumyadip Roy",
+//     role: "SENIOR & HACKATHON PARTNER",
+//     avatar: "https://i.pravatar.cc/150?u=soumyadip",
+//     quote:
+//       "Snehasish is a genuinely talented developer who contributes sincerely to any team and brings positive energy to finish projects before deadlines.",
+//     tag: "STUDENT",
+//   },
+//   {
+//     name: "Amit Verma",
+//     role: "PROJECT PARTNER",
+//     avatar: "https://i.pravatar.cc/150?u=amit",
+//     quote:
+//       "He has a great sense of UI and interaction design. His projects aren't just functional — they feel modern and well-crafted.",
+//     tag: "PARTNER",
+//   },
+//   {
+//     name: "Arijit Sen",
+//     role: "SENIOR",
+//     avatar: "https://i.pravatar.cc/150?u=arijit",
+//     quote:
+//       "A strong problem-solving mindset and genuine curiosity for learning. He consistently took ownership of challenging tasks.",
+//     tag: "SENIOR",
+//   },
+//   {
+//     name: "Rohit Sharma",
+//     role: "HACKATHON TEAMMATE",
+//     avatar: "https://i.pravatar.cc/150?u=rohit",
+//     quote:
+//       "Working with Snehasish during the hackathon was a great experience. His ability to stay calm under pressure helped our team a lot.",
+//     tag: "TEAMMATE",
+//   },
+//   {
+//     name: "Priyanka Mukherjee",
+//     role: "SENIOR",
+//     avatar: "https://i.pravatar.cc/150?u=priyanka",
+//     quote:
+//       "Extremely consistent and disciplined in his work. His attention to detail makes his projects feel polished and professional.",
+//     tag: "SENIOR",
+//   },
+// ];
 
 /* ---------------- Education & Qualifications ---------------- */
 export type EducationItem = {
