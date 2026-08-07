@@ -17,7 +17,7 @@ export const profile = {
   location: "Kolkata · West Bengal, India",
   avatar: avatarImage,
   octocat: "https://bikram-dot-dev.vercel.app/octocat.png",
-  intro: "a 3rd year B.Tech Information Technology student who loves turning ideas into working products. Frontend developer exploring backend, learning by building — programming isn't just my course, it's my craft.",
+  intro: ", 3rd year B.Tech Information Technology student who loves turning ideas into working products. Frontend developer exploring backend, learning by building — programming isn't just my course, it's my craft.",
 };
 
 export const socials = [
