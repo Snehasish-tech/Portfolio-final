@@ -62,7 +62,7 @@ export const miniProjects = [
     tags: ["TypeScript", "AI", "Supabase"],
   },
   {
-    title: "OSS Sustainability Intelligence",
+    title: "OSSI - Open Source Sustainability Intelligence",
     desc: "A human-centric platform to assess open-source project health, maintainer workload and sustainability risk.",
     tags: ["TypeScript", "Next.js", "Data Viz"],
   },
