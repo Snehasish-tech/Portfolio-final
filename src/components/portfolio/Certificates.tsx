@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Medal, Calendar, Eye, Download, ChevronDown, Trophy, Star, ShieldCheck } from "lucide-react";
-import { certificates, badges } from "@/data/portfolio";
+import { Medal, Calendar, Eye, Download, ChevronDown, Trophy, Star } from "lucide-react";
+import { certificates } from "@/data/portfolio";
 
 import { SectionBadge, SectionHeading } from "./Section";
 
@@ -96,37 +96,6 @@ export function Certificates() {
             </motion.article>
           ))}
         </div>
-
-
-        {/* Badges */}
-        <div className="mt-14">
-          <div className="flex items-center gap-3">
-            <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg border border-lime/30 bg-lime/10 text-lime">
-              <ShieldCheck className="h-4 w-4" />
-            </span>
-            <h3 className="font-display text-lg font-semibold">Badges &amp; Recognitions</h3>
-            <span className="h-px flex-1 bg-border" />
-          </div>
-          <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {badges.map((b) => (
-              <div
-                key={b.label}
-                className="card-surface grid grid-cols-[auto_minmax(0,1fr)] items-center gap-3 rounded-xl p-4 transition-[border-color,transform] duration-200 will-change-transform hover:-translate-y-0.5 hover:border-lime/50"
-              >
-                <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg border border-lime/30 bg-lime/10 text-lime">
-                  <ShieldCheck className="h-4 w-4" />
-                </span>
-                <span className="min-w-0">
-                  <span className="block truncate text-sm font-medium">{b.label}</span>
-                  <span className="mt-0.5 block truncate text-[11px] text-muted-foreground">
-                    {b.issuer} · {b.tone}
-                  </span>
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-
 
         <div className="mt-12 flex justify-center">
           <button

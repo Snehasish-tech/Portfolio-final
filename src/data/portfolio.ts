@@ -13,6 +13,7 @@ import DjangoImg from "@/assets/Certificates/Django.jpg";
 import OpenSourceImg from "@/assets/Certificates/Open_Source.jpg";
 import EliteCodersImg from "@/assets/Certificates/EliteCoder.jpg";
 import ServiceNowImg from "@/assets/Certificates/ServiceNow.jpg";
+import resumePdf from "@/assets/RESUME.pdf";
 
 const shot = (url: string) =>
   `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false&embed=screenshot.url`;
@@ -147,7 +148,7 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-   {
+  {
     name: "OSSI- Open Source Sustainability Intelligence",
     tagline: "Open-Source Health & Risk Analytics",
     image: shot("https://open-source-sustainability-intellig.vercel.app/"),
@@ -170,8 +171,7 @@ export const projects: Project[] = [
     github: "https://github.com/Snehasish-tech/OpenSource-Sustainability-Intelligence",
     live: "https://open-source-sustainability-intellig.vercel.app/",
   },
- 
- 
+
   {
     name: "Agri-Companion",
     tagline: "AI-Driven Smart Farming Platform",
@@ -195,8 +195,8 @@ export const projects: Project[] = [
     github: "https://github.com/Snehasish-tech/Agri-Companion",
     live: "https://agri-companion.vercel.app/",
   },
- 
-   {
+
+  {
     name: "ChhatroBondhu 2.0",
     tagline: "AI-Powered Student Assistance Platform",
     image: shot("https://chhatrobondhu-20.vercel.app/"),
@@ -219,8 +219,6 @@ export const projects: Project[] = [
     github: "https://github.com/Snehasish-tech/ChhatroBondhu-2.0",
     live: "https://chhatrobondhu-20.vercel.app/",
   },
-
-  
 ];
 
 export type Experience = {
@@ -228,38 +226,34 @@ export type Experience = {
   role: string;
   org: string;
   desc: string;
-  icon: "code" | "users" | "globe" | "award";
+  icon: "code" | "users" | "globe" | "trophy" | "github";
 };
 
 export const experiences: Experience[] = [
+ 
   {
-    period: "2024 – 2028",
-    role: "B.Tech, Information Technology · CGPA 8.67",
-    org: "Narula Institute of Technology, Agarpara",
-    desc: "Pursuing Information Technology with a strong academic record while building web applications, practising DSA and exploring application security.",
-    icon: "award",
+    period: "Jun 2026 - July 2026",
+    role: "ServiceNow Virtual Intern",
+    org: "ServiceNow University (AICTE & SmartBridge)",
+    desc: "Successfully completed hands-on training modules including Agentic AI, Flow Designer, Automated Test Framework (ATF), and CSA exam preparation.",
+    icon: "trophy",
   },
-  {
-    period: "2025",
-    role: "Smart India Hackathon 2025 — Internal Round",
-    org: "Narula Institute of Technology",
-    desc: "Qualified through the institute-level selection process and represented the college team for Smart India Hackathon 2025.",
-    icon: "users",
-  },
-  {
-    period: "2026",
-    role: "Open Source Contributor — ECWoC",
-    org: "Elite Coders Winter of Code",
-    desc: "Contributed to the open-source developer community among 5000+ participants, working on issues, reviews and documentation across projects.",
+ {
+    period: "Feb 2026 - Mar 2026",
+    role: "Contributor",
+    org: "Open Source Connect Global 2026",
+    desc: "Actively participated and made valuable contributions to advancing open-source development and strengthening the community network.",
     icon: "globe",
   },
+ 
   {
-    period: "Mar 2026",
-    role: "Python with Django Trainee",
-    org: "Genex Engineering & Management Solutions",
-    desc: "Completed a 30-hour certified training programme on Python with Django, covering backend development concepts and web application fundamentals.",
-    icon: "code",
+    period: "Jan 2026 – Feb 2026",
+    role: "Open Source Contributor — ECWoC",
+    org: "Elite Coders Winter of Code",
+    desc: "Contributed to the open-source developer community among 5000+ participants, working on issues, reviews, and documentation across projects.",
+    icon: "github",
   },
+
 ];
 
 export type Certificate = {
@@ -274,7 +268,7 @@ export type Certificate = {
 };
 
 export const certificates: Certificate[] = [
- {
+  {
     title: "Hack&Verse Hackathon 2026 — GDG on Campus, SATI Vidisha",
     date: "2026",
     desc: "Secured 3rd position by building an innovative solution during the hackathon.",
@@ -282,14 +276,13 @@ export const certificates: Certificate[] = [
     imageAlt: "Hack&Verse Hackathon certificate",
     ribbon: "3rd",
     category: "Hackathon",
-},
+  },
   {
     title: "Smart India Hackathon 2025 — Internal College Round",
     date: "2025",
     desc: "Qualified through the institute-level selection process and represented the college team for SIH 2025.",
     image: SIHImg,
     imageAlt: "Smart India Hackathon certificate",
-  
     ribbon: "Selected",
     category: "Hackathon",
   },
@@ -305,8 +298,8 @@ export const certificates: Certificate[] = [
   },
   {
     title: "Elite Coders Winter of Code (ECWoC)",
-    date: "2026",
-    desc: "Open-source contributor among 5000+ participants, contributing to community-driven repositories.",
+    date: "2026", 
+    desc: "Open-source contributor among 5000+ participants, contributing to community-driven repositories.", 
     image: EliteCodersImg,
     imageAlt: "Elite Coders Winter of Code certificate",
     asset: "src/assets/certificates/ecwoc-2026.jpg",
@@ -314,134 +307,65 @@ export const certificates: Certificate[] = [
     category: "Extracurricular",
   },
   {
-    title: "New Hackathon Win 1",
-    date: "YYYY",
-    desc: "Description of the hackathon achievement.",
-    image: GDGImg ,
-    imageAlt: "New Hackathon certificate",
-    ribbon: "Winner",
+    title: "Solution Challenge 2026: Build with AI", // Updated
+    date: "Jul 2026", // Updated
+    desc: "Recognized for successful prototype submission and contribution to the spirit of innovation and problem-solving.", // Updated
+    image: GDGImg,
+    imageAlt: "Solution Challenge 2026 Build with AI certificate", // Updated
+    ribbon: "Participant", // Updated based on certificate
     category: "Hackathon",
   },
-
   {
-    title: "New Hackathon Win 3",
-    date: "YYYY",
-    desc: "Description of the hackathon achievement.",
+    title: "Techsprint Hackathon — GDG on Campus, JIS University",
+    date: "Jan 2026",
+    desc: "Participated in the first Techsprint Hackathon powered by Google Developer Groups on Campus JIS University.",
     image: JISUImg,
-    imageAlt: "New Hackathon certificate",
+    imageAlt: "Techsprint Hackathon JIS University certificate",
     asset: "src/assets/certificates/new-hackathon-3.jpg",
     ribbon: "Participant",
     category: "Hackathon",
   },
   {
-    title: "New Skill Certification 1",
-    date: "Mon YYYY",
-    desc: "Description of the skill certification.",
+    title: "Programming in Java — NPTEL Online Certification",
+    date: "Jan-Apr 2026",
+    desc: "Successfully completed a 12-week course by IIT Kharagpur, funded by the MoE, Govt. of India.",
     image: NPTELImg,
-    imageAlt: "New skill certificate",
+    imageAlt: "NPTEL Java Certification",
     asset: "src/assets/certificates/new-skill-1.jpg",
     ribbon: "Certified",
     category: "Skills",
   },
   {
-    title: "New Skill Certification 2",
-    date: "Mon YYYY",
-    desc: "Description of the skill certification.",
+    title: "Python with Django Certificate of Completion",
+    date: "Mar 2026",
+    desc: "Successfully completed a 30-hour training on Python with Django from Genex Engineering & Management Solutions.",
     image: DjangoImg,
-    imageAlt: "New skill certificate",
+    imageAlt: "Python with Django completion certificate",
     asset: "src/assets/certificates/new-skill-2.jpg",
     ribbon: "Certified",
     category: "Skills",
   },
   {
-    title: "New Extracurricular Activity 1",
-    date: "YYYY",
-    desc: "Description of the extracurricular activity.",
+    title: "Open Source Connect Global 2026",
+    date: "Feb 2026",
+    desc: "Recognized for active participation and valuable contributions as a Contributor to advance open-source development.",
     image: OpenSourceImg,
-    imageAlt: "New extracurricular certificate",
+    imageAlt: "Open Source Connect Global certificate",
     asset: "src/assets/certificates/new-extracurricular-1.jpg",
-    ribbon: "Member",
+    ribbon: "Contributor",
     category: "Extracurricular",
   },
- 
   {
-    title: "New Extracurricular Activity 3",
-    date: "YYYY",
-    desc: "Description of the extracurricular activity.",
+    title: "ServiceNow Virtual Internship Program",
+    date: "Jul 2026",
+    desc: "Successfully completed the Virtual Internship Program by ServiceNow University in collaboration with AICTE and SmartBridge.",
     image: ServiceNowImg,
-    imageAlt: "New extracurricular certificate",
+    imageAlt: "ServiceNow Virtual Internship certificate",
     asset: "src/assets/certificates/new-extracurricular-3.jpg",
     ribbon: "Coordinator",
     category: "Extracurricular",
   },
 ];
-
-// export const testimonials = [
-//   {
-//     name: "Ananyo Dasgupta",
-//     role: "SENIOR & HACKATHON PARTNER",
-//     avatar: "https://i.pravatar.cc/150?u=ananyo",
-//     quote:
-//       "Snehasish is a disciplined, reliable developer who moves from idea to implementation quickly, backed by a rare ability to dissect complex logic manually.",
-//     tag: "STUDENT",
-//   },
-//   {
-//     name: "Piyush Kumar",
-//     role: "FRIEND / HACKATHON TEAMMATE",
-//     avatar: "https://i.pravatar.cc/150?u=piyush",
-//     quote:
-//       "Loved working with Snehasish! Truly an all-rounder who thrives in a collaborative environment and brings out the best in each of his teammates.",
-//     tag: "STUDENT",
-//   },
-//   {
-//     name: "Sahil Kumar",
-//     role: "SENIOR & HACKATHON TEAMMATE",
-//     avatar: "https://i.pravatar.cc/150?u=sahil",
-//     quote:
-//       "He has in-depth knowledge across many technologies, and even in areas he isn't familiar with, he knows how to figure things out and get the work done.",
-//     tag: "STUDENT",
-//   },
-//   {
-//     name: "Soumyadip Roy",
-//     role: "SENIOR & HACKATHON PARTNER",
-//     avatar: "https://i.pravatar.cc/150?u=soumyadip",
-//     quote:
-//       "Snehasish is a genuinely talented developer who contributes sincerely to any team and brings positive energy to finish projects before deadlines.",
-//     tag: "STUDENT",
-//   },
-//   {
-//     name: "Amit Verma",
-//     role: "PROJECT PARTNER",
-//     avatar: "https://i.pravatar.cc/150?u=amit",
-//     quote:
-//       "He has a great sense of UI and interaction design. His projects aren't just functional — they feel modern and well-crafted.",
-//     tag: "PARTNER",
-//   },
-//   {
-//     name: "Arijit Sen",
-//     role: "SENIOR",
-//     avatar: "https://i.pravatar.cc/150?u=arijit",
-//     quote:
-//       "A strong problem-solving mindset and genuine curiosity for learning. He consistently took ownership of challenging tasks.",
-//     tag: "SENIOR",
-//   },
-//   {
-//     name: "Rohit Sharma",
-//     role: "HACKATHON TEAMMATE",
-//     avatar: "https://i.pravatar.cc/150?u=rohit",
-//     quote:
-//       "Working with Snehasish during the hackathon was a great experience. His ability to stay calm under pressure helped our team a lot.",
-//     tag: "TEAMMATE",
-//   },
-//   {
-//     name: "Priyanka Mukherjee",
-//     role: "SENIOR",
-//     avatar: "https://i.pravatar.cc/150?u=priyanka",
-//     quote:
-//       "Extremely consistent and disciplined in his work. His attention to detail makes his projects feel polished and professional.",
-//     tag: "SENIOR",
-//   },
-// ];
 
 /* ---------------- Education & Qualifications ---------------- */
 export type EducationItem = {
@@ -478,7 +402,7 @@ export const education: EducationItem[] = [
     institution: "Digha Vidyabhawan High School",
     location: "West Bengal",
     period: "2022 — 2024",
-    grade: "Science (PCMB) — 80.2%",
+    grade: "Science (PCMB) — 80.1%",
     status: "Completed",
     desc: "Studied Physics, Chemistry, Mathematics",
     coursework: ["Mathematics", "Physics", "Chemistry"],
@@ -488,27 +412,20 @@ export const education: EducationItem[] = [
     institution: "Digha Vidyabhawan High School",
     location: "West Bengal",
     period: "2021 — 2022",
-    grade: "90.06 %",
+    grade: "90.85 %",
     status: "Completed",
     desc: "Built strong fundamentals across mathematics and science alongside consistent extracurricular participation.",
     coursework: ["Mathematics", "Science", "English", "Computer Applications"],
   },
 ];
 
-/* ---------------- Badges ---------------- */
-export const badges = [
-  { label: "SIH 2025 Finalist (Internal)", issuer: "Smart India Hackathon", tone: "Hackathon" },
-  { label: "Hack&Verse 2026 — 3rd Place", issuer: "GDG on Campus, SATI", tone: "Hackathon" },
-  { label: "ECWoC Open-Source Contributor", issuer: "Elite Coders Winter of Code", tone: "Community" },
-  { label: "Python + Django (30h)", issuer: "Genex Engineering", tone: "Training" },
-  { label: "100+ DSA Problems", issuer: "LeetCode · GfG", tone: "Practice" },
-  { label: "3★ Problem Solver", issuer: "CodeChef", tone: "Practice" },
-];
+
+
 
 /* ---------------- Resume ---------------- */
 export const resume = {
-  href: "https://github.com/Snehasish-tech/Resume/blob/main/Snehasish_Dey_Resume.pdf",
-  pdf: "src/assets/resume/Snehasish-Resume.pdf",
+  href: resumePdf,
+  pdf: resumePdf,
   updated: "Updated Aug 2026",
   highlights: [
     "3rd-year B.Tech IT · CGPA 8.67",

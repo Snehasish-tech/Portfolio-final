@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { Wrench, Code2, Users, Globe, Award, ArrowUpRight } from "lucide-react";
+import { Wrench, Code2, Users, Globe, Award, Trophy, Github, ArrowUpRight } from "lucide-react";
 import { experiences } from "@/data/portfolio";
 import { SectionBadge, SectionHeading, Reveal } from "./Section";
 
-const icons = { code: Code2, users: Users, globe: Globe, award: Award };
+const icons = { code: Code2, users: Users, globe: Globe, award: Award, trophy: Trophy, github: Github };
 
 const stats = [
   { value: "8.67", label: "CGPA · B.Tech IT" },
