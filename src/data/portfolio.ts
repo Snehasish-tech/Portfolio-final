@@ -5,6 +5,14 @@ import ChhatroBondhuImg from "@/assets/ChhatroBondhu.jpg";
 import OSSIImg from "@/assets/OSSI.png";
 import hackverseImg from "@/assets/Certificates/hackverse-2026.jpg";
 import SIHImg from "@/assets/Certificates/SIH.jpg";
+import TMNTImg from "@/assets/Certificates/TMNT.jpg";
+import GDGImg from "@/assets/Certificates/GDG.jpeg";
+import JISUImg from "@/assets/Certificates/JISU.jpg";
+import NPTELImg from "@/assets/Certificates/NPTEL.jpg";
+import DjangoImg from "@/assets/Certificates/Django.jpg";
+import OpenSourceImg from "@/assets/Certificates/Open_Source.jpg";
+import EliteCodersImg from "@/assets/Certificates/EliteCoder.jpg";
+import ServiceNowImg from "@/assets/Certificates/ServiceNow.jpg";
 
 const shot = (url: string) =>
   `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false&embed=screenshot.url`;
@@ -289,17 +297,17 @@ export const certificates: Certificate[] = [
     title: "Python with Django Training Certification",
     date: "Mar 2026",
     desc: "30-hour training programme by Genex Engineering & Management Solutions on Django backend development.",
-    image: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=1200&q=70",
+    image: TMNTImg,
     imageAlt: "Python with Django training certificate",
     asset: "src/assets/certificates/django-training.jpg",
     ribbon: "Certified",
-    category: "Skills",
+    category: "Hackathon",
   },
   {
     title: "Elite Coders Winter of Code (ECWoC)",
     date: "2026",
     desc: "Open-source contributor among 5000+ participants, contributing to community-driven repositories.",
-    image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?auto=format&fit=crop&w=1200&q=70",
+    image: EliteCodersImg,
     imageAlt: "Elite Coders Winter of Code certificate",
     asset: "src/assets/certificates/ecwoc-2026.jpg",
     ribbon: "Contributor",
@@ -309,27 +317,17 @@ export const certificates: Certificate[] = [
     title: "New Hackathon Win 1",
     date: "YYYY",
     desc: "Description of the hackathon achievement.",
-    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=70",
+    image: GDGImg ,
     imageAlt: "New Hackathon certificate",
-    asset: "src/assets/certificates/new-hackathon-1.jpg",
     ribbon: "Winner",
     category: "Hackathon",
   },
-  {
-    title: "New Hackathon Win 2",
-    date: "YYYY",
-    desc: "Description of the hackathon achievement.",
-    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=70",
-    imageAlt: "New Hackathon certificate",
-    asset: "src/assets/certificates/new-hackathon-2.jpg",
-    ribbon: "Finalist",
-    category: "Hackathon",
-  },
+
   {
     title: "New Hackathon Win 3",
     date: "YYYY",
     desc: "Description of the hackathon achievement.",
-    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=70",
+    image: JISUImg,
     imageAlt: "New Hackathon certificate",
     asset: "src/assets/certificates/new-hackathon-3.jpg",
     ribbon: "Participant",
@@ -339,7 +337,7 @@ export const certificates: Certificate[] = [
     title: "New Skill Certification 1",
     date: "Mon YYYY",
     desc: "Description of the skill certification.",
-    image: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=1200&q=70",
+    image: NPTELImg,
     imageAlt: "New skill certificate",
     asset: "src/assets/certificates/new-skill-1.jpg",
     ribbon: "Certified",
@@ -349,7 +347,7 @@ export const certificates: Certificate[] = [
     title: "New Skill Certification 2",
     date: "Mon YYYY",
     desc: "Description of the skill certification.",
-    image: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=1200&q=70",
+    image: DjangoImg,
     imageAlt: "New skill certificate",
     asset: "src/assets/certificates/new-skill-2.jpg",
     ribbon: "Certified",
@@ -359,27 +357,18 @@ export const certificates: Certificate[] = [
     title: "New Extracurricular Activity 1",
     date: "YYYY",
     desc: "Description of the extracurricular activity.",
-    image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?auto=format&fit=crop&w=1200&q=70",
+    image: OpenSourceImg,
     imageAlt: "New extracurricular certificate",
     asset: "src/assets/certificates/new-extracurricular-1.jpg",
     ribbon: "Member",
     category: "Extracurricular",
   },
-  {
-    title: "New Extracurricular Activity 2",
-    date: "YYYY",
-    desc: "Description of the extracurricular activity.",
-    image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?auto=format&fit=crop&w=1200&q=70",
-    imageAlt: "New extracurricular certificate",
-    asset: "src/assets/certificates/new-extracurricular-2.jpg",
-    ribbon: "Volunteer",
-    category: "Extracurricular",
-  },
+ 
   {
     title: "New Extracurricular Activity 3",
     date: "YYYY",
     desc: "Description of the extracurricular activity.",
-    image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?auto=format&fit=crop&w=1200&q=70",
+    image: ServiceNowImg,
     imageAlt: "New extracurricular certificate",
     asset: "src/assets/certificates/new-extracurricular-3.jpg",
     ribbon: "Coordinator",
