@@ -42,7 +42,7 @@ export const socials = [
     label: "Resume",
     icon: FileText,
     // PDF is available in the resume section
-    href: "https://github.com/Snehasish-tech/Resume/blob/main/Snehasish_Dey_Resume.pdf",
+    href: resumePdf,
   },
 ];
 
