@@ -399,7 +399,7 @@ export const education: EducationItem[] = [
   },
   {
     degree: "Higher Secondary (WBCHSE) — Science",
-    institution: "Digha Vidyabhawan High School",
+    institution: "Digha Vidyabhaban High School",
     location: "West Bengal",
     period: "2022 — 2024",
     grade: "Science (PCMB) — 80.1%",
@@ -409,7 +409,7 @@ export const education: EducationItem[] = [
   },
   {
     degree: "Secondary (WBBSE)",
-    institution: "Digha Vidyabhawan High School",
+    institution: "Digha Vidyabhaban High School",
     location: "West Bengal",
     period: "2021 — 2022",
     grade: "90.85 %",
