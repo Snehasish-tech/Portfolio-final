@@ -114,7 +114,7 @@ export const techGroups: { group: string; note: string; items: string[] }[] = [
   {
     group: "Frontend",
     note: "Building accessible, responsive interfaces with a component-driven workflow.",
-    items: ["React", "TypeScript", "Tailwind CSS", "HTML5", "CSS3", "Vite"],
+    items: ["React", "Tailwind CSS", "HTML5", "CSS3", "Vite"],
   },
   {
     group: "Backend",
@@ -129,7 +129,7 @@ export const techGroups: { group: string; note: string; items: string[] }[] = [
   {
     group: "Tools",
     note: "Everyday tooling for version control, testing, deployment and design handoff.",
-    items: ["Git", "GitHub", "VS Code", "Vercel", "Figma"],
+    items: ["Git", "GitHub", "VS Code", "Vercel"],
   },
 ];
 
@@ -405,7 +405,7 @@ export const education: EducationItem[] = [
     grade: "Science (PCMB) — 80.1%",
     status: "Completed",
     desc: "Studied Physics, Chemistry, Mathematics",
-    coursework: ["Mathematics", "Physics", "Chemistry"],
+    coursework: ["Mathematics", "Physics", "Chemistry", "Biology"],
   },
   {
     degree: "Secondary (WBBSE)",
@@ -415,7 +415,7 @@ export const education: EducationItem[] = [
     grade: "90.85 %",
     status: "Completed",
     desc: "Built strong fundamentals across mathematics and science alongside consistent extracurricular participation.",
-    coursework: ["Mathematics", "Science", "English", "Computer Applications"],
+    coursework: ["Mathematics", "Science", "English"],
   },
 ];
 
