@@ -385,7 +385,7 @@ export const education: EducationItem[] = [
     institution: "Narula Institute of Technology",
     location: "Agarpara, Kolkata",
     period: "2024 — 2028",
-    grade: "8.67 / 10 CGPA",
+    grade: "8.73 / 10 CGPA",
     status: "In Progress",
     desc: "Core computer-science foundations paired with hands-on product building, hackathons and open-source contribution.",
     coursework: [
