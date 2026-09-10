@@ -6,10 +6,10 @@ import { SectionBadge, SectionHeading, Reveal } from "./Section";
 const icons = { code: Code2, users: Users, globe: Globe, award: Award, trophy: Trophy, github: Github };
 
 const stats = [
-  { value: "8.67", label: "CGPA · B.Tech IT" },
-  { value: "5000+", label: "ECWoC community" },
+  { value: "8.73", label: "CGPA · B.Tech IT" },
+  { value: "500+", label: "ECWoC community" },
   { value: "30h", label: "Django training" },
-  { value: "2×", label: "Hackathon runs" },
+  { value: "5×", label: "Hackathon runs" },
 ];
 
 export function Experience() {
