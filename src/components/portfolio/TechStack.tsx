@@ -63,7 +63,7 @@ function TechCard({ name }: { name: string }) {
     <motion.div
       variants={cardVariants}
       layout
-      className="group relative flex h-[64px] items-center gap-3.5 overflow-hidden rounded-2xl border border-white/5 bg-white/[0.02] px-4 backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-lime/40 hover:bg-white/[0.04] hover:shadow-[0_10px_30px_-10px_rgba(163,230,53,0.2)]"
+      className="group relative flex h-[54px] items-center gap-2.5 overflow-hidden rounded-xl border border-white/5 bg-white/[0.02] px-3 backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-1 hover:border-lime/40 hover:bg-white/[0.04] hover:shadow-[0_10px_30px_-10px_rgba(163,230,53,0.2)]"
     >
       {/* Subtle Hover Glow behind the card */}
       <div
@@ -75,20 +75,20 @@ function TechCard({ name }: { name: string }) {
       />
       
       {/* ENHANCED LOGO CONTAINER: Added a soft frosted glass background so dark logos pop out brightly */}
-      <span className="relative grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-white/10 bg-white/10 shadow-inner transition-all duration-500 ease-out group-hover:scale-110 group-hover:rotate-3 group-hover:border-lime/50 group-hover:bg-white/20 group-hover:shadow-[0_0_20px_rgba(163,230,53,0.3)]">
+      <span className="relative grid h-8 w-8 shrink-0 place-items-center rounded-lg border border-white/10 bg-white/10 shadow-inner transition-all duration-500 ease-out group-hover:scale-110 group-hover:rotate-3 group-hover:border-lime/50 group-hover:bg-white/20 group-hover:shadow-[0_0_20px_rgba(163,230,53,0.3)]">
         
         {/* Soft light burst to ensure contrast for dark original logos */}
-        <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-white/30 to-transparent opacity-50 mix-blend-overlay" />
+        <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-white/30 to-transparent opacity-50 mix-blend-overlay" />
         
         <img
           src={iconUrl(name)}
           alt={`${name} icon`}
           aria-hidden="true"
           loading="lazy"
-          width={22}
-          height={22}
+          width={18}
+          height={18}
           // BRIGHTNESS ENHANCEMENT: Added brightness-110 & contrast-125
-          className="relative z-10 h-[22px] w-[22px] object-contain brightness-110 contrast-125 drop-shadow-[0_0_8px_rgba(255,255,255,0.25)] transition-all duration-300 group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.4)]"
+          className="relative z-10 h-[18px] w-[18px] object-contain brightness-110 contrast-125 drop-shadow-[0_0_8px_rgba(255,255,255,0.25)] transition-all duration-300 group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.4)]"
           onError={(e) => {
             // FIXED: Safe TypeScript event casting
             const target = e.target as HTMLImageElement;
@@ -111,7 +111,7 @@ export function TechStack() {
   const total = useMemo(() => techGroups.reduce((n, g) => n + g.items.length, 0), []);
 
   return (
-    <section id="tech" className="relative py-24 overflow-hidden">
+    <section id="tech" className="relative overflow-hidden py-16">
       {/* Ambient Background Glow */}
       <div
         className="pointer-events-none absolute inset-x-0 top-1/4 h-[500px]"
@@ -131,7 +131,7 @@ export function TechStack() {
 
         {/* Fluid Filter Tabs */}
         <Reveal>
-          <div className="mt-14 flex min-h-[44px] flex-wrap items-center justify-center gap-2.5">
+          <div className="mt-8 flex min-h-[40px] flex-wrap items-center justify-center gap-2">
             {tabs.map((t) => {
               const Icon = t === "All" ? Grid3x3 : (groupIcons[t] ?? Layers);
               const count =
@@ -144,7 +144,7 @@ export function TechStack() {
                   type="button"
                   onClick={() => setActive(t)}
                   aria-pressed={isActive}
-                  className="relative flex h-11 items-center gap-2.5 rounded-full px-5 text-sm outline-none transition-transform duration-300 hover:-translate-y-0.5 active:scale-95"
+                    className="relative flex h-10 items-center gap-2 rounded-full px-4 text-sm outline-none transition-transform duration-300 hover:-translate-y-0.5 active:scale-95"
                 >
                   {isActive ? (
                     <motion.div
@@ -180,7 +180,7 @@ export function TechStack() {
         </Reveal>
 
         {/* Staggered Grid Rendering */}
-        <motion.div layout className="mt-16 space-y-16">
+        <motion.div layout className="mt-10 space-y-8">
           <AnimatePresence mode="popLayout">
             {techGroups
               .filter((g) => active === "All" || active === g.group)
@@ -196,17 +196,17 @@ export function TechStack() {
                     transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
                   >
                     {/* Category Header */}
-                    <div className="flex items-center gap-4">
-                      <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-lime/30 bg-lime/10 text-lime shadow-[0_0_15px_rgba(163,230,53,0.15)]">
-                        <Icon className="h-5 w-5" />
+                    <div className="flex items-center gap-3">
+                      <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg border border-lime/30 bg-lime/10 text-lime shadow-[0_0_15px_rgba(163,230,53,0.15)]">
+                        <Icon className="h-4 w-4" />
                       </span>
-                      <h3 className="font-display text-2xl font-bold tracking-tight text-foreground/90">
+                      <h3 className="font-display text-xl font-bold tracking-tight text-foreground/90">
                         {g.group}
                       </h3>
                       <span className="h-[2px] flex-1 rounded-full bg-gradient-to-r from-border to-transparent" />
                     </div>
                     
-                    <p className="mt-4 max-w-2xl text-[15px] text-muted-foreground/80 leading-relaxed">
+                    <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground/80">
                       {g.note}
                     </p>
                     
@@ -216,7 +216,7 @@ export function TechStack() {
                       initial="hidden"
                       animate="show"
                       exit="exit"
-                      className="mt-8 grid auto-rows-[64px] grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5"
+                      className="mt-5 grid auto-rows-[54px] grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6"
                     >
                       {g.items.map((name) => (
                         <TechCard key={name} name={name} />
@@ -230,7 +230,7 @@ export function TechStack() {
 
         {/* Currently exploring Section - Premium Glow Card */}
         <Reveal>
-          <div className="relative mt-24 overflow-hidden rounded-3xl border border-lime/20 bg-[#0a0f1e]/50 p-8 shadow-[0_0_40px_rgba(163,230,53,0.06)] backdrop-blur-xl sm:flex sm:items-center sm:justify-between sm:p-10">
+          <div className="relative mt-14 overflow-hidden rounded-2xl border border-lime/20 bg-[#0a0f1e]/50 p-5 shadow-[0_0_40px_rgba(163,230,53,0.06)] backdrop-blur-xl sm:flex sm:items-center sm:justify-between sm:p-7">
             {/* Inner subtle gradient */}
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-lime/5 to-transparent opacity-50" />
             
@@ -239,16 +239,16 @@ export function TechStack() {
                 <Sparkles className="h-4 w-4 shrink-0 animate-pulse" /> 
                 Currently exploring
               </p>
-              <p className="mt-3 text-[15px] text-muted-foreground/90">
+              <p className="mt-2 text-sm text-muted-foreground/90">
                 Levelling up beyond the frontend — backend systems, cloud, and AI tooling.
               </p>
             </div>
             
-            <div className="relative z-10 mt-6 flex flex-wrap gap-2.5 sm:mt-0">
+            <div className="relative z-10 mt-4 flex flex-wrap gap-2 sm:mt-0">
               {learning.map((l) => (
                 <span
                   key={l}
-                  className="cursor-default rounded-full border border-lime/30 bg-lime/10 px-4 py-2 text-sm font-semibold tracking-wide text-lime transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:border-lime/80 hover:bg-lime/20 hover:shadow-[0_0_20px_rgba(163,230,53,0.25)]"
+                  className="cursor-default rounded-full border border-lime/30 bg-lime/10 px-3 py-1.5 text-sm font-semibold tracking-wide text-lime transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:border-lime/80 hover:bg-lime/20 hover:shadow-[0_0_20px_rgba(163,230,53,0.25)]"
                 >
                   {l}
                 </span>

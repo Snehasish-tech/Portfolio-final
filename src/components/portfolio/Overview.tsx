@@ -4,8 +4,8 @@ import { profile } from "@/data/portfolio";
 import { SectionBadge, SectionHeading, Reveal } from "./Section";
 
 const stats = [
-  { value: "3+", label: "Years building" },
-  { value: "25+", label: "Projects shipped" },
+  { value: "2+", label: "Years building" },
+  { value: "10+", label: "Projects shipped" },
   { value: "15+", label: "Technologies" },
 ];
 
@@ -106,12 +106,12 @@ export function Overview() {
                 transition={{ duration: 34, repeat: Infinity, ease: "linear" }}
                 className="pointer-events-none absolute -inset-6 rounded-[2.5rem] border border-dashed border-lime/20"
               />
-              <div className="group relative overflow-hidden rounded-[2rem] border border-lime/25 glow-lime">
+              <div className="group relative overflow-hidden rounded-[2.5rem] border border-lime/25 glow-lime">
                 <img
                   src={profile.avatar}
                   alt={`Portrait of ${profile.name}`}
                   loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-[1.2s] group-hover:scale-110"
+                  className="h-full w-full object-cover transition-transform duration-[1.1s] group-hover:scale-108"
                 />
                 <div
                   className="pointer-events-none absolute inset-0"
@@ -120,15 +120,6 @@ export function Overview() {
                       "linear-gradient(to top, color-mix(in oklab, var(--background) 92%, transparent) 4%, transparent 55%)",
                   }}
                 />
-                <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <div
-                    className="absolute inset-0"
-                    style={{
-                      background:
-                        "linear-gradient(115deg, transparent 40%, color-mix(in oklab, var(--lime) 22%, transparent) 50%, transparent 60%)",
-                    }}
-                  />
-                </div>
 
                 <div className="absolute inset-x-5 bottom-5 flex items-end justify-between gap-3">
                   <div>
