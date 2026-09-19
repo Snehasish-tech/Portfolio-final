@@ -428,7 +428,7 @@ export const resume = {
   pdf: resumePdf,
   updated: "Updated Aug 2026",
   highlights: [
-    "3rd-year B.Tech IT · CGPA 8.67",
+    "3rd-year B.Tech IT · CGPA 8.73",
     "Full-stack projects shipped to production",
     "Open-source contributor & hackathon finalist",
   ],
