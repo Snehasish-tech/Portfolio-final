@@ -9,7 +9,6 @@ import { Experience } from "@/components/portfolio/Experience";
 import { GithubActivity } from "@/components/portfolio/GithubActivity";
 import { Education } from "@/components/portfolio/Education";
 import { Certificates } from "@/components/portfolio/Certificates";
-import { ResumeSection } from "@/components/portfolio/ResumeSection";
 import { Connect } from "@/components/portfolio/Connect";
 import { CustomCursor } from "@/components/portfolio/CustomCursor";
 
@@ -46,7 +45,6 @@ function Index() {
       <GithubActivity />
       <Education />
       <Certificates />
-      <ResumeSection />
       <Connect />
     </main>
   );

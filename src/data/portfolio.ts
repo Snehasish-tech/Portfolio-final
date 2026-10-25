@@ -55,7 +55,7 @@ export const navLinks = [
   { label: "GitHub", href: "#github" },
   { label: "Education", href: "#education" },
   { label: "Certificates", href: "#certificates" },
-  { label: "Resume", href: "#resume" },
+  { label: "Resume", href: resumePdf },
 ];
 
 

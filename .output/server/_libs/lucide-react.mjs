@@ -125,19 +125,6 @@ var Activity = createLucideIcon("activity", [["path", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var ArrowRight = createLucideIcon("arrow-right", [["path", {
-	d: "M5 12h14",
-	key: "1ays0h"
-}], ["path", {
-	d: "m12 5 7 7-7 7",
-	key: "xquz4c"
-}]]);
-/**
-* @license lucide-react v0.575.0 - ISC
-*
-* This source code is licensed under the ISC license.
-* See the LICENSE file in the root directory of this source tree.
-*/
 var ArrowUpRight = createLucideIcon("arrow-up-right", [["path", {
 	d: "M7 7h10v10",
 	key: "1tivn9"
@@ -316,16 +303,6 @@ var Calendar = createLucideIcon("calendar", [
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var ChevronDown = createLucideIcon("chevron-down", [["path", {
-	d: "m6 9 6 6 6-6",
-	key: "qrunsl"
-}]]);
-/**
-* @license lucide-react v0.575.0 - ISC
-*
-* This source code is licensed under the ISC license.
-* See the LICENSE file in the root directory of this source tree.
-*/
 var ChevronLeft = createLucideIcon("chevron-left", [["path", {
 	d: "m15 18-6-6 6-6",
 	key: "1wnfg3"
@@ -339,21 +316,6 @@ var ChevronLeft = createLucideIcon("chevron-left", [["path", {
 var ChevronRight = createLucideIcon("chevron-right", [["path", {
 	d: "m9 18 6-6-6-6",
 	key: "mthhwq"
-}]]);
-/**
-* @license lucide-react v0.575.0 - ISC
-*
-* This source code is licensed under the ISC license.
-* See the LICENSE file in the root directory of this source tree.
-*/
-var CircleCheck = createLucideIcon("circle-check", [["circle", {
-	cx: "12",
-	cy: "12",
-	r: "10",
-	key: "1mglay"
-}], ["path", {
-	d: "m9 12 2 2 4-4",
-	key: "dzmm74"
 }]]);
 /**
 * @license lucide-react v0.575.0 - ISC
@@ -398,6 +360,30 @@ var CodeXml = createLucideIcon("code-xml", [
 	["path", {
 		d: "m14.5 4-5 16",
 		key: "e7oirm"
+	}]
+]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var Coffee = createLucideIcon("coffee", [
+	["path", {
+		d: "M10 2v2",
+		key: "7u0qdc"
+	}],
+	["path", {
+		d: "M14 2v2",
+		key: "6buw04"
+	}],
+	["path", {
+		d: "M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1",
+		key: "pwadti"
+	}],
+	["path", {
+		d: "M6 2v2",
+		key: "colzsn"
 	}]
 ]);
 /**
@@ -484,6 +470,127 @@ var FileText = createLucideIcon("file-text", [
 	["path", {
 		d: "M16 17H8",
 		key: "z1uh3a"
+	}]
+]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var Flame = createLucideIcon("flame", [["path", {
+	d: "M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4",
+	key: "1slcih"
+}]]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var FolderGit2 = createLucideIcon("folder-git-2", [
+	["path", {
+		d: "M18 19a5 5 0 0 1-5-5v8",
+		key: "sz5oeg"
+	}],
+	["path", {
+		d: "M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5",
+		key: "1w6njk"
+	}],
+	["circle", {
+		cx: "13",
+		cy: "12",
+		r: "2",
+		key: "1j92g6"
+	}],
+	["circle", {
+		cx: "20",
+		cy: "19",
+		r: "2",
+		key: "1obnsp"
+	}]
+]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var GitBranch = createLucideIcon("git-branch", [
+	["path", {
+		d: "M15 6a9 9 0 0 0-9 9V3",
+		key: "1cii5b"
+	}],
+	["circle", {
+		cx: "18",
+		cy: "6",
+		r: "3",
+		key: "1h7g24"
+	}],
+	["circle", {
+		cx: "6",
+		cy: "18",
+		r: "3",
+		key: "fqmcym"
+	}]
+]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var GitCommitHorizontal = createLucideIcon("git-commit-horizontal", [
+	["circle", {
+		cx: "12",
+		cy: "12",
+		r: "3",
+		key: "1v7zrd"
+	}],
+	["line", {
+		x1: "3",
+		x2: "9",
+		y1: "12",
+		y2: "12",
+		key: "1dyftd"
+	}],
+	["line", {
+		x1: "15",
+		x2: "21",
+		y1: "12",
+		y2: "12",
+		key: "oup4p8"
+	}]
+]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var GitPullRequest = createLucideIcon("git-pull-request", [
+	["circle", {
+		cx: "18",
+		cy: "18",
+		r: "3",
+		key: "1xkwt0"
+	}],
+	["circle", {
+		cx: "6",
+		cy: "6",
+		r: "3",
+		key: "1lh9wr"
+	}],
+	["path", {
+		d: "M13 6h3a2 2 0 0 1 2 2v7",
+		key: "1yeb86"
+	}],
+	["line", {
+		x1: "6",
+		x2: "6",
+		y1: "9",
+		y2: "21",
+		key: "rroup"
 	}]
 ]);
 /**
@@ -878,6 +985,32 @@ var Star = createLucideIcon("star", [["path", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var Terminal = createLucideIcon("terminal", [["path", {
+	d: "M12 19h8",
+	key: "baeox8"
+}], ["path", {
+	d: "m4 17 6-6-6-6",
+	key: "1yngyt"
+}]]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var TrendingUp = createLucideIcon("trending-up", [["path", {
+	d: "M16 7h6v6",
+	key: "box55l"
+}], ["path", {
+	d: "m22 7-8.5 8.5-5-5L2 17",
+	key: "1t1m79"
+}]]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var Trophy = createLucideIcon("trophy", [
 	["path", {
 		d: "M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978",
@@ -964,4 +1097,4 @@ var Zap = createLucideIcon("zap", [["path", {
 	key: "1xq2db"
 }]]);
 //#endregion
-export { ChevronRight as A, ArrowRight as B, Eye as C, Cloud as D, CodeXml as E, Briefcase as F, Brain as I, BadgeCheck as L, ChevronDown as M, Calendar as N, Clock as O, CalendarDays as P, Award as R, FileText as S, Database as T, Activity as V, Layers as _, Trophy as a, Globe as b, Server as c, MonitorSmartphone as d, Menu as f, Linkedin as g, Mail as h, Users as i, ChevronLeft as j, CircleCheck as k, Rocket as l, MapPin as m, X as n, Star as o, Medal as p, Wrench as r, Sparkles as s, Zap as t, Palette as u, Grid3x3 as v, Download as w, Github as x, GraduationCap as y, ArrowUpRight as z };
+export { Eye as A, CalendarDays as B, Github as C, FolderGit2 as D, GitBranch as E, Cloud as F, ArrowUpRight as G, Brain as H, Clock as I, Activity as K, ChevronRight as L, Database as M, Coffee as N, Flame as O, CodeXml as P, ChevronLeft as R, Globe as S, GitCommitHorizontal as T, BadgeCheck as U, Briefcase as V, Award as W, Mail as _, Trophy as a, Grid3x3 as b, Star as c, Rocket as d, Palette as f, MapPin as g, Medal as h, Users as i, Download as j, FileText as k, Sparkles as l, Menu as m, X as n, TrendingUp as o, MonitorSmartphone as p, Wrench as r, Terminal as s, Zap as t, Server as u, Linkedin as v, GitPullRequest as w, GraduationCap as x, Layers as y, Calendar as z };

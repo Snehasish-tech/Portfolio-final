@@ -28,21 +28,21 @@ export function SectionHeading({
   return (
     <>
       <motion.h2
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
-        transition={{ duration: 0.6, delay: 0.05 }}
-        className="mt-6 text-center text-4xl font-bold sm:text-5xl md:text-6xl"
+        viewport={{ once: true, margin: "-60px" }}
+        transition={{ duration: 0.5, delay: 0.05 }}
+        className="mt-3 text-center text-3xl font-bold sm:text-4xl md:text-5xl"
       >
         {lead} <span className="text-lime">{accent}</span>
       </motion.h2>
       {sub && (
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.6, delay: 0.12 }}
-          className="mx-auto mt-5 max-w-2xl text-center text-base text-muted-foreground"
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="mx-auto mt-2.5 max-w-2xl text-center text-sm sm:text-base text-muted-foreground"
         >
           {sub}
         </motion.p>

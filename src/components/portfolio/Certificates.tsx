@@ -64,7 +64,7 @@ export function Certificates() {
   );
 
   return (
-    <section id="certificates" className="relative py-24">
+    <section id="certificates" className="relative py-10 sm:py-12">
       <div className="mx-auto max-w-[1200px] px-5 lg:px-8">
         <SectionBadge icon={Medal}>Achievements</SectionBadge>
         <SectionHeading
@@ -73,28 +73,27 @@ export function Certificates() {
           sub="Validated expertise through recognised certifications, hackathon wins and continuous skill development."
         />
 
-
-        <div className="mt-12 flex flex-wrap justify-center gap-3">
+        <div className="mt-6 flex flex-wrap justify-center gap-2">
           {filters.map((f) => (
             <button
               key={f.label}
               onClick={() => {
                 setActive(f.label);
               }}
-              className={`inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-200 ${
+              className={`inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-xs sm:text-sm font-medium transition-all duration-200 ${
                 active === f.label
                   ? "bg-lime text-primary-foreground"
                   : "border border-border bg-secondary/50 text-foreground/80 hover:border-lime/50 hover:text-lime"
               }`}
             >
-              <f.icon className="h-4 w-4" />
+              <f.icon className="h-3.5 w-3.5" />
               {f.label}
             </button>
           ))}
         </div>
 
-        <div className="group marquee-mask relative mt-10 overflow-hidden py-3">
-          <div className="flex w-max gap-5 animate-marquee-right [animation-duration:72s] will-change-transform group-hover:[animation-play-state:paused] group-focus-within:[animation-play-state:paused]">
+        <div className="group marquee-mask relative mt-6 overflow-hidden py-2">
+          <div className="flex w-max gap-4 animate-marquee-right [animation-duration:72s] will-change-transform group-hover:[animation-play-state:paused] group-focus-within:[animation-play-state:paused]">
             {list.map((c) => renderCertificate(c, 0))}
             {list.map((c) => renderCertificate(c, 1))}
           </div>

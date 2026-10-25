@@ -57,16 +57,21 @@ export function Navbar() {
         </a>
 
         <ul className="hidden items-center gap-0.5 xl:flex">
-          {navLinks.map((l) => (
-            <li key={l.label}>
-              <a
-                href={l.href}
-                className="rounded-full px-2.5 py-2 text-[13px] text-foreground/80 transition-colors duration-200 hover:text-lime"
-              >
-                {l.label}
-              </a>
-            </li>
-          ))}
+          {navLinks.map((l) => {
+            const isExternal = !l.href.startsWith("#");
+            return (
+              <li key={l.label}>
+                <a
+                  href={l.href}
+                  target={isExternal ? "_blank" : undefined}
+                  rel={isExternal ? "noreferrer" : undefined}
+                  className="rounded-full px-2.5 py-2 text-[13px] text-foreground/80 transition-colors duration-200 hover:text-lime"
+                >
+                  {l.label}
+                </a>
+              </li>
+            );
+          })}
         </ul>
 
 
@@ -96,17 +101,22 @@ export function Navbar() {
             className="overflow-hidden border-b border-border bg-background/95 backdrop-blur-xl xl:hidden"
           >
             <ul className="flex flex-col gap-1 px-5 py-4">
-              {navLinks.map((l) => (
-                <li key={l.label}>
-                  <a
-                    href={l.href}
-                    onClick={() => setOpen(false)}
-                    className="block rounded-lg px-3 py-2.5 text-foreground/85 hover:bg-secondary hover:text-lime"
-                  >
-                    {l.label}
-                  </a>
-                </li>
-              ))}
+              {navLinks.map((l) => {
+                const isExternal = !l.href.startsWith("#");
+                return (
+                  <li key={l.label}>
+                    <a
+                      href={l.href}
+                      target={isExternal ? "_blank" : undefined}
+                      rel={isExternal ? "noreferrer" : undefined}
+                      onClick={() => setOpen(false)}
+                      className="block rounded-lg px-3 py-2.5 text-foreground/85 hover:bg-secondary hover:text-lime"
+                    >
+                      {l.label}
+                    </a>
+                  </li>
+                );
+              })}
               <a
                 href="#connect"
                 onClick={() => setOpen(false)}

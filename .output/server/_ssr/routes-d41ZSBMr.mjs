@@ -1,11 +1,11 @@
 import { a as __toESM } from "../_runtime.mjs";
-import { n as AnimatePresence, r as performance_default, t as motion } from "../_libs/framer-motion.mjs";
+import { i as performance_default, n as motion, r as AnimatePresence, t as animate } from "../_libs/framer-motion.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { A as ChevronRight, B as ArrowRight, C as Eye, D as Cloud, E as CodeXml, F as Briefcase, I as Brain, L as BadgeCheck, M as ChevronDown, N as Calendar, O as Clock, P as CalendarDays, R as Award, S as FileText, T as Database, V as Activity, _ as Layers, a as Trophy, b as Globe, c as Server, d as MonitorSmartphone, f as Menu, g as Linkedin, h as Mail, i as Users, j as ChevronLeft, k as CircleCheck, l as Rocket, m as MapPin, n as X, o as Star, p as Medal, r as Wrench, s as Sparkles, t as Zap, u as Palette, v as Grid3x3, w as Download, x as Github, y as GraduationCap, z as ArrowUpRight } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-B0Enk7ZD.js
+import { A as Eye, B as CalendarDays, C as Github, D as FolderGit2, E as GitBranch, F as Cloud, G as ArrowUpRight, H as Brain, I as Clock, K as Activity, L as ChevronRight, M as Database, N as Coffee, O as Flame, P as CodeXml, R as ChevronLeft, S as Globe, T as GitCommitHorizontal, U as BadgeCheck, V as Briefcase, W as Award, _ as Mail, a as Trophy, b as Grid3x3, c as Star$1, d as Rocket, f as Palette, g as MapPin, h as Medal, i as Users, j as Download, k as FileText, l as Sparkles, m as Menu, n as X, o as TrendingUp, p as MonitorSmartphone, r as Wrench, s as Terminal, t as Zap, u as Server, v as Linkedin, w as GitPullRequest, x as GraduationCap, y as Layers, z as Calendar } from "../_libs/lucide-react.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-d41ZSBMr.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var Snehasish_default = "/assets/Snehasish-BQRSL_Ex.jpeg";
+var Snehasish_default = "/assets/Snehasish-D00w0_l7.jpeg";
 var agri_companion_default = "/assets/agri-companion-DYDByVuS.jpg";
 var ChhatroBondhu_default = "/assets/ChhatroBondhu-f1VLWV5b.jpg";
 var OSSI_default = "/assets/OSSI-DZpyclXs.png";
@@ -16,7 +16,7 @@ var GDG_default = "/assets/GDG-B82PvfIH.jpeg";
 var JISU_default = "/assets/JISU-DOGpVk3E.jpg";
 var NPTEL_default = "/assets/NPTEL-BPaV8Llw.jpg";
 var Django_default = "/assets/Django-BG8k_5Hm.jpg";
-var Open_Source_default = "/assets/Open_Source-CJ0uy0WQ.jpg";
+var Open_Source_default = "/assets/Open_Source-Bh-qpiXW.jpg";
 var EliteCoder_default = "/assets/EliteCoder-BqSiU8HT.jpg";
 var ServiceNow_default = "/assets/ServiceNow-DCJNRNnH.jpg";
 var RESUME_default = "/assets/RESUME-BbZOBQMi.pdf";
@@ -55,7 +55,7 @@ var socials = [
 	{
 		label: "Resume",
 		icon: FileText,
-		href: "https://github.com/Snehasish-tech/Resume/blob/main/Snehasish_Dey_Resume.pdf"
+		href: RESUME_default
 	}
 ];
 var navLinks = [
@@ -93,36 +93,7 @@ var navLinks = [
 	},
 	{
 		label: "Resume",
-		href: "#resume"
-	}
-];
-var miniProjects = [
-	{
-		title: "ChhatroBondhu 2.0",
-		desc: "AI-powered study companion with gamification, smart note search and collaboration features for students.",
-		tags: [
-			"React",
-			"TypeScript",
-			"PostgreSQL"
-		]
-	},
-	{
-		title: "Agri-Companion",
-		desc: "Smart farming platform with AI crop advisor, live market prices, weather insights and a farmer marketplace.",
-		tags: [
-			"TypeScript",
-			"AI",
-			"Supabase"
-		]
-	},
-	{
-		title: "OSSI - Open Source Sustainability Intelligence",
-		desc: "A human-centric platform to assess open-source project health, maintainer workload and sustainability risk.",
-		tags: [
-			"TypeScript",
-			"Next.js",
-			"Data Viz"
-		]
+		href: RESUME_default
 	}
 ];
 var techSlugs = {
@@ -170,7 +141,6 @@ var techGroups = [
 		note: "Building accessible, responsive interfaces with a component-driven workflow.",
 		items: [
 			"React",
-			"TypeScript",
 			"Tailwind CSS",
 			"HTML5",
 			"CSS3",
@@ -203,8 +173,7 @@ var techGroups = [
 			"Git",
 			"GitHub",
 			"VS Code",
-			"Vercel",
-			"Figma"
+			"Vercel"
 		]
 	}
 ];
@@ -329,19 +298,29 @@ var projects = [
 		live: "https://chhatrobondhu-20.vercel.app/"
 	}
 ];
-var experiences = [{
-	period: "Jul 2026",
-	role: "ServiceNow Virtual Intern",
-	org: "ServiceNow University (AICTE & SmartBridge)",
-	desc: "Successfully completed hands-on training modules including Agentic AI, Flow Designer, Automated Test Framework (ATF), and CSA exam preparation.",
-	icon: "trophy"
-}, {
-	period: "Jan 2026 – Feb 2026",
-	role: "Open Source Contributor — ECWoC",
-	org: "Elite Coders Winter of Code",
-	desc: "Contributed to the open-source developer community among 5000+ participants, working on issues, reviews, and documentation across projects.",
-	icon: "github"
-}];
+var experiences = [
+	{
+		period: "Jun 2026 - July 2026",
+		role: "ServiceNow Virtual Intern",
+		org: "ServiceNow University (AICTE & SmartBridge)",
+		desc: "Successfully completed hands-on training modules including Agentic AI, Flow Designer, Automated Test Framework (ATF), and CSA exam preparation.",
+		icon: "trophy"
+	},
+	{
+		period: "Feb 2026 - Mar 2026",
+		role: "Contributor",
+		org: "Open Source Connect Global 2026",
+		desc: "Actively participated and made valuable contributions to advancing open-source development and strengthening the community network.",
+		icon: "globe"
+	},
+	{
+		period: "Jan 2026 – Feb 2026",
+		role: "Open Source Contributor — ECWoC",
+		org: "Elite Coders Winter of Code",
+		desc: "Contributed to the open-source developer community among 5000+ participants, working on issues, reviews, and documentation across projects.",
+		icon: "github"
+	}
+];
 var certificates = [
 	{
 		title: "Hack&Verse Hackathon 2026 — GDG on Campus, SATI Vidisha",
@@ -422,12 +401,12 @@ var certificates = [
 	},
 	{
 		title: "Open Source Connect Global 2026",
-		date: "Mar 2026",
-		desc: "Active participation in the technical workshop on AI-Driven Systems for Open Source Collaboration and Development.",
+		date: "Feb 2026",
+		desc: "Recognized for active participation and valuable contributions as a Contributor to advance open-source development.",
 		image: Open_Source_default,
 		imageAlt: "Open Source Connect Global certificate",
 		asset: "src/assets/certificates/new-extracurricular-1.jpg",
-		ribbon: "Member",
+		ribbon: "Contributor",
 		category: "Extracurricular"
 	},
 	{
@@ -447,7 +426,7 @@ var education = [
 		institution: "Narula Institute of Technology",
 		location: "Agarpara, Kolkata",
 		period: "2024 — 2028",
-		grade: "8.67 / 10 CGPA",
+		grade: "8.73 / 10 CGPA",
 		status: "In Progress",
 		desc: "Core computer-science foundations paired with hands-on product building, hackathons and open-source contribution.",
 		coursework: [
@@ -461,7 +440,7 @@ var education = [
 	},
 	{
 		degree: "Higher Secondary (WBCHSE) — Science",
-		institution: "Digha Vidyabhawan High School",
+		institution: "Digha Vidyabhaban High School",
 		location: "West Bengal",
 		period: "2022 — 2024",
 		grade: "Science (PCMB) — 80.1%",
@@ -470,12 +449,13 @@ var education = [
 		coursework: [
 			"Mathematics",
 			"Physics",
-			"Chemistry"
+			"Chemistry",
+			"Biology"
 		]
 	},
 	{
 		degree: "Secondary (WBBSE)",
-		institution: "Digha Vidyabhawan High School",
+		institution: "Digha Vidyabhaban High School",
 		location: "West Bengal",
 		period: "2021 — 2022",
 		grade: "90.85 %",
@@ -484,21 +464,10 @@ var education = [
 		coursework: [
 			"Mathematics",
 			"Science",
-			"English",
-			"Computer Applications"
+			"English"
 		]
 	}
 ];
-var resume = {
-	href: RESUME_default,
-	pdf: RESUME_default,
-	updated: "Updated Aug 2026",
-	highlights: [
-		"3rd-year B.Tech IT · CGPA 8.67",
-		"Full-stack projects shipped to production",
-		"Open-source contributor & hackathon finalist"
-	]
-};
 function Logo() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
 		viewBox: "0 0 100 100",
@@ -582,11 +551,16 @@ function Navbar() {
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
 					className: "hidden items-center gap-0.5 xl:flex",
-					children: navLinks.map((l) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						href: l.href,
-						className: "rounded-full px-2.5 py-2 text-[13px] text-foreground/80 transition-colors duration-200 hover:text-lime",
-						children: l.label
-					}) }, l.label))
+					children: navLinks.map((l) => {
+						const isExternal = !l.href.startsWith("#");
+						return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+							href: l.href,
+							target: isExternal ? "_blank" : void 0,
+							rel: isExternal ? "noreferrer" : void 0,
+							className: "rounded-full px-2.5 py-2 text-[13px] text-foreground/80 transition-colors duration-200 hover:text-lime",
+							children: l.label
+						}) }, l.label);
+					})
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "flex items-center gap-3",
@@ -618,12 +592,17 @@ function Navbar() {
 			className: "overflow-hidden border-b border-border bg-background/95 backdrop-blur-xl xl:hidden",
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 				className: "flex flex-col gap-1 px-5 py-4",
-				children: [navLinks.map((l) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-					href: l.href,
-					onClick: () => setOpen(false),
-					className: "block rounded-lg px-3 py-2.5 text-foreground/85 hover:bg-secondary hover:text-lime",
-					children: l.label
-				}) }, l.label)), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+				children: [navLinks.map((l) => {
+					const isExternal = !l.href.startsWith("#");
+					return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+						href: l.href,
+						target: isExternal ? "_blank" : void 0,
+						rel: isExternal ? "noreferrer" : void 0,
+						onClick: () => setOpen(false),
+						className: "block rounded-lg px-3 py-2.5 text-foreground/85 hover:bg-secondary hover:text-lime",
+						children: l.label
+					}) }, l.label);
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 					href: "#connect",
 					onClick: () => setOpen(false),
 					className: "mt-2 rounded-full bg-lime px-5 py-2.5 text-center text-sm font-semibold text-primary-foreground",
@@ -989,7 +968,7 @@ function SectionHeading({ lead, accent, sub }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.h2, {
 		initial: {
 			opacity: 0,
-			y: 20
+			y: 16
 		},
 		whileInView: {
 			opacity: 1,
@@ -997,13 +976,13 @@ function SectionHeading({ lead, accent, sub }) {
 		},
 		viewport: {
 			once: true,
-			margin: "-80px"
+			margin: "-60px"
 		},
 		transition: {
-			duration: .6,
+			duration: .5,
 			delay: .05
 		},
-		className: "mt-6 text-center text-4xl font-bold sm:text-5xl md:text-6xl",
+		className: "mt-3 text-center text-3xl font-bold sm:text-4xl md:text-5xl",
 		children: [
 			lead,
 			" ",
@@ -1015,7 +994,7 @@ function SectionHeading({ lead, accent, sub }) {
 	}), sub && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.p, {
 		initial: {
 			opacity: 0,
-			y: 20
+			y: 16
 		},
 		whileInView: {
 			opacity: 1,
@@ -1023,13 +1002,13 @@ function SectionHeading({ lead, accent, sub }) {
 		},
 		viewport: {
 			once: true,
-			margin: "-80px"
+			margin: "-60px"
 		},
 		transition: {
-			duration: .6,
-			delay: .12
+			duration: .5,
+			delay: .1
 		},
-		className: "mx-auto mt-5 max-w-2xl text-center text-base text-muted-foreground",
+		className: "mx-auto mt-2.5 max-w-2xl text-center text-sm sm:text-base text-muted-foreground",
 		children: sub
 	})] });
 }
@@ -1165,11 +1144,144 @@ function Earth3D({ className }) {
 		"aria-hidden": "true"
 	});
 }
+function useCountUp(target, duration = 2, startOnView = true) {
+	const [value, setValue] = (0, import_react.useState)(0);
+	const ref = (0, import_react.useRef)(null);
+	const started = (0, import_react.useRef)(false);
+	(0, import_react.useEffect)(() => {
+		if (!startOnView) return;
+		const observer = new IntersectionObserver(([entry]) => {
+			if (entry.isIntersecting && !started.current) {
+				started.current = true;
+				const controls = animate({ v: 0 }.v, target, {
+					duration,
+					ease: "easeOut",
+					onUpdate: (latest) => {
+						if (ref.current) ref.current.textContent = Math.round(latest).toLocaleString();
+					}
+				});
+				return () => controls.stop();
+			}
+		}, { threshold: .3 });
+		if (ref.current) observer.observe(ref.current);
+		return () => observer.disconnect();
+	}, [
+		target,
+		duration,
+		startOnView
+	]);
+	return ref;
+}
+var devStats = [
+	{
+		icon: GitCommitHorizontal,
+		label: "Total Commits",
+		value: 430,
+		suffix: "+",
+		color: "text-lime",
+		bar: .82
+	},
+	{
+		icon: FolderGit2,
+		label: "Repositories",
+		value: 28,
+		suffix: "",
+		color: "text-sky-400",
+		bar: .56
+	},
+	{
+		icon: GitPullRequest,
+		label: "Pull Requests",
+		value: 64,
+		suffix: "+",
+		color: "text-violet-400",
+		bar: .64
+	},
+	{
+		icon: Star$1,
+		label: "Stars Earned",
+		value: 17,
+		suffix: "",
+		color: "text-yellow-400",
+		bar: .34
+	},
+	{
+		icon: Clock,
+		label: "Hours Coded",
+		value: 1200,
+		suffix: "+",
+		color: "text-orange-400",
+		bar: .75
+	},
+	{
+		icon: Coffee,
+		label: "Coffees Downed",
+		value: 312,
+		suffix: "☕",
+		color: "text-amber-300",
+		bar: .62
+	}
+];
+function StatRow({ stat, delay }) {
+	const ref = useCountUp(stat.value, 1.8);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
+		initial: {
+			opacity: 0,
+			x: -12
+		},
+		whileInView: {
+			opacity: 1,
+			x: 0
+		},
+		viewport: { once: true },
+		transition: {
+			delay,
+			duration: .5
+		},
+		className: "group/row flex items-center gap-3",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			className: `grid h-8 w-8 shrink-0 place-items-center rounded-lg border border-zinc-800 bg-zinc-900 ${stat.color} transition-colors group-hover/row:border-zinc-700`,
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(stat.icon, { className: "h-4 w-4" })
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "flex flex-1 flex-col gap-1",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "flex items-baseline justify-between",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "text-xs text-zinc-500",
+					children: stat.label
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+					className: "font-mono text-sm font-semibold text-white",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+						ref,
+						children: "0"
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+						className: `ml-0.5 text-xs ${stat.color}`,
+						children: stat.suffix
+					})]
+				})]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "h-1 w-full overflow-hidden rounded-full bg-zinc-800",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
+					initial: { scaleX: 0 },
+					whileInView: { scaleX: stat.bar },
+					viewport: { once: true },
+					transition: {
+						delay: delay + .3,
+						duration: 1.2,
+						ease: "easeOut"
+					},
+					style: { transformOrigin: "left" },
+					className: `h-full rounded-full bg-gradient-to-r ${stat.color === "text-lime" ? "from-lime/70 to-lime" : stat.color === "text-sky-400" ? "from-sky-600 to-sky-400" : stat.color === "text-violet-400" ? "from-violet-600 to-violet-400" : stat.color === "text-yellow-400" ? "from-yellow-600 to-yellow-400" : stat.color === "text-orange-400" ? "from-orange-600 to-orange-400" : "from-amber-600 to-amber-300"}`
+				})
+			})]
+		})]
+	});
+}
 function Ideas() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		id: "about",
-		className: "relative overflow-hidden py-24 bg-black",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute left-1/2 top-0 -z-10 h-[500px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-lime/10 blur-[120px] pointer-events-none" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "relative overflow-hidden bg-black py-10 sm:py-12",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute left-1/2 top-0 -z-10 h-[400px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-lime/10 blur-[120px] pointer-events-none" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "mx-auto max-w-[1280px] px-5 lg:px-8",
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SectionBadge, {
@@ -1182,12 +1294,12 @@ function Ideas() {
 					sub: "Crafting scalable AI tools, interactive web apps, and experimental digital systems where performance meets creativity."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "mt-14 grid auto-rows-[minmax(220px,auto)] gap-4 sm:gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3",
+					className: "mt-6 grid auto-rows-[minmax(140px,auto)] grid-cols-1 gap-3 sm:gap-4 md:grid-cols-2 xl:grid-cols-3",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
 							className: "md:col-span-2 xl:col-span-2",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "group relative flex h-full min-h-[220px] items-center justify-center overflow-hidden rounded-[2rem] bg-zinc-950 border border-zinc-800/60 p-6 text-center transition-all duration-500 hover:border-lime/40 hover:shadow-[0_0_40px_-10px_rgba(163,230,53,0.15)] sm:min-h-[260px] sm:p-10",
+								className: "group relative flex h-full min-h-[140px] items-center justify-center overflow-hidden rounded-[1.5rem] border border-zinc-800/60 bg-zinc-950 p-4 text-center transition-all duration-500 hover:border-lime/40 hover:shadow-[0_0_40px_-10px_rgba(163,230,53,0.15)] sm:min-h-[160px] sm:p-6",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 opacity-[0.03] bg-[radial-gradient(#ffffff_1px,transparent_1px)] bg-[size:16px_16px]" }),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-lime/10 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" }),
@@ -1207,13 +1319,13 @@ function Ideas() {
 												duration: .7,
 												ease: "easeOut"
 											},
-											className: "font-script text-6xl tracking-tight text-white sm:text-7xl md:text-8xl",
+											className: "font-script text-4xl tracking-tight text-white sm:text-5xl md:text-6xl",
 											children: "Welcome"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.p, {
 											initial: { opacity: 0 },
 											whileInView: { opacity: 1 },
 											transition: { delay: .3 },
-											className: "mt-3 font-display text-xl text-zinc-400 sm:text-3xl",
+											className: "mt-1.5 font-display text-base text-zinc-400 sm:text-xl",
 											children: ["to my ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "text-lime font-medium drop-shadow-[0_0_10px_rgba(163,230,53,0.3)]",
 												children: "Portfolio!"
@@ -1227,14 +1339,24 @@ function Ideas() {
 							delay: .1,
 							className: "md:col-span-1 xl:col-span-1 xl:row-span-2",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "group relative flex h-full min-h-[260px] flex-col justify-between overflow-hidden rounded-[2rem] bg-zinc-950 border border-zinc-800/60 p-6 transition-all duration-500 hover:border-lime/40 hover:shadow-[0_0_40px_-10px_rgba(163,230,53,0.15)] sm:p-8",
+								className: "group relative flex h-full min-h-[200px] flex-col justify-between overflow-hidden rounded-[1.5rem] border border-zinc-800/60 bg-zinc-950 p-4 sm:p-5 transition-all duration-500 hover:border-lime/40 hover:shadow-[0_0_40px_-10px_rgba(163,230,53,0.15)]",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-t from-lime/5 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "flex flex-1 items-center justify-center",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.img, {
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "relative z-10 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+											className: "flex items-center gap-2 text-lime",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1.5 w-1.5 animate-pulse-glow rounded-full bg-lime" }), "Build signal"]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+											className: "flex items-center gap-1.5",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Terminal, { className: "h-3.5 w-3.5" }), " v2.0"]
+										})]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "relative flex flex-1 items-center justify-center py-2 sm:py-3",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute h-24 w-24 sm:h-28 sm:w-28 rounded-full border border-dashed border-lime/20 transition-transform duration-700 group-hover:rotate-180" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.img, {
 											whileHover: {
-												y: -10,
+												y: -8,
 												rotate: -5
 											},
 											transition: {
@@ -1244,24 +1366,41 @@ function Ideas() {
 											src: profile.octocat,
 											alt: "Developer mascot",
 											loading: "lazy",
-											className: "animate-float size-32 object-contain drop-shadow-xl transition-transform duration-500 sm:size-44"
-										})
+											className: "relative z-10 size-20 animate-float object-contain drop-shadow-xl transition-transform duration-500 sm:size-28"
+										})]
 									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "relative z-10 mt-6 border-t border-zinc-800/50 pt-5",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "flex items-center gap-4",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-zinc-900 border border-zinc-800 text-lime transition-transform group-hover:scale-110 group-hover:bg-lime/10 group-hover:border-lime/30",
-												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Zap, { className: "h-6 w-6" })
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-												className: "text-lg font-semibold tracking-tight text-white",
-												children: "Digital Innovations"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "mt-1 text-sm text-zinc-400",
-												children: "Full-stack expertise across the modern JS ecosystem."
-											})] })]
-										})
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "relative z-10 border-t border-zinc-800/50 pt-3",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-end justify-between gap-3",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+													className: "font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500",
+													children: "Current mode"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", {
+													className: "mt-0.5 text-lg font-semibold tracking-tight text-white",
+													children: ["Ship mode", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-lime",
+														children: "."
+													})]
+												})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(GitBranch, { className: "h-4 w-4 text-lime transition-transform duration-300 group-hover:-rotate-12" })]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "mt-1.5 text-xs sm:text-sm leading-relaxed text-zinc-400",
+												children: "Turning curious ideas into useful, full-stack systems."
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+												className: "mt-2.5 flex flex-wrap gap-1.5",
+												children: [
+													"AI",
+													"Web",
+													"Open source"
+												].map((tag) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "rounded-full border border-zinc-800 bg-zinc-900 px-2.5 py-0.5 font-mono text-[10px] text-zinc-400 transition-colors group-hover:border-lime/20 group-hover:text-lime",
+													children: tag
+												}, tag))
+											})
+										]
 									})
 								]
 							})
@@ -1270,13 +1409,13 @@ function Ideas() {
 							delay: .15,
 							className: "md:col-span-1 xl:col-span-1 xl:row-span-2",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "group relative flex h-full min-h-[360px] flex-col justify-between overflow-hidden rounded-[2rem] bg-zinc-950 border border-zinc-800/60 p-6 transition-all duration-500 hover:border-lime/40 hover:shadow-[0_0_40px_-10px_rgba(163,230,53,0.15)] sm:min-h-[420px] sm:p-8",
+								className: "group relative flex h-full min-h-[250px] flex-col justify-between overflow-hidden rounded-[1.5rem] border border-zinc-800/60 bg-zinc-950 p-4 sm:p-5 transition-all duration-500 hover:border-lime/40 hover:shadow-[0_0_40px_-10px_rgba(163,230,53,0.15)] sm:min-h-[290px]",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 opacity-[0.02] bg-[radial-gradient(#ffffff_1px,transparent_1px)] bg-[size:16px_16px]" }),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "relative z-10 flex flex-col items-start justify-between gap-3 sm:flex-row sm:gap-4",
+										className: "relative z-10 flex flex-col items-start justify-between gap-2 sm:flex-row sm:gap-3",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-											className: "font-display text-lg leading-snug tracking-tight text-white",
+											className: "font-display text-base leading-snug tracking-tight text-white",
 											children: [
 												"Highly adaptable ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
@@ -1286,16 +1425,16 @@ function Ideas() {
 												})
 											]
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-											className: "flex shrink-0 items-center gap-2 rounded-full border border-lime/30 bg-lime/10 px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-lime",
+											className: "flex shrink-0 items-center gap-1.5 rounded-full border border-lime/30 bg-lime/10 px-2.5 py-1 font-mono text-[9px] uppercase tracking-wider text-lime",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1.5 w-1.5 animate-pulse-glow rounded-full bg-lime" }), "Live"]
 										})]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "relative my-6 grid flex-1 place-items-center",
+										className: "relative my-3 grid flex-1 place-items-center",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
 											animate: { y: [
 												0,
-												-8,
+												-6,
 												0
 											] },
 											transition: {
@@ -1303,8 +1442,8 @@ function Ideas() {
 												repeat: Infinity,
 												ease: "easeInOut"
 											},
-											className: "relative size-[180px] sm:size-[220px]",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-4 rounded-full bg-lime/20 blur-2xl transition-opacity group-hover:opacity-80" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Earth3D, { className: "relative h-full w-full transition-transform duration-700 group-hover:scale-110" })]
+											className: "relative size-[130px] sm:size-[160px]",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-3 rounded-full bg-lime/20 blur-2xl transition-opacity group-hover:opacity-80" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Earth3D, { className: "relative h-full w-full transition-transform duration-700 group-hover:scale-110" })]
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 											animate: { rotate: 360 },
 											transition: {
@@ -1312,21 +1451,21 @@ function Ideas() {
 												repeat: Infinity,
 												ease: "linear"
 											},
-											className: "pointer-events-none absolute size-[240px] rounded-full border border-zinc-800 sm:size-[280px]",
-											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "absolute left-1/2 top-0 h-1 w-8 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lime shadow-[0_0_15px_var(--lime)]" })
+											className: "pointer-events-none absolute size-[175px] rounded-full border border-zinc-800 sm:size-[210px]",
+											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "absolute left-1/2 top-0 h-1 w-6 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lime shadow-[0_0_15px_var(--lime)]" })
 										})]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "relative z-10 flex flex-col items-start gap-2 rounded-2xl bg-zinc-900/50 border border-zinc-800/50 p-4 sm:flex-row sm:items-center sm:justify-between sm:gap-3",
+										className: "relative z-10 flex items-center justify-between rounded-xl border border-zinc-800/50 bg-zinc-900/50 p-2.5 sm:p-3",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-											className: "flex items-center gap-2 font-mono text-sm font-medium text-white",
+											className: "flex items-center gap-1.5 font-mono text-xs font-medium text-white",
 											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MapPin, { className: "h-4 w-4 text-lime" }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MapPin, { className: "h-3.5 w-3.5 text-lime" }),
 												" ",
 												profile.location
 											]
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "font-mono text-xs font-semibold text-zinc-400 bg-zinc-800/50 px-2 py-1 rounded-md",
+											className: "font-mono text-[11px] font-semibold text-zinc-400 bg-zinc-800/50 px-2 py-0.5 rounded",
 											children: "UTC +05:30"
 										})]
 									})
@@ -1337,9 +1476,9 @@ function Ideas() {
 							delay: .2,
 							className: "md:col-span-1 xl:col-span-1",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "group relative grid h-full min-h-[260px] place-items-center overflow-hidden rounded-[2rem] bg-zinc-950 border border-zinc-800/60 p-6 transition-all duration-500 hover:border-lime/40 hover:shadow-[0_0_40px_-10px_rgba(163,230,53,0.15)] sm:min-h-[300px] sm:p-8",
+								className: "group relative grid h-full min-h-[190px] place-items-center overflow-hidden rounded-[1.5rem] border border-zinc-800/60 bg-zinc-950 p-4 transition-all duration-500 hover:border-lime/40 hover:shadow-[0_0_40px_-10px_rgba(163,230,53,0.15)] sm:min-h-[220px]",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(163,230,53,0.05)_0%,transparent_70%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "relative size-48 sm:size-56",
+									className: "relative size-36 sm:size-42",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 										animate: { rotate: 360 },
 										transition: {
@@ -1358,7 +1497,7 @@ function Ideas() {
 											className: "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2",
 											style: { transform: `rotate(${i * 72}deg)` },
 											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "grid size-10 -translate-y-[96px] place-items-center rounded-full border border-zinc-700 bg-zinc-900 text-sm text-zinc-300 shadow-xl transition-all duration-300 hover:scale-125 hover:border-lime/50 hover:text-lime hover:bg-zinc-950 sm:-translate-y-[112px]",
+												className: "grid size-8 -translate-y-[70px] place-items-center rounded-full border border-zinc-700 bg-zinc-900 text-xs text-zinc-300 shadow-xl transition-all duration-300 hover:scale-125 hover:border-lime/50 hover:bg-zinc-950 hover:text-lime sm:-translate-y-[84px]",
 												style: { transform: `rotate(-${i * 72}deg)` },
 												children: t
 											})
@@ -1368,7 +1507,7 @@ function Ideas() {
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 											src: profile.octocat,
 											alt: "Stack",
-											className: "size-10 object-contain"
+											className: "size-8 sm:size-9 object-contain"
 										})
 									})]
 								})]
@@ -1378,53 +1517,34 @@ function Ideas() {
 							delay: .25,
 							className: "md:col-span-2 xl:col-start-2 xl:col-span-2 xl:row-start-3",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "group relative flex h-full min-h-[300px] flex-col overflow-hidden rounded-[2rem] bg-zinc-950 border border-zinc-800/60 transition-all duration-500 hover:border-lime/40 hover:shadow-[0_0_40px_-10px_rgba(163,230,53,0.15)] sm:min-h-[340px]",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "flex items-center justify-between px-6 pt-6 sm:px-8 sm:pt-8",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-										className: "font-display text-2xl font-bold tracking-tight text-white",
-										children: "Selected Works"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "mt-1.5 text-sm text-zinc-400",
-										children: "SaaS products, AI tools & full-stack builds"
-									})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-										href: "#projects",
-										className: "hidden items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-lime/10 hover:border-lime/30 hover:text-lime sm:flex",
-										children: ["View All ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, { className: "h-4 w-4" })]
-									})]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "flex flex-1 items-center overflow-x-auto overflow-y-hidden px-6 pb-6 pt-4 scrollbar-hide lg:overflow-hidden sm:px-8 sm:pb-8",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "flex w-max gap-4 lg:animate-marquee-left lg:will-change-transform lg:group-hover:[animation-play-state:paused]",
-										children: [...miniProjects, ...miniProjects].map((p, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
-											className: "w-[260px] shrink-0 snap-start rounded-2xl border border-zinc-800 bg-zinc-900/50 p-5 transition-all hover:-translate-y-1 hover:border-lime/30 hover:bg-zinc-900 sm:w-[280px]",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "flex items-center justify-between",
-													children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "grid h-10 w-10 place-items-center rounded-xl bg-zinc-800 border border-zinc-700 text-lime",
-														children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CodeXml, { className: "h-5 w-5" })
-													})
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-													className: "mt-4 text-base font-semibold text-white",
-													children: p.title
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-													className: "mt-2 line-clamp-3 text-sm leading-relaxed text-zinc-400",
-													children: p.desc
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "mt-4 flex flex-wrap gap-2",
-													children: p.tags.slice(0, 3).map((t) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "rounded-md bg-zinc-800/50 px-2 py-1 font-mono text-[11px] text-zinc-400",
-														children: t
-													}, t))
-												})
-											]
-										}, i))
+								className: "group relative flex h-full min-h-[200px] flex-col overflow-hidden rounded-[1.5rem] border border-zinc-800/60 bg-zinc-950 transition-all duration-500 hover:border-lime/40 hover:shadow-[0_0_40px_-10px_rgba(163,230,53,0.15)]",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 opacity-[0.025] bg-[radial-gradient(#ffffff_1px,transparent_1px)] bg-[size:18px_18px]" }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-lime/5 via-transparent to-violet-500/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "relative z-10 flex items-center justify-between px-4 pt-4 sm:px-6 sm:pt-5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+											className: "font-display text-lg font-bold tracking-tight text-white",
+											children: "Dev Stats"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "mt-0.5 text-xs text-zinc-400",
+											children: "Numbers that tell my story 📊"
+										})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+											href: "https://github.com/Snehasish-tech",
+											target: "_blank",
+											rel: "noreferrer",
+											className: "hidden items-center gap-1.5 rounded-full border border-zinc-800 bg-zinc-900 px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-lime/10 hover:border-lime/30 hover:text-lime sm:flex",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1.5 w-1.5 animate-pulse rounded-full bg-lime" }), "Active Coder"]
+										})]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-2.5 px-4 py-3 sm:px-6 sm:py-4",
+										children: devStats.map((stat, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(StatRow, {
+											stat,
+											delay: i * .05
+										}, stat.label))
 									})
-								})]
+								]
 							})
 						})
 					]
@@ -1435,11 +1555,11 @@ function Ideas() {
 }
 var stats$1 = [
 	{
-		value: "3+",
+		value: "2+",
 		label: "Years building"
 	},
 	{
-		value: "25+",
+		value: "10+",
 		label: "Projects shipped"
 	},
 	{
@@ -1467,7 +1587,7 @@ var highlights = [
 function Overview() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 		id: "overview",
-		className: "relative py-24",
+		className: "relative py-10 sm:py-12",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "mx-auto max-w-[1400px] px-5 lg:px-8",
 			children: [
@@ -1481,20 +1601,20 @@ function Overview() {
 					sub: "A full-stack developer passionate about AI, scalable architecture, and crafting interactive digital experiences."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "mt-20 grid items-start gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16",
+					className: "mt-6 sm:mt-8 grid items-start gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Reveal, { children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "flex items-center gap-4",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-px w-12 bg-lime/60" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "font-mono text-xs uppercase tracking-[0.3em] text-lime",
+							className: "flex items-center gap-3",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-px w-10 bg-lime/60" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "font-mono text-[11px] uppercase tracking-[0.25em] text-lime",
 								children: "Overview"
 							})]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", {
-							className: "mt-5 text-5xl font-bold leading-[1.05] sm:text-6xl",
+							className: "mt-2.5 text-2xl font-bold leading-[1.15] sm:text-3xl md:text-4xl",
 							children: [
 								"Building the web,",
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+								" ",
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 									className: "text-lime text-glow",
 									children: "one system at a time."
@@ -1502,7 +1622,7 @@ function Overview() {
 							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-							className: "mt-6 text-lg leading-relaxed text-muted-foreground",
+							className: "mt-3 text-sm sm:text-base leading-relaxed text-muted-foreground",
 							children: [
 								"I’m a ",
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
@@ -1521,15 +1641,15 @@ function Overview() {
 									className: "text-foreground",
 									children: "React.js, Next.js, Node.js, and database systems"
 								}),
-								". I love to explore new technologies to refine my skills and contribute to interactive projects — building efficient, scalable, and user-friendly solutions that solve real-world problems."
+								". I love to explore new technologies to build efficient, scalable, and user-friendly solutions."
 							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "mt-8 grid gap-3 sm:grid-cols-3",
+							className: "mt-5 grid grid-cols-3 gap-2 sm:gap-3",
 							children: stats$1.map((s, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
 								initial: {
 									opacity: 0,
-									y: 16
+									y: 12
 								},
 								whileInView: {
 									opacity: 1,
@@ -1537,58 +1657,58 @@ function Overview() {
 								},
 								viewport: { once: true },
 								transition: {
-									duration: .5,
-									delay: i * .08
+									duration: .4,
+									delay: i * .06
 								},
-								className: "card-surface rounded-2xl p-4",
+								className: "card-surface rounded-xl p-3 text-center sm:text-left sm:p-4",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "font-display text-3xl font-bold text-lime",
+									className: "font-display text-2xl font-bold text-lime sm:text-3xl",
 									children: s.value
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "mt-1 text-xs text-muted-foreground",
+									className: "mt-0.5 text-[11px] text-muted-foreground sm:text-xs",
 									children: s.label
 								})]
 							}, s.label))
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "mt-6 space-y-3",
+							className: "mt-4 grid gap-2 sm:grid-cols-3",
 							children: highlights.map((h, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
 								initial: {
 									opacity: 0,
-									x: -18
+									y: 12
 								},
 								whileInView: {
 									opacity: 1,
-									x: 0
+									y: 0
 								},
 								viewport: { once: true },
 								transition: {
-									duration: .5,
-									delay: .1 + i * .08
+									duration: .4,
+									delay: .08 + i * .05
 								},
-								className: "group flex items-start gap-4 rounded-2xl border border-border bg-background/40 p-4 transition-colors hover:border-lime/40",
+								className: "group flex sm:flex-col items-center sm:items-start gap-3 rounded-xl border border-border bg-background/40 p-3 transition-colors hover:border-lime/40",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-lime/15 text-lime transition-transform duration-300 group-hover:scale-110",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(h.icon, { className: "h-5 w-5" })
+									className: "grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-lime/15 text-lime transition-transform duration-300 group-hover:scale-110",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(h.icon, { className: "h-4 w-4" })
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-									className: "text-sm font-semibold",
+									className: "text-xs sm:text-sm font-semibold",
 									children: h.title
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "mt-0.5 text-sm text-muted-foreground",
+									className: "mt-0.5 text-[11px] leading-tight text-muted-foreground sm:text-xs",
 									children: h.desc
 								})] })]
 							}, h.title))
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 							href: "#projects",
-							className: "mt-8 inline-flex items-center gap-2 rounded-full border border-lime/40 bg-lime/10 px-5 py-2.5 text-sm font-medium text-lime transition-all hover:bg-lime/20 hover:gap-3",
-							children: ["Explore my work ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUpRight, { className: "h-4 w-4" })]
+							className: "mt-5 inline-flex items-center gap-2 rounded-full border border-lime/40 bg-lime/10 px-4 py-2 text-xs sm:text-sm font-medium text-lime transition-all hover:bg-lime/20 hover:gap-3",
+							children: ["Explore my work ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUpRight, { className: "h-3.5 w-3.5" })]
 						})
 					] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
 						delay: .12,
-						className: "lg:sticky lg:top-28",
+						className: "lg:sticky lg:top-24",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "relative",
+							className: "relative mx-auto max-w-sm lg:max-w-none",
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 									animate: { rotate: 360 },
@@ -1597,61 +1717,54 @@ function Overview() {
 										repeat: Infinity,
 										ease: "linear"
 									},
-									className: "pointer-events-none absolute -inset-6 rounded-[2.5rem] border border-dashed border-lime/20"
+									className: "pointer-events-none absolute -inset-3 rounded-[2rem] border border-dashed border-lime/20"
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "group relative overflow-hidden rounded-[2rem] border border-lime/25 glow-lime",
+									className: "group relative overflow-hidden rounded-[1.8rem] border border-lime/25 glow-lime",
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 											src: profile.avatar,
 											alt: `Portrait of ${profile.name}`,
 											loading: "lazy",
-											className: "h-full w-full object-cover transition-transform duration-[1.2s] group-hover:scale-110"
+											className: "max-h-[300px] sm:max-h-[360px] w-full object-cover transition-transform duration-[1.1s] group-hover:scale-105"
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 											className: "pointer-events-none absolute inset-0",
 											style: { background: "linear-gradient(to top, color-mix(in oklab, var(--background) 92%, transparent) 4%, transparent 55%)" }
 										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100",
-											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "absolute inset-0",
-												style: { background: "linear-gradient(115deg, transparent 40%, color-mix(in oklab, var(--lime) 22%, transparent) 50%, transparent 60%)" }
-											})
-										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "absolute inset-x-5 bottom-5 flex items-end justify-between gap-3",
+											className: "absolute inset-x-4 bottom-4 flex items-end justify-between gap-2",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "font-display text-xl font-semibold",
+												className: "font-display text-lg font-semibold",
 												children: profile.name
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "font-mono text-xs text-lime",
+												className: "font-mono text-[11px] text-lime",
 												children: profile.location
 											})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-												className: "flex items-center gap-2 rounded-full border border-lime/40 bg-background/70 px-3 py-1.5 font-mono text-[10px] uppercase tracking-widest text-lime backdrop-blur",
+												className: "flex items-center gap-1.5 rounded-full border border-lime/40 bg-background/70 px-2.5 py-1 font-mono text-[9px] uppercase tracking-widest text-lime backdrop-blur",
 												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1.5 w-1.5 animate-pulse-glow rounded-full bg-lime" }), "Open to work"]
 											})]
 										})
 									]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "mt-4 grid grid-cols-2 gap-3",
+									className: "mt-3 grid grid-cols-2 gap-2.5",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "card-surface rounded-2xl p-4",
+										className: "card-surface rounded-xl p-3",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "font-mono text-[10px] uppercase tracking-widest text-muted-foreground",
+											className: "font-mono text-[9px] uppercase tracking-widest text-muted-foreground",
 											children: "Focus"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "mt-1 text-sm font-semibold",
+											className: "mt-0.5 text-xs sm:text-sm font-semibold",
 											children: "AI & Full-stack"
 										})]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "card-surface rounded-2xl p-4",
+										className: "card-surface rounded-xl p-3",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "font-mono text-[10px] uppercase tracking-widest text-muted-foreground",
+											className: "font-mono text-[9px] uppercase tracking-widest text-muted-foreground",
 											children: "Availability"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "mt-1 text-sm font-semibold text-lime",
+											className: "mt-0.5 text-xs sm:text-sm font-semibold text-lime",
 											children: "Remote worldwide"
 										})]
 									})]
@@ -1720,22 +1833,22 @@ function TechCard({ name }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
 		variants: cardVariants,
 		layout: true,
-		className: "group relative flex h-[64px] items-center gap-3.5 overflow-hidden rounded-2xl border border-white/5 bg-white/[0.02] px-4 backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-lime/40 hover:bg-white/[0.04] hover:shadow-[0_10px_30px_-10px_rgba(163,230,53,0.2)]",
+		className: "group relative flex h-[54px] items-center gap-2.5 overflow-hidden rounded-xl border border-white/5 bg-white/[0.02] px-3 backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-1 hover:border-lime/40 hover:bg-white/[0.04] hover:shadow-[0_10px_30px_-10px_rgba(163,230,53,0.2)]",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 				className: "pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100",
 				style: { background: "radial-gradient(120px circle at 50% 50%, color-mix(in oklab, var(--lime) 15%, transparent), transparent 100%)" }
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-				className: "relative grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-white/10 bg-white/10 shadow-inner transition-all duration-500 ease-out group-hover:scale-110 group-hover:rotate-3 group-hover:border-lime/50 group-hover:bg-white/20 group-hover:shadow-[0_0_20px_rgba(163,230,53,0.3)]",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 rounded-xl bg-gradient-to-br from-white/30 to-transparent opacity-50 mix-blend-overlay" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+				className: "relative grid h-8 w-8 shrink-0 place-items-center rounded-lg border border-white/10 bg-white/10 shadow-inner transition-all duration-500 ease-out group-hover:scale-110 group-hover:rotate-3 group-hover:border-lime/50 group-hover:bg-white/20 group-hover:shadow-[0_0_20px_rgba(163,230,53,0.3)]",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 rounded-lg bg-gradient-to-br from-white/30 to-transparent opacity-50 mix-blend-overlay" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 					src: iconUrl(name),
 					alt: `${name} icon`,
 					"aria-hidden": "true",
 					loading: "lazy",
-					width: 22,
-					height: 22,
-					className: "relative z-10 h-[22px] w-[22px] object-contain brightness-110 contrast-125 drop-shadow-[0_0_8px_rgba(255,255,255,0.25)] transition-all duration-300 group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.4)]",
+					width: 18,
+					height: 18,
+					className: "relative z-10 h-[18px] w-[18px] object-contain brightness-110 contrast-125 drop-shadow-[0_0_8px_rgba(255,255,255,0.25)] transition-all duration-300 group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.4)]",
 					onError: (e) => {
 						const target = e.target;
 						target.style.visibility = "hidden";
@@ -1753,11 +1866,24 @@ function TechStack() {
 	const [active, setActive] = (0, import_react.useState)("All");
 	const tabs = (0, import_react.useMemo)(() => ["All", ...techGroups.map((g) => g.group)], []);
 	const total = (0, import_react.useMemo)(() => techGroups.reduce((n, g) => n + g.items.length, 0), []);
+	const allItems = (0, import_react.useMemo)(() => {
+		const seen = /* @__PURE__ */ new Set();
+		const list = [];
+		techGroups.forEach((g) => {
+			g.items.forEach((item) => {
+				if (!seen.has(item)) {
+					seen.add(item);
+					list.push(item);
+				}
+			});
+		});
+		return list;
+	}, []);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		id: "tech",
-		className: "relative py-24 overflow-hidden",
+		className: "relative overflow-hidden py-10 sm:py-12",
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-			className: "pointer-events-none absolute inset-x-0 top-1/4 h-[500px]",
+			className: "pointer-events-none absolute inset-x-0 top-1/4 h-[400px]",
 			style: { background: "radial-gradient(ellipse 70% 50% at 50% 50%, color-mix(in oklab, var(--lime) 5%, transparent), transparent 70%)" }
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "relative mx-auto max-w-[1200px] px-5 lg:px-8",
@@ -1772,7 +1898,7 @@ function TechStack() {
 					sub: "Organised by discipline — the languages, frameworks and tools I reach for when building and shipping products."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "mt-14 flex min-h-[44px] flex-wrap items-center justify-center gap-2.5",
+					className: "mt-6 flex min-h-[40px] flex-wrap items-center justify-center gap-2",
 					children: tabs.map((t) => {
 						const Icon = t === "All" ? Grid3x3 : groupIcons[t] ?? Layers;
 						const count = t === "All" ? total : techGroups.find((g) => g.group === t)?.items.length ?? 0;
@@ -1781,7 +1907,7 @@ function TechStack() {
 							type: "button",
 							onClick: () => setActive(t),
 							"aria-pressed": isActive,
-							className: "relative flex h-11 items-center gap-2.5 rounded-full px-5 text-sm outline-none transition-transform duration-300 hover:-translate-y-0.5 active:scale-95",
+							className: "relative flex h-9 items-center gap-2 rounded-full px-3.5 text-xs sm:text-sm outline-none transition-transform duration-300 hover:-translate-y-0.5 active:scale-95",
 							children: [isActive ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 								layoutId: "activeTechTabIndicator",
 								className: "absolute inset-0 rounded-full bg-lime shadow-[0_0_20px_rgba(163,230,53,0.4)]",
@@ -1791,12 +1917,12 @@ function TechStack() {
 									damping: 30
 								}
 							}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 rounded-full border border-white/10 bg-white/[0.03] transition-colors hover:border-lime/30 hover:bg-white/[0.06]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-								className: `relative z-10 flex items-center gap-2 font-semibold tracking-wide ${isActive ? "text-[#0a0f1e]" : "text-muted-foreground hover:text-lime"}`,
+								className: `relative z-10 flex items-center gap-1.5 font-semibold tracking-wide ${isActive ? "text-[#0a0f1e]" : "text-muted-foreground hover:text-lime"}`,
 								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: "h-[18px] w-[18px]" }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: "h-4 w-4" }),
 									t,
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: `ml-1 rounded-full px-2 py-0.5 font-mono text-[10px] tabular-nums ${isActive ? "bg-[#0a0f1e]/20 text-[#0a0f1e]" : "bg-white/5 text-muted-foreground"}`,
+										className: `ml-1 rounded-full px-1.5 py-0.5 font-mono text-[10px] tabular-nums ${isActive ? "bg-[#0a0f1e]/20 text-[#0a0f1e]" : "bg-white/5 text-muted-foreground"}`,
 										children: count
 									})
 								]
@@ -1806,16 +1932,23 @@ function TechStack() {
 				}) }),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 					layout: true,
-					className: "mt-16 space-y-16",
+					className: "mt-8",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(AnimatePresence, {
-						mode: "popLayout",
-						children: techGroups.filter((g) => active === "All" || active === g.group).map((g) => {
+						mode: "wait",
+						children: active === "All" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
+							variants: containerVariants,
+							initial: "hidden",
+							animate: "show",
+							exit: "exit",
+							className: "grid auto-rows-[54px] grid-cols-2 gap-2.5 sm:grid-cols-4 lg:grid-cols-6",
+							children: allItems.map((name) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(TechCard, { name }, name))
+						}, "all-grid") : techGroups.filter((g) => g.group === active).map((g) => {
 							const Icon = groupIcons[g.group] ?? Layers;
 							return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.section, {
 								layout: true,
 								initial: {
 									opacity: 0,
-									y: 30
+									y: 16
 								},
 								animate: {
 									opacity: 1,
@@ -1823,35 +1956,26 @@ function TechStack() {
 								},
 								exit: {
 									opacity: 0,
-									y: -20,
-									filter: "blur(4px)"
+									y: -10
 								},
-								transition: {
-									duration: .5,
-									ease: [
-										.22,
-										1,
-										.36,
-										1
-									]
-								},
+								transition: { duration: .35 },
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "flex items-center gap-4",
+										className: "flex items-center gap-3",
 										children: [
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-lime/30 bg-lime/10 text-lime shadow-[0_0_15px_rgba(163,230,53,0.15)]",
-												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: "h-5 w-5" })
+												className: "grid h-8 w-8 shrink-0 place-items-center rounded-lg border border-lime/30 bg-lime/10 text-lime shadow-[0_0_15px_rgba(163,230,53,0.15)]",
+												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: "h-4 w-4" })
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-												className: "font-display text-2xl font-bold tracking-tight text-foreground/90",
+												className: "font-display text-lg font-bold tracking-tight text-foreground/90",
 												children: g.group
 											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-[2px] flex-1 rounded-full bg-gradient-to-r from-border to-transparent" })
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-[1px] flex-1 rounded-full bg-gradient-to-r from-border to-transparent" })
 										]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "mt-4 max-w-2xl text-[15px] text-muted-foreground/80 leading-relaxed",
+										className: "mt-1.5 max-w-2xl text-xs sm:text-sm leading-relaxed text-muted-foreground/80",
 										children: g.note
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
@@ -1859,7 +1983,7 @@ function TechStack() {
 										initial: "hidden",
 										animate: "show",
 										exit: "exit",
-										className: "mt-8 grid auto-rows-[64px] grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5",
+										className: "mt-4 grid auto-rows-[54px] grid-cols-2 gap-2.5 sm:grid-cols-4 lg:grid-cols-6",
 										children: g.items.map((name) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(TechCard, { name }, name))
 									})
 								]
@@ -1868,23 +1992,23 @@ function TechStack() {
 					})
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "relative mt-24 overflow-hidden rounded-3xl border border-lime/20 bg-[#0a0f1e]/50 p-8 shadow-[0_0_40px_rgba(163,230,53,0.06)] backdrop-blur-xl sm:flex sm:items-center sm:justify-between sm:p-10",
+					className: "relative mt-8 sm:mt-10 overflow-hidden rounded-2xl border border-lime/20 bg-[#0a0f1e]/50 p-4 sm:p-6 shadow-[0_0_40px_rgba(163,230,53,0.06)] backdrop-blur-xl sm:flex sm:items-center sm:justify-between",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "pointer-events-none absolute inset-0 bg-gradient-to-br from-lime/5 to-transparent opacity-50" }),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "relative z-10 min-w-0",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-								className: "flex items-center gap-2.5 font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-lime",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "h-4 w-4 shrink-0 animate-pulse" }), "Currently exploring"]
+								className: "flex items-center gap-2 font-mono text-[11px] font-bold uppercase tracking-[0.2em] text-lime",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "h-3.5 w-3.5 shrink-0 animate-pulse" }), "Currently exploring"]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "mt-3 text-[15px] text-muted-foreground/90",
+								className: "mt-1 text-xs sm:text-sm text-muted-foreground/90",
 								children: "Levelling up beyond the frontend — backend systems, cloud, and AI tooling."
 							})]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "relative z-10 mt-6 flex flex-wrap gap-2.5 sm:mt-0",
+							className: "relative z-10 mt-3 flex flex-wrap gap-2 sm:mt-0",
 							children: learning.map((l) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "cursor-default rounded-full border border-lime/30 bg-lime/10 px-4 py-2 text-sm font-semibold tracking-wide text-lime transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:border-lime/80 hover:bg-lime/20 hover:shadow-[0_0_20px_rgba(163,230,53,0.25)]",
+								className: "cursor-default rounded-full border border-lime/30 bg-lime/10 px-3 py-1 text-xs font-semibold tracking-wide text-lime transition-all duration-300 hover:-translate-y-0.5 hover:border-lime/80 hover:bg-lime/20 hover:shadow-[0_0_15px_rgba(163,230,53,0.2)]",
 								children: l
 							}, l))
 						})
@@ -1957,7 +2081,7 @@ function Projects() {
 	const go = (dir) => setI((v) => (v + dir + projects.length) % projects.length);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 		id: "projects",
-		className: "relative py-24",
+		className: "relative py-10 sm:py-12",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "mx-auto max-w-[1400px] px-5 lg:px-8",
 			children: [
@@ -1971,7 +2095,7 @@ function Projects() {
 					sub: "A collection of high-performance web applications and AI-driven tools built with a focus on scalability, clean architecture, and user experience."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "mt-16",
+					className: "mt-6 sm:mt-8",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AnimatePresence, {
 						mode: "wait",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.article, {
@@ -1996,29 +2120,29 @@ function Projects() {
 									1
 								]
 							},
-							className: "card-surface grid gap-10 rounded-3xl p-8 md:p-12 lg:grid-cols-2",
+							className: "card-surface grid gap-6 rounded-2xl p-5 sm:p-7 md:p-8 lg:grid-cols-2",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex flex-col items-center text-center",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "relative flex h-[280px] w-full items-center justify-center sm:h-[320px]",
+										className: "relative flex h-[220px] w-full items-center justify-center sm:h-[250px]",
 										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute top-1/2 left-1/2 size-48 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lime/20 blur-[80px]" }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute top-1/2 left-1/2 size-40 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lime/20 blur-[70px]" }),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 												className: "absolute z-0",
 												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PurpleTechOrbit, {})
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "relative z-10 grid size-40 place-items-center rounded-full border border-lime/40 bg-[#060913] p-1 shadow-[0_0_50px_rgba(163,230,53,0.15)] sm:size-48 backdrop-blur-md",
+												className: "relative z-10 grid size-32 place-items-center rounded-full border border-lime/40 bg-[#060913] p-1 shadow-[0_0_40px_rgba(163,230,53,0.15)] sm:size-40 backdrop-blur-md",
 												children: p.logo ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 													src: p.logo,
 													alt: `${p.name} logo`,
 													loading: "lazy",
-													className: "relative size-[140px] rounded-full object-contain sm:size-[170px]"
+													className: "relative size-[110px] rounded-full object-contain sm:size-[140px]"
 												}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "relative grid size-[140px] place-items-center rounded-full border border-lime/10 bg-background/80 text-center sm:size-[170px]",
+													className: "relative grid size-[110px] place-items-center rounded-full border border-lime/10 bg-background/80 text-center sm:size-[140px]",
 													children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "font-display text-4xl font-bold text-lime",
+														className: "font-display text-3xl font-bold text-lime sm:text-4xl",
 														children: projectInitials(p.name)
 													})
 												})
@@ -2026,54 +2150,57 @@ function Projects() {
 										]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "mt-4 text-sm text-muted-foreground",
+										className: "mt-3 text-xs sm:text-sm text-muted-foreground",
 										children: p.tagline
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "mt-5 flex flex-wrap justify-center gap-2",
+										className: "mt-3.5 flex flex-wrap justify-center gap-1.5",
 										children: p.stack.map((s) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 											style: { backgroundColor: s.color },
-											className: "rounded px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wider text-white",
+											className: "rounded px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-white",
 											children: s.label
 										}, s.label))
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "mt-7 flex flex-wrap justify-center gap-3",
+										className: "mt-5 flex flex-wrap justify-center gap-2.5",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 											href: p.github,
 											target: "_blank",
 											rel: "noreferrer",
-											className: "inline-flex items-center gap-2 rounded-full bg-lime px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Github, { className: "h-4 w-4" }), " View on GitHub"]
+											className: "inline-flex items-center gap-2 rounded-full bg-lime px-4 py-2 text-xs sm:text-sm font-semibold text-primary-foreground transition-transform hover:scale-105",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Github, { className: "h-3.5 w-3.5" }), " View on GitHub"]
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 											href: p.live,
 											target: "_blank",
 											rel: "noreferrer",
-											className: "inline-flex items-center gap-2 rounded-full border border-lime/50 px-5 py-2.5 text-sm font-semibold text-lime transition-colors hover:bg-lime/10",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, { className: "h-4 w-4" }), " View Live"]
+											className: "inline-flex items-center gap-2 rounded-full border border-lime/50 px-4 py-2 text-xs sm:text-sm font-semibold text-lime transition-colors hover:bg-lime/10",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, { className: "h-3.5 w-3.5" }), " View Live"]
 										})]
 									})
 								]
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-									className: "text-3xl font-bold text-lime sm:text-4xl",
-									children: p.name
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "mt-5 leading-relaxed text-muted-foreground",
-									children: p.desc
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
-									className: "mt-7 space-y-4",
-									children: p.points.map((pt) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-										className: "flex gap-3 text-[15px] text-foreground/85",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "mt-1 h-4 w-4 shrink-0 text-lime" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: pt })]
-									}, pt))
-								})
-							] })]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex flex-col justify-center",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-2xl font-bold text-lime sm:text-3xl",
+										children: p.name
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "mt-3 text-xs sm:text-sm leading-relaxed text-muted-foreground",
+										children: p.desc
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
+										className: "mt-4 space-y-2.5",
+										children: p.points.map((pt) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+											className: "flex gap-2.5 text-xs sm:text-sm text-foreground/85",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "mt-0.5 h-3.5 w-3.5 shrink-0 text-lime" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: pt })]
+										}, pt))
+									})
+								]
+							})]
 						}, p.name)
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "mt-10 flex items-center justify-center gap-4",
+						className: "mt-6 flex items-center justify-center gap-4",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 								onClick: () => go(-1),
@@ -2112,11 +2239,11 @@ var icons = {
 };
 var stats = [
 	{
-		value: "8.67",
+		value: "8.73",
 		label: "CGPA · B.Tech IT"
 	},
 	{
-		value: "5000+",
+		value: "500+",
 		label: "ECWoC community"
 	},
 	{
@@ -2124,16 +2251,16 @@ var stats = [
 		label: "Django training"
 	},
 	{
-		value: "2×",
+		value: "5×",
 		label: "Hackathon runs"
 	}
 ];
 function Experience() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		id: "experience",
-		className: "relative py-24",
+		className: "relative py-10 sm:py-12",
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-			className: "pointer-events-none absolute inset-x-0 top-1/3 h-[420px]",
+			className: "pointer-events-none absolute inset-x-0 top-1/3 h-[350px]",
 			style: { background: "radial-gradient(ellipse 55% 50% at 50% 50%, color-mix(in oklab, var(--lime) 7%, transparent), transparent 70%)" }
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "relative mx-auto max-w-[1200px] px-5 lg:px-8",
@@ -2148,18 +2275,18 @@ function Experience() {
 					sub: "A journey through the projects I've built, the communities I've contributed to, and the experiences that shaped my growth as a developer."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "mt-16 grid gap-10 lg:grid-cols-[320px_1fr] lg:gap-14",
+					className: "mt-6 sm:mt-8 grid gap-6 lg:grid-cols-[300px_1fr] lg:gap-8",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
-						className: "lg:sticky lg:top-28 lg:self-start",
+						className: "lg:sticky lg:top-24 lg:self-start",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "card-surface rounded-2xl p-7",
+							className: "card-surface rounded-2xl p-5 sm:p-6",
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 									className: "font-mono text-[11px] uppercase tracking-[0.25em] text-lime",
 									children: "Timeline · 2024 → now"
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", {
-									className: "mt-3 font-display text-2xl font-semibold leading-snug",
+									className: "mt-2.5 font-display text-xl font-semibold leading-snug",
 									children: [
 										"Learning by building,",
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
@@ -2167,18 +2294,18 @@ function Experience() {
 									]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "mt-3 text-sm leading-relaxed text-muted-foreground",
+									className: "mt-2 text-xs sm:text-sm leading-relaxed text-muted-foreground",
 									children: "From classrooms to hackathon war-rooms and open-source issue threads — every step below added a tool, a habit or a teammate."
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "mt-6 grid grid-cols-2 gap-3",
+									className: "mt-4 grid grid-cols-2 gap-2.5",
 									children: stats.map((s) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "rounded-xl border border-border bg-background/50 p-3.5 transition-[border-color,transform] duration-200 will-change-transform hover:-translate-y-0.5 hover:border-lime/50",
+										className: "rounded-xl border border-border bg-background/50 p-2.5 sm:p-3 transition-[border-color,transform] duration-200 will-change-transform hover:-translate-y-0.5 hover:border-lime/50",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "font-display text-xl font-bold text-lime",
+											className: "font-display text-lg font-bold text-lime sm:text-xl",
 											children: s.value
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "mt-1 text-[11px] leading-tight text-muted-foreground",
+											className: "mt-0.5 text-[10px] leading-tight text-muted-foreground",
 											children: s.label
 										})]
 									}, s.label))
@@ -2186,15 +2313,15 @@ function Experience() {
 							]
 						})
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "relative pl-8 sm:pl-10",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "absolute left-[11px] top-2 h-[calc(100%-1rem)] w-px bg-gradient-to-b from-lime via-lime/40 to-transparent sm:left-[15px]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "space-y-6",
+						className: "relative pl-7 sm:pl-9",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "absolute left-[10px] top-2 h-[calc(100%-1rem)] w-px bg-gradient-to-b from-lime via-lime/40 to-transparent sm:left-[14px]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "space-y-3.5",
 							children: experiences.map((e, idx) => {
 								const Icon = icons[e.icon];
 								return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.article, {
 									initial: {
 										opacity: 0,
-										y: 24
+										y: 16
 									},
 									whileInView: {
 										opacity: 1,
@@ -2202,11 +2329,11 @@ function Experience() {
 									},
 									viewport: {
 										once: true,
-										margin: "-80px"
+										margin: "-60px"
 									},
 									transition: {
-										duration: .5,
-										delay: idx * .06,
+										duration: .4,
+										delay: idx * .05,
 										ease: [
 											.22,
 											1,
@@ -2216,36 +2343,36 @@ function Experience() {
 									},
 									className: "group relative",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "absolute -left-8 top-6 grid h-6 w-6 place-items-center rounded-full border border-lime/40 bg-background sm:-left-10 sm:h-8 sm:w-8",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-2 w-2 rounded-full bg-lime glow-lime animate-pulse-glow" })
+										className: "absolute -left-7 top-5 grid h-5 w-5 place-items-center rounded-full border border-lime/40 bg-background sm:-left-9 sm:h-7 sm:w-7",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1.5 w-1.5 rounded-full bg-lime glow-lime animate-pulse-glow" })
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "card-surface relative overflow-hidden rounded-2xl p-6 transition-[border-color,transform] duration-300 will-change-transform group-hover:-translate-y-1 group-hover:border-lime/50 sm:p-7",
+										className: "card-surface relative overflow-hidden rounded-xl p-4 sm:p-5 transition-[border-color,transform] duration-300 will-change-transform group-hover:-translate-y-0.5 group-hover:border-lime/50",
 										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-lime/10 opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-100" }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full bg-lime/10 opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-100" }),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "pointer-events-none absolute right-5 top-4 font-display text-5xl font-bold text-foreground/[0.04]",
+												className: "pointer-events-none absolute right-4 top-3 font-display text-3xl font-bold text-foreground/[0.04] sm:text-4xl",
 												children: String(idx + 1).padStart(2, "0")
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "relative flex flex-wrap items-center gap-3",
+												className: "relative flex flex-wrap items-center gap-2.5",
 												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "grid h-9 w-9 shrink-0 place-items-center rounded-lg border border-lime/30 bg-lime/10 text-lime",
-													children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: "h-4 w-4" })
+													className: "grid h-8 w-8 shrink-0 place-items-center rounded-lg border border-lime/30 bg-lime/10 text-lime",
+													children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: "h-3.5 w-3.5" })
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "rounded-full border border-lime/40 bg-lime/10 px-3 py-1 font-mono text-[11px] tracking-wide text-lime",
+													className: "rounded-full border border-lime/40 bg-lime/10 px-2.5 py-0.5 font-mono text-[10px] tracking-wide text-lime",
 													children: e.period
 												})]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-												className: "relative mt-4 font-display text-lg font-semibold leading-snug sm:text-xl",
+												className: "relative mt-2.5 font-display text-base font-semibold leading-snug sm:text-lg",
 												children: e.role
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-												className: "relative mt-1 flex items-center gap-1.5 text-sm text-lime",
-												children: [e.org, /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUpRight, { className: "h-3.5 w-3.5 opacity-0 transition-opacity duration-200 group-hover:opacity-100" })]
+												className: "relative mt-0.5 flex items-center gap-1 text-xs sm:text-sm text-lime",
+												children: [e.org, /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUpRight, { className: "h-3 w-3 opacity-0 transition-opacity duration-200 group-hover:opacity-100" })]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "relative mt-3 text-sm leading-relaxed text-muted-foreground",
+												className: "relative mt-2 text-xs sm:text-sm leading-relaxed text-muted-foreground",
 												children: e.desc
 											})
 										]
@@ -2261,16 +2388,60 @@ function Experience() {
 }
 var USERNAME = "Snehasish-tech";
 var CONTRIBUTION_CHART_URL = `https://ghchart.rshah.org/40916c/${USERNAME}`;
+var LANG_COLORS = {
+	TypeScript: "#3178c6",
+	JavaScript: "#f7df1e",
+	Python: "#3572A5",
+	HTML: "#e34c26",
+	CSS: "#563d7c",
+	"C++": "#f34b7d",
+	Java: "#b07219",
+	Rust: "#dea584",
+	Go: "#00ADD8",
+	Other: "#6e7681"
+};
+var langColor = (name) => LANG_COLORS[name] ?? LANG_COLORS.Other;
+function CountUp({ target, suffix = "" }) {
+	const ref = (0, import_react.useRef)(null);
+	const started = (0, import_react.useRef)(false);
+	(0, import_react.useEffect)(() => {
+		if (target === null) return;
+		const el = ref.current;
+		if (!el) return;
+		const io = new IntersectionObserver(([entry]) => {
+			if (entry.isIntersecting && !started.current) {
+				started.current = true;
+				let start = 0;
+				const step = target / 60;
+				const tick = () => {
+					start = Math.min(start + step, target);
+					el.textContent = Math.round(start).toLocaleString() + suffix;
+					if (start < target) requestAnimationFrame(tick);
+				};
+				requestAnimationFrame(tick);
+				io.disconnect();
+			}
+		}, { threshold: .3 });
+		io.observe(el);
+		return () => io.disconnect();
+	}, [target, suffix]);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+		ref,
+		children: target === null ? "—" : "0"
+	});
+}
 function GithubActivity() {
 	const [languages, setLanguages] = (0, import_react.useState)([]);
 	const [stats, setStats] = (0, import_react.useState)(null);
+	const [topRepos, setTopRepos] = (0, import_react.useState)([]);
+	const [loading, setLoading] = (0, import_react.useState)(false);
 	const ref = (0, import_react.useRef)(null);
 	const [inView, setInView] = (0, import_react.useState)(false);
 	(0, import_react.useEffect)(() => {
 		const el = ref.current;
 		if (!el) return;
-		const io = new IntersectionObserver((entries) => {
-			if (entries[0]?.isIntersecting) {
+		const io = new IntersectionObserver(([entry]) => {
+			if (entry.isIntersecting) {
 				setInView(true);
 				io.disconnect();
 			}
@@ -2281,18 +2452,19 @@ function GithubActivity() {
 	(0, import_react.useEffect)(() => {
 		if (!inView) return;
 		const ac = new AbortController();
+		setLoading(true);
 		(async () => {
 			try {
 				const [uRes, rRes] = await Promise.all([fetch(`https://api.github.com/users/${USERNAME}`, { signal: ac.signal }), fetch(`https://api.github.com/users/${USERNAME}/repos?per_page=100&sort=updated`, { signal: ac.signal })]);
 				if (!uRes.ok || !rRes.ok) return;
 				const user = await uRes.json();
 				const own = (await rRes.json()).filter((r) => !r.fork);
-				const languageCounts = own.reduce((acc, repo) => {
-					const language = repo.language ?? "Other";
-					acc[language] = (acc[language] ?? 0) + 1;
+				const langCounts = own.reduce((acc, r) => {
+					const l = r.language ?? "Other";
+					acc[l] = (acc[l] ?? 0) + 1;
 					return acc;
 				}, {});
-				const languageEntries = Object.entries(languageCounts).map(([name, count]) => ({
+				const langEntries = Object.entries(langCounts).map(([name, count]) => ({
 					name,
 					count,
 					percent: own.length ? Math.round(count / own.length * 100) : 0
@@ -2300,36 +2472,52 @@ function GithubActivity() {
 				setStats({
 					repos: user.public_repos ?? own.length,
 					stars: own.reduce((n, r) => n + (r.stargazers_count || 0), 0),
-					followers: user.followers ?? 0
+					followers: user.followers ?? 0,
+					following: user.following ?? 0
 				});
-				setLanguages(languageEntries);
-			} catch {}
+				setLanguages(langEntries);
+				setTopRepos(own.sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 4));
+			} catch {} finally {
+				setLoading(false);
+			}
 		})();
 		return () => ac.abort();
 	}, [inView]);
-	const cards = [
+	const statCards = [
 		{
-			label: "Public repos",
-			value: stats ? String(stats.repos) : "25+"
+			icon: BookOpen,
+			label: "Public Repos",
+			value: stats?.repos ?? null,
+			color: "text-lime",
+			glow: "from-lime/20"
 		},
 		{
-			label: "Stars earned",
-			value: stats ? String(stats.stars) : "—"
+			icon: Star,
+			label: "Stars Earned",
+			value: stats?.stars ?? null,
+			color: "text-yellow-400",
+			glow: "from-yellow-400/20"
 		},
 		{
+			icon: Users,
 			label: "Followers",
-			value: stats ? String(stats.followers) : "—"
+			value: stats?.followers ?? null,
+			color: "text-sky-400",
+			glow: "from-sky-400/20"
 		},
 		{
-			label: "Primary language",
-			value: languages[0]?.name ?? "TypeScript"
+			icon: TrendingUp,
+			label: "Following",
+			value: stats?.following ?? null,
+			color: "text-violet-400",
+			glow: "from-violet-400/20"
 		}
 	];
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		ref,
 		id: "github",
-		className: "relative py-24",
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "relative py-10 sm:py-12 bg-black overflow-hidden",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "pointer-events-none absolute left-1/2 top-0 -z-10 h-[500px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-lime/[0.08] blur-[140px]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "mx-auto max-w-[1200px] px-5 lg:px-8",
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SectionBadge, {
@@ -2342,98 +2530,136 @@ function GithubActivity() {
 					sub: "Commits, repositories and the day-to-day rhythm of building in public."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "mt-12 grid grid-cols-2 gap-4 md:grid-cols-4",
-					children: cards.map((c) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "card-surface rounded-2xl p-5 transition-[border-color,transform] duration-200 will-change-transform hover:-translate-y-0.5 hover:border-lime/50",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "font-display text-2xl font-bold text-lime tabular-nums",
-							children: c.value
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "mt-1 text-xs text-muted-foreground",
-							children: c.label
+					className: "mt-6 grid grid-cols-2 gap-2.5 sm:gap-3.5 md:grid-cols-4",
+					children: statCards.map((c, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
+						initial: {
+							opacity: 0,
+							y: 16
+						},
+						whileInView: {
+							opacity: 1,
+							y: 0
+						},
+						viewport: { once: true },
+						transition: {
+							delay: i * .06,
+							duration: .4
+						},
+						whileHover: { y: -3 },
+						className: "group relative overflow-hidden rounded-xl border border-zinc-800/60 bg-zinc-950 p-3.5 sm:p-4 transition-colors duration-300 hover:border-zinc-700",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: `absolute inset-0 bg-gradient-to-br ${c.glow} to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100` }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "relative z-10",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(c.icon, { className: `mb-2 h-4 w-4 sm:h-5 sm:w-5 ${c.color}` }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: `font-mono text-xl sm:text-2xl font-bold tabular-nums ${c.color}`,
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CountUp, { target: c.value })
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "mt-0.5 text-[11px] text-zinc-500",
+									children: c.label
+								})
+							]
 						})]
 					}, c.label))
 				}) }),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "mt-10 grid gap-6 md:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)]",
+					className: "mt-6 grid gap-4 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
 						delay: .05,
 						className: "min-w-0",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "card-surface h-full rounded-2xl p-5 sm:p-6",
+							className: "flex h-full flex-col gap-4 rounded-xl border border-zinc-800/60 bg-zinc-950 p-4 sm:p-5",
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-start justify-between gap-4",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-										className: "flex min-w-0 items-center gap-2 font-mono text-[11px] uppercase tracking-[0.25em] text-lime",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Activity, { className: "h-3.5 w-3.5 shrink-0" }), " Contribution rhythm"]
+										className: "flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.25em] text-lime",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Activity, { className: "h-3.5 w-3.5 shrink-0" }), " Contribution Rhythm"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 										href: `https://github.com/${USERNAME}`,
 										target: "_blank",
 										rel: "noreferrer",
-										className: "inline-flex shrink-0 items-center gap-1 text-xs text-muted-foreground transition-colors hover:text-lime",
+										className: "inline-flex shrink-0 items-center gap-1 text-xs text-zinc-500 transition-colors hover:text-lime",
 										children: ["View profile ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUpRight, { className: "h-3.5 w-3.5" })]
 									})]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "mt-5 overflow-hidden rounded-2xl border border-border bg-background/35 p-3 sm:p-4",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "flex items-center justify-between gap-3",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-											className: "flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.25em] text-lime",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-2 w-2 animate-pulse-glow rounded-full bg-lime" }), "Live"]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground",
-											children: "GitHub activity"
-										})]
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "mt-4 overflow-x-auto pb-1",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-											src: CONTRIBUTION_CHART_URL,
-											alt: `${USERNAME} GitHub contribution chart`,
-											loading: "lazy",
-											className: "min-w-[520px] rounded-xl border border-border bg-background/40 sm:min-w-[640px]"
-										})
-									})]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "mt-4 flex items-center gap-2 text-[11px] text-muted-foreground",
+									className: "rounded-xl border border-zinc-800/60 bg-black/40 p-3 sm:p-4",
 									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Less" }),
-										[
-											"bg-secondary/50",
-											"bg-lime/25",
-											"bg-lime/45",
-											"bg-lime/70",
-											"bg-lime"
-										].map((c, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: `h-[11px] w-[11px] rounded-[3px] ${c}` }, i)),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "More" })
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "mb-3 flex items-center gap-2",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1.5 w-1.5 animate-pulse rounded-full bg-lime" }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "font-mono text-[10px] uppercase tracking-[0.25em] text-lime",
+													children: "Live"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "ml-auto font-mono text-[10px] text-zinc-600",
+													children: "GitHub activity"
+												})
+											]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "overflow-x-auto pb-1",
+											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+												src: CONTRIBUTION_CHART_URL,
+												alt: `${USERNAME} GitHub contribution chart`,
+												loading: "lazy",
+												className: "min-w-[500px] rounded-xl border border-zinc-800/50 sm:min-w-[600px]"
+											})
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "mt-3 flex items-center gap-2 text-[11px] text-zinc-600",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Less" }),
+												[
+													"bg-zinc-800",
+													"bg-lime/25",
+													"bg-lime/45",
+													"bg-lime/70",
+													"bg-lime"
+												].map((c, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: `h-2.5 w-2.5 rounded-[3px] ${c}` }, i)),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "More" })
+											]
+										})
 									]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "mt-6 grid gap-3 sm:grid-cols-3",
+									className: "grid grid-cols-3 gap-3",
 									children: [
 										{
+											icon: Flame,
 											v: "Daily",
-											l: "Commit habit"
+											l: "Commit habit",
+											color: "text-orange-400"
 										},
 										{
+											icon: Calendar,
 											v: "26w",
-											l: "Window shown"
+											l: "Window shown",
+											color: "text-sky-400"
 										},
 										{
+											icon: Github,
 											v: "Public",
-											l: "Building in the open"
+											l: "Building in the open",
+											color: "text-lime"
 										}
 									].map((s) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "rounded-xl border border-border bg-background/50 p-3.5 transition-[border-color,transform] duration-200 will-change-transform hover:-translate-y-0.5 hover:border-lime/50",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "font-display text-base font-bold text-lime",
-											children: s.v
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "mt-1 text-[11px] leading-tight text-muted-foreground",
-											children: s.l
-										})]
+										className: "flex flex-col gap-2 rounded-xl border border-zinc-800/60 bg-zinc-900/50 p-3.5 transition-colors hover:border-zinc-700",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)(s.icon, { className: `h-4 w-4 ${s.color}` }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: `font-mono text-sm font-bold ${s.color}`,
+												children: s.v
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-[10px] leading-tight text-zinc-600",
+												children: s.l
+											})
+										]
 									}, s.l))
 								})
 							]
@@ -2441,68 +2667,96 @@ function GithubActivity() {
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
 						delay: .1,
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "card-surface h-full rounded-2xl p-5 sm:p-6",
+							className: "flex h-full flex-col gap-5 rounded-2xl border border-zinc-800/60 bg-zinc-950 p-5 sm:p-6",
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center justify-between gap-4",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 										className: "flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.25em] text-lime",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CodeXml, { className: "h-3.5 w-3.5 shrink-0" }), " Language share"]
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CodeXml, { className: "h-3.5 w-3.5 shrink-0" }), " Language Share"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										className: "rounded-full border border-lime/30 bg-lime/10 px-3 py-1 font-mono text-[10px] uppercase tracking-wider text-lime",
 										children: "Live"
 									})]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "mt-5 rounded-2xl border border-border bg-background/35 p-4",
+									className: "flex-1 rounded-xl border border-zinc-800/60 bg-black/40 p-4",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "flex items-center justify-between gap-3 text-[11px] text-muted-foreground",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Based on public repos" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: stats ? `${stats.repos} repos` : "live loading" })]
+										className: "mb-4 flex items-center justify-between text-[11px] text-zinc-600",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Based on public repos" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: loading ? "loading…" : stats ? `${stats.repos} repos` : "—" })]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "mt-4 space-y-4",
-										children: (languages.length ? languages : placeholderLanguages).map((lang) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "space-y-4",
+										children: (languages.length ? languages : placeholderLanguages).map((lang, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
+											initial: {
+												opacity: 0,
+												x: -10
+											},
+											whileInView: {
+												opacity: 1,
+												x: 0
+											},
+											viewport: { once: true },
+											transition: {
+												delay: i * .07,
+												duration: .4
+											},
 											className: "space-y-1.5",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center justify-between gap-3 text-sm",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "font-medium text-foreground",
-													children: lang.name
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+													className: "flex items-center gap-2 font-medium text-zinc-300",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "h-2 w-2 rounded-full",
+														style: { backgroundColor: langColor(lang.name) }
+													}), lang.name]
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-													className: "font-mono text-xs text-lime",
+													className: "font-mono text-xs",
+													style: { color: langColor(lang.name) },
 													children: [lang.percent, "%"]
 												})]
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "h-2 overflow-hidden rounded-full bg-secondary/70",
-												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "h-full rounded-full bg-gradient-to-r from-lime via-lime/80 to-lime-soft transition-all duration-700",
-													style: { width: `${Math.max(lang.percent, 6)}%` }
+												className: "h-1.5 overflow-hidden rounded-full bg-zinc-800",
+												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
+													initial: { scaleX: 0 },
+													whileInView: { scaleX: lang.percent / 100 },
+													viewport: { once: true },
+													transition: {
+														delay: i * .07 + .2,
+														duration: 1,
+														ease: "easeOut"
+													},
+													style: {
+														transformOrigin: "left",
+														backgroundColor: langColor(lang.name)
+													},
+													className: "h-full rounded-full"
 												})
 											})]
 										}, lang.name))
 									})]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "mt-4 grid gap-3 sm:grid-cols-3",
+									className: "grid grid-cols-3 gap-2",
 									children: [
 										{
-											v: `${languages.length || 0}`,
-											l: "Languages tracked"
+											v: `${languages.length || "—"}`,
+											l: "Languages"
 										},
 										{
-											v: `${languages[0]?.name ?? "TypeScript"}`,
-											l: "Top language"
+											v: languages[0]?.name ?? "TypeScript",
+											l: "Top lang"
 										},
 										{
-											v: `${languages[0]?.percent ?? 0}%`,
+											v: `${languages[0]?.percent ?? "—"}%`,
 											l: "Share"
 										}
 									].map((s) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "rounded-xl border border-border bg-background/50 p-3.5 transition-[border-color,transform] duration-200 will-change-transform hover:-translate-y-0.5 hover:border-lime/50",
+										className: "rounded-xl border border-zinc-800/60 bg-zinc-900/50 p-3 text-center transition-colors hover:border-zinc-700",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "font-display text-base font-bold text-lime",
+											className: "font-mono text-sm font-bold text-lime",
 											children: s.v
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "mt-1 text-[11px] leading-tight text-muted-foreground",
+											className: "mt-0.5 text-[10px] text-zinc-600",
 											children: s.l
 										})]
 									}, s.l))
@@ -2510,9 +2764,28 @@ function GithubActivity() {
 							]
 						})
 					})]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
+					delay: .1,
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "mt-6 flex justify-center",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.a, {
+							href: `https://github.com/${USERNAME}`,
+							target: "_blank",
+							rel: "noreferrer",
+							whileHover: { scale: 1.04 },
+							whileTap: { scale: .97 },
+							className: "inline-flex items-center gap-2.5 rounded-full border border-lime/30 bg-lime/10 px-5 py-2.5 font-mono text-xs sm:text-sm font-medium text-lime shadow-[0_0_24px_-6px_rgba(163,230,53,0.3)] transition-all duration-300 hover:bg-lime/15 hover:shadow-[0_0_36px_-4px_rgba(163,230,53,0.4)]",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Github, { className: "h-4 w-4" }),
+								"View Full GitHub Profile",
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUpRight, { className: "h-4 w-4" })
+							]
+						})
+					})
 				})
 			]
-		})
+		})]
 	});
 }
 var placeholderLanguages = [
@@ -2527,12 +2800,12 @@ var placeholderLanguages = [
 		percent: 16
 	},
 	{
-		name: "CSS",
+		name: "Python",
 		count: 0,
 		percent: 7
 	},
 	{
-		name: "HTML",
+		name: "CSS",
 		count: 0,
 		percent: 5
 	}
@@ -2540,7 +2813,7 @@ var placeholderLanguages = [
 function Education() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 		id: "education",
-		className: "relative py-24",
+		className: "relative py-10 sm:py-12",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "mx-auto max-w-[1200px] px-5 lg:px-8",
 			children: [
@@ -2554,33 +2827,33 @@ function Education() {
 					sub: "The academic foundation behind the engineering — from school fundamentals to an IT degree in progress."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "mt-12 grid gap-5 lg:grid-cols-3",
+					className: "mt-6 grid gap-3.5 lg:grid-cols-3",
 					children: education.map((e, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
-						delay: i * .06,
+						delay: i * .05,
 						className: "h-full",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
-							className: "card-surface group flex h-full flex-col rounded-2xl p-6 transition-[border-color,transform] duration-300 will-change-transform hover:-translate-y-1 hover:border-lime/50",
+							className: "card-surface group flex h-full flex-col rounded-xl p-4 sm:p-5 transition-[border-color,transform] duration-300 will-change-transform hover:-translate-y-1 hover:border-lime/50",
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "grid grid-cols-[auto_minmax(0,1fr)] items-center gap-3",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-lime/30 bg-lime/10 text-lime",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "h-5 w-5" })
+										className: "grid h-9 w-9 shrink-0 place-items-center rounded-lg border border-lime/30 bg-lime/10 text-lime",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "h-4 w-4" })
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: `justify-self-end rounded-full px-3 py-1 font-mono text-[10px] uppercase tracking-widest ${e.status === "In Progress" ? "border border-lime/40 bg-lime/10 text-lime" : "border border-border bg-secondary/50 text-muted-foreground"}`,
+										className: `justify-self-end rounded-full px-2.5 py-0.5 font-mono text-[9px] uppercase tracking-widest ${e.status === "In Progress" ? "border border-lime/40 bg-lime/10 text-lime" : "border border-border bg-secondary/50 text-muted-foreground"}`,
 										children: e.status
 									})]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-									className: "mt-5 font-display text-lg font-semibold leading-snug",
+									className: "mt-3 font-display text-base font-semibold leading-snug sm:text-lg",
 									children: e.degree
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "mt-1.5 text-sm text-lime",
+									className: "mt-1 text-xs sm:text-sm text-lime",
 									children: e.institution
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "mt-3 flex flex-wrap gap-x-4 gap-y-1.5 text-xs text-muted-foreground",
+									className: "mt-2.5 flex flex-wrap gap-x-3 gap-y-1 text-xs text-muted-foreground",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 										className: "inline-flex items-center gap-1.5",
 										children: [
@@ -2598,20 +2871,20 @@ function Education() {
 									})]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "mt-4 text-sm leading-relaxed text-muted-foreground",
+									className: "mt-2.5 text-xs sm:text-sm leading-relaxed text-muted-foreground",
 									children: e.desc
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "mt-5 inline-flex w-fit items-center gap-2 rounded-lg border border-border bg-background/50 px-3 py-2 text-sm",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BadgeCheck, { className: "h-4 w-4 shrink-0 text-lime" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "mt-3 inline-flex w-fit items-center gap-2 rounded-lg border border-border bg-background/50 px-2.5 py-1.5 text-xs sm:text-sm",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BadgeCheck, { className: "h-3.5 w-3.5 shrink-0 text-lime" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										className: "font-medium",
 										children: e.grade
 									})]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "mt-5 flex flex-wrap gap-2 pt-1",
+									className: "mt-3 flex flex-wrap gap-1.5 pt-1",
 									children: e.coursework.map((c) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "rounded-full border border-border bg-secondary/40 px-2.5 py-1 text-[11px] text-foreground/80",
+										className: "rounded-full border border-border bg-secondary/40 px-2 py-0.5 text-[10px] text-foreground/80",
 										children: c
 									}, c))
 								})
@@ -2625,6 +2898,10 @@ function Education() {
 }
 var filters = [
 	{
+		label: "All",
+		icon: Layers
+	},
+	{
 		label: "Hackathon",
 		icon: Trophy
 	},
@@ -2634,16 +2911,77 @@ var filters = [
 	},
 	{
 		label: "Extracurricular",
-		icon: Star
+		icon: Star$1
 	}
 ];
 function Certificates() {
-	const [active, setActive] = (0, import_react.useState)("Hackathon");
-	const [showAll, setShowAll] = (0, import_react.useState)(false);
-	const list = certificates.filter((c) => showAll ? true : c.category === active);
+	const [active, setActive] = (0, import_react.useState)("All");
+	const list = active === "All" ? certificates : certificates.filter((c) => c.category === active);
+	const renderCertificate = (c, copy) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.article, {
+		initial: {
+			opacity: 0,
+			y: 16
+		},
+		animate: {
+			opacity: 1,
+			y: 0
+		},
+		transition: {
+			duration: .3,
+			ease: "easeOut"
+		},
+		className: "group w-[min(74vw,18rem)] shrink-0 overflow-hidden rounded-2xl border border-border bg-navy-deep/70 sm:w-[20rem] lg:w-[23rem]",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "relative aspect-[16/9] overflow-hidden bg-secondary",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+				src: c.image,
+				alt: c.imageAlt ?? `${c.title} certificate`,
+				loading: "lazy",
+				className: "h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+				className: "absolute left-3 top-3 rounded-full bg-lime px-2.5 py-1 font-mono text-[10px] font-bold uppercase text-primary-foreground",
+				children: c.ribbon
+			})]
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "p-4",
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+					className: "text-base font-semibold leading-snug",
+					children: c.title
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+					className: "mt-2 flex items-center gap-2 text-sm text-muted-foreground",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Calendar, { className: "h-4 w-4" }),
+						" ",
+						c.date
+					]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "mt-3 line-clamp-2 text-sm text-muted-foreground",
+					children: c.desc
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "mt-4 grid grid-cols-2 gap-2",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+						href: c.image,
+						target: "_blank",
+						rel: "noreferrer",
+						className: "inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-secondary/60 py-2 text-sm transition-colors hover:border-lime/50 hover:text-lime",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Eye, { className: "h-4 w-4" }), " View in Full"]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+						href: c.asset,
+						download: true,
+						className: "inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-secondary/60 py-2 text-sm transition-colors hover:border-lime/50 hover:text-lime",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Download, { className: "h-4 w-4" }), " Download"]
+					})]
+				})
+			]
+		})]
+	}, `${copy}-${c.title}`);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 		id: "certificates",
-		className: "relative py-24",
+		className: "relative py-10 sm:py-12",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "mx-auto max-w-[1200px] px-5 lg:px-8",
 			children: [
@@ -2657,160 +2995,22 @@ function Certificates() {
 					sub: "Validated expertise through recognised certifications, hackathon wins and continuous skill development."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "mt-12 flex flex-wrap justify-center gap-3",
+					className: "mt-6 flex flex-wrap justify-center gap-2",
 					children: filters.map((f) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 						onClick: () => {
 							setActive(f.label);
-							setShowAll(false);
 						},
-						className: `inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-200 ${!showAll && active === f.label ? "bg-lime text-primary-foreground" : "border border-border bg-secondary/50 text-foreground/80 hover:border-lime/50 hover:text-lime"}`,
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(f.icon, { className: "h-4 w-4" }), f.label]
+						className: `inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-xs sm:text-sm font-medium transition-all duration-200 ${active === f.label ? "bg-lime text-primary-foreground" : "border border-border bg-secondary/50 text-foreground/80 hover:border-lime/50 hover:text-lime"}`,
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(f.icon, { className: "h-3.5 w-3.5" }), f.label]
 					}, f.label))
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3",
-					children: list.map((c) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.article, {
-						initial: {
-							opacity: 0,
-							y: 16
-						},
-						animate: {
-							opacity: 1,
-							y: 0
-						},
-						transition: {
-							duration: .3,
-							ease: "easeOut"
-						},
-						className: "group overflow-hidden rounded-2xl border border-border bg-navy-deep/70",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "relative aspect-[16/9] overflow-hidden bg-secondary",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-								src: c.image,
-								alt: c.imageAlt ?? `${c.title} certificate`,
-								loading: "lazy",
-								className: "h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "absolute left-3 top-3 rounded-full bg-lime px-2.5 py-1 font-mono text-[10px] font-bold uppercase text-primary-foreground",
-								children: c.ribbon
-							})]
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "p-5",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-									className: "text-lg font-semibold leading-snug",
-									children: c.title
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-									className: "mt-2 flex items-center gap-2 text-sm text-muted-foreground",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Calendar, { className: "h-4 w-4" }),
-										" ",
-										c.date
-									]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "mt-3 line-clamp-2 text-sm text-muted-foreground",
-									children: c.desc
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "mt-5 grid grid-cols-2 gap-3",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-										href: c.image,
-										target: "_blank",
-										rel: "noreferrer",
-										className: "inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-secondary/60 py-2 text-sm transition-colors hover:border-lime/50 hover:text-lime",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Eye, { className: "h-4 w-4" }), " View in Full"]
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-										href: c.asset,
-										download: true,
-										className: "inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-secondary/60 py-2 text-sm transition-colors hover:border-lime/50 hover:text-lime",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Download, { className: "h-4 w-4" }), " Download"]
-									})]
-								})
-							]
-						})]
-					}, c.title))
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "mt-12 flex justify-center",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-						onClick: () => setShowAll((v) => !v),
-						className: "inline-flex items-center gap-2 rounded-full border border-lime/40 bg-lime/10 px-7 py-3 text-sm font-medium text-lime transition-colors hover:bg-lime/20",
-						children: [showAll ? "Show Less" : "Show All", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: `h-4 w-4 transition-transform ${showAll ? "rotate-180" : ""}` })]
+					className: "group marquee-mask relative mt-6 overflow-hidden py-2",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "flex w-max gap-4 animate-marquee-right [animation-duration:72s] will-change-transform group-hover:[animation-play-state:paused] group-focus-within:[animation-play-state:paused]",
+						children: [list.map((c) => renderCertificate(c, 0)), list.map((c) => renderCertificate(c, 1))]
 					})
 				})
-			]
-		})
-	});
-}
-var resumeFile = resume.pdf ?? resume.href;
-function ResumeSection() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
-		id: "resume",
-		className: "relative py-24",
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "mx-auto max-w-[1100px] px-5 lg:px-8",
-			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SectionBadge, {
-					icon: FileText,
-					children: "Resume"
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SectionHeading, {
-					lead: "Grab my",
-					accent: "Full Resume",
-					sub: "A one-page snapshot of my education, projects, stack and achievements — always kept current."
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "card-surface mt-12 overflow-hidden rounded-3xl p-7 sm:p-10",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "min-w-0",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-									className: "flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.25em] text-lime",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Clock, { className: "h-3.5 w-3.5 shrink-0" }),
-										" ",
-										resume.updated
-									]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", {
-									className: "mt-3 font-display text-2xl font-semibold leading-snug sm:text-3xl",
-									children: [
-										profile.name,
-										" — ",
-										profile.role
-									]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
-									className: "mt-5 space-y-2.5",
-									children: resume.highlights.map((h) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-										className: "flex items-start gap-2.5 text-sm text-muted-foreground",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "mt-0.5 h-4 w-4 shrink-0 text-lime" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: h })]
-									}, h))
-								})
-							]
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "flex w-full shrink-0 flex-col gap-3 sm:flex-row lg:w-auto lg:flex-col",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-								href: resumeFile,
-								target: "_blank",
-								download: "Snehasish_Dey_Resume.pdf",
-								rel: "noreferrer",
-								className: "inline-flex items-center justify-center gap-2 rounded-full bg-lime px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-transform duration-200 will-change-transform hover:-translate-y-0.5",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Download, { className: "h-4 w-4" }), " Download Resume"]
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-								href: resumeFile,
-								target: "_blank",
-								rel: "noreferrer",
-								className: "inline-flex items-center justify-center gap-2 rounded-full border border-border bg-secondary/40 px-7 py-3.5 text-sm font-medium transition-colors duration-200 hover:border-lime/50 hover:text-lime",
-								children: ["View online ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUpRight, { className: "h-4 w-4" })]
-							})]
-						})]
-					})
-				}) })
 			]
 		})
 	});
@@ -2818,31 +3018,31 @@ function ResumeSection() {
 function Connect() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("footer", {
 		id: "connect",
-		className: "relative border-t border-border py-24",
+		className: "relative border-t border-border py-10 sm:py-14",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "mx-auto max-w-[1400px] px-5 lg:px-8",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "grid gap-14 lg:grid-cols-2",
+				className: "grid gap-8 lg:grid-cols-2",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Reveal, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-					className: "bg-gradient-to-b from-foreground/90 to-foreground/20 bg-clip-text text-6xl font-bold text-transparent sm:text-7xl",
+					className: "bg-gradient-to-b from-foreground/90 to-foreground/20 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl md:text-6xl",
 					children: "Let's Connect"
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "mt-10 inline-flex flex-wrap gap-1 rounded-2xl border border-border bg-secondary/40 p-2",
+					className: "mt-5 inline-flex flex-wrap gap-1 rounded-2xl border border-border bg-secondary/40 p-1.5",
 					children: socials.map((s) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 						href: s.href,
 						target: "_blank",
 						rel: "noreferrer",
 						"aria-label": s.label,
-						className: "grid h-11 w-11 place-items-center rounded-xl text-foreground/75 transition-all duration-200 hover:-translate-y-1 hover:bg-lime/10 hover:text-lime",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(s.icon, { className: "h-[18px] w-[18px]" })
+						className: "grid h-10 w-10 place-items-center rounded-xl text-foreground/75 transition-all duration-200 hover:-translate-y-0.5 hover:bg-lime/10 hover:text-lime",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(s.icon, { className: "h-4 w-4" })
 					}, s.label))
 				})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Reveal, {
 					delay: .12,
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-						className: "text-3xl font-semibold leading-snug text-lime sm:text-4xl",
+						className: "text-2xl font-semibold leading-snug text-lime sm:text-3xl",
 						children: "Have an idea or want to collaborate? I'd love to hear from you."
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-						className: "mt-6 text-lg text-muted-foreground",
+						className: "mt-3 text-sm sm:text-base text-muted-foreground",
 						children: [
 							"Looking for a contact form? Skip the traditional way, just reach out directly at",
 							" ",
@@ -2857,9 +3057,9 @@ function Connect() {
 					})]
 				})]
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "mt-20 flex flex-col items-center justify-between gap-6 border-t border-border pt-8 sm:flex-row",
+				className: "mt-10 flex flex-col items-center justify-between gap-4 border-t border-border pt-6 sm:flex-row",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-					className: "text-sm text-muted-foreground",
+					className: "text-xs sm:text-sm text-muted-foreground",
 					children: [
 						"© ",
 						(/* @__PURE__ */ new Date()).getFullYear(),
@@ -2868,10 +3068,10 @@ function Connect() {
 						". All rights reserved."
 					]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
-					className: "flex flex-wrap justify-center gap-5",
+					className: "flex flex-wrap justify-center gap-4",
 					children: navLinks.slice(0, 5).map((l) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 						href: l.href,
-						className: "text-sm text-muted-foreground transition-colors hover:text-lime",
+						className: "text-xs sm:text-sm text-muted-foreground transition-colors hover:text-lime",
 						children: l.label
 					}, l.label))
 				})]
@@ -2979,7 +3179,6 @@ function Index() {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(GithubActivity, {}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Education, {}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Certificates, {}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ResumeSection, {}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Connect, {})
 		]
 	});

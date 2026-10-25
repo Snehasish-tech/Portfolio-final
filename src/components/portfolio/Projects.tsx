@@ -59,7 +59,7 @@ export function Projects() {
   const go = (dir: number) => setI((v) => (v + dir + projects.length) % projects.length);
 
   return (
-    <section id="projects" className="relative py-24">
+    <section id="projects" className="relative py-10 sm:py-12">
       <div className="mx-auto max-w-[1400px] px-5 lg:px-8">
         <SectionBadge icon={Briefcase}>Featured Projects</SectionBadge>
         <SectionHeading
@@ -68,7 +68,7 @@ export function Projects() {
           sub="A collection of high-performance web applications and AI-driven tools built with a focus on scalability, clean architecture, and user experience."
         />
 
-        <div className="mt-16">
+        <div className="mt-6 sm:mt-8">
           <AnimatePresence mode="wait">
             <motion.article
               key={p.name}
@@ -76,15 +76,15 @@ export function Projects() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -40 }}
               transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-              className="card-surface grid gap-10 rounded-3xl p-8 md:p-12 lg:grid-cols-2"
+              className="card-surface grid gap-6 rounded-2xl p-5 sm:p-7 md:p-8 lg:grid-cols-2"
             >
               <div className="flex flex-col items-center text-center">
                 
                 {/* --- LOGO SECTION WITH ORBIT --- */}
-                <div className="relative flex h-[280px] w-full items-center justify-center sm:h-[320px]">
+                <div className="relative flex h-[220px] w-full items-center justify-center sm:h-[250px]">
                   
                   {/* Deep Green Background Glow */}
-                  <div className="absolute top-1/2 left-1/2 size-48 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lime/20 blur-[80px]" />
+                  <div className="absolute top-1/2 left-1/2 size-40 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lime/20 blur-[70px]" />
 
                   {/* The Perfect Purple Tech Orbit (Z-index 0 ensures it stays perfectly behind) */}
                   <div className="absolute z-0">
@@ -92,17 +92,17 @@ export function Projects() {
                   </div>
 
                   {/* Circular Frame for Logo (Z-index 10 keeps it crisp and on top) */}
-                  <div className="relative z-10 grid size-40 place-items-center rounded-full border border-lime/40 bg-[#060913] p-1 shadow-[0_0_50px_rgba(163,230,53,0.15)] sm:size-48 backdrop-blur-md">
+                  <div className="relative z-10 grid size-32 place-items-center rounded-full border border-lime/40 bg-[#060913] p-1 shadow-[0_0_40px_rgba(163,230,53,0.15)] sm:size-40 backdrop-blur-md">
                     {p.logo ? (
                       <img
                         src={p.logo}
                         alt={`${p.name} logo`}
                         loading="lazy"
-                        className="relative size-[140px] rounded-full object-contain sm:size-[170px]"
+                        className="relative size-[110px] rounded-full object-contain sm:size-[140px]"
                       />
                     ) : (
-                      <div className="relative grid size-[140px] place-items-center rounded-full border border-lime/10 bg-background/80 text-center sm:size-[170px]">
-                        <span className="font-display text-4xl font-bold text-lime">
+                      <div className="relative grid size-[110px] place-items-center rounded-full border border-lime/10 bg-background/80 text-center sm:size-[140px]">
+                        <span className="font-display text-3xl font-bold text-lime sm:text-4xl">
                           {projectInitials(p.name)}
                         </span>
                       </div>
@@ -111,47 +111,47 @@ export function Projects() {
                 </div>
                 {/* ---------------------------------- */}
 
-                <p className="mt-4 text-sm text-muted-foreground">{p.tagline}</p>
+                <p className="mt-3 text-xs sm:text-sm text-muted-foreground">{p.tagline}</p>
 
-                <div className="mt-5 flex flex-wrap justify-center gap-2">
+                <div className="mt-3.5 flex flex-wrap justify-center gap-1.5">
                   {p.stack.map((s) => (
                     <span
                       key={s.label}
                       style={{ backgroundColor: s.color }}
-                      className="rounded px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wider text-white"
+                      className="rounded px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-white"
                     >
                       {s.label}
                     </span>
                   ))}
                 </div>
 
-                <div className="mt-7 flex flex-wrap justify-center gap-3">
+                <div className="mt-5 flex flex-wrap justify-center gap-2.5">
                   <a
                     href={p.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full bg-lime px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
+                    className="inline-flex items-center gap-2 rounded-full bg-lime px-4 py-2 text-xs sm:text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
                   >
-                    <Github className="h-4 w-4" /> View on GitHub
+                    <Github className="h-3.5 w-3.5" /> View on GitHub
                   </a>
                   <a
                     href={p.live}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full border border-lime/50 px-5 py-2.5 text-sm font-semibold text-lime transition-colors hover:bg-lime/10"
+                    className="inline-flex items-center gap-2 rounded-full border border-lime/50 px-4 py-2 text-xs sm:text-sm font-semibold text-lime transition-colors hover:bg-lime/10"
                   >
-                    <Globe className="h-4 w-4" /> View Live
+                    <Globe className="h-3.5 w-3.5" /> View Live
                   </a>
                 </div>
               </div>
 
-              <div>
-                <h3 className="text-3xl font-bold text-lime sm:text-4xl">{p.name}</h3>
-                <p className="mt-5 leading-relaxed text-muted-foreground">{p.desc}</p>
-                <ul className="mt-7 space-y-4">
+              <div className="flex flex-col justify-center">
+                <h3 className="text-2xl font-bold text-lime sm:text-3xl">{p.name}</h3>
+                <p className="mt-3 text-xs sm:text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
+                <ul className="mt-4 space-y-2.5">
                   {p.points.map((pt) => (
-                    <li key={pt} className="flex gap-3 text-[15px] text-foreground/85">
-                      <Sparkles className="mt-1 h-4 w-4 shrink-0 text-lime" />
+                    <li key={pt} className="flex gap-2.5 text-xs sm:text-sm text-foreground/85">
+                      <Sparkles className="mt-0.5 h-3.5 w-3.5 shrink-0 text-lime" />
                       <span>{pt}</span>
                     </li>
                   ))}
@@ -160,7 +160,7 @@ export function Projects() {
             </motion.article>
           </AnimatePresence>
 
-          <div className="mt-10 flex items-center justify-center gap-4">
+          <div className="mt-6 flex items-center justify-center gap-4">
             <button
               onClick={() => go(-1)}
               aria-label="Previous project"
