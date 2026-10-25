@@ -1,22 +1,18 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/createCsrfMiddleware-B2To0gPJ.js
+import { R as isPromise } from "../_libs/@tanstack/react-router+[...].mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/createCsrfMiddleware-BdK_4__8.js
 var createMiddleware = (options, __opts) => {
 	const resolvedOptions = {
 		type: "request",
 		...__opts || options
-	};
-	const setValidator = (validator) => {
-		return createMiddleware({}, Object.assign(resolvedOptions, {
-			validator,
-			inputValidator: validator
-		}));
 	};
 	return {
 		options: resolvedOptions,
 		middleware: (middleware) => {
 			return createMiddleware({}, Object.assign(resolvedOptions, { middleware }));
 		},
-		validator: setValidator,
-		inputValidator: setValidator,
+		validator: (validator) => {
+			return createMiddleware({}, Object.assign(resolvedOptions, { validator }));
+		},
 		client: (client) => {
 			return createMiddleware({}, Object.assign(resolvedOptions, { client }));
 		},
@@ -26,19 +22,33 @@ var createMiddleware = (options, __opts) => {
 	};
 };
 var innerCreateCsrfMiddleware = (opts = {}) => {
-	return createMiddleware().server(async (ctx) => {
+	const continueRequest = (result, ctx) => {
+		return isValidationResultAllowed(result, opts) ? ctx.next() : getFailureResponse(opts, ctx);
+	};
+	const validateRequest = (ctx) => {
+		const result = validateCsrfRequest(opts, ctx);
+		if (isPromise(result)) return result.then((result) => continueRequest(result, ctx));
+		return continueRequest(result, ctx);
+	};
+	return createMiddleware().server((ctx) => {
 		const csrfCtx = ctx;
-		if (opts.filter && !await opts.filter(csrfCtx)) return ctx.next();
-		if (await isCsrfRequestAllowed(opts, csrfCtx)) return ctx.next();
-		return getFailureResponse(opts, csrfCtx);
+		try {
+			if (opts.filter) {
+				const shouldValidate = opts.filter(csrfCtx);
+				if (isPromise(shouldValidate)) return shouldValidate.then((shouldValidate) => shouldValidate ? validateRequest(csrfCtx) : ctx.next());
+				if (!shouldValidate) return ctx.next();
+			}
+			return validateRequest(csrfCtx);
+		} catch (error) {
+			return Promise.reject(error);
+		}
 	});
 };
 var createCsrfMiddleware = innerCreateCsrfMiddleware;
-async function isCsrfRequestAllowed(opts, ctx) {
-	const result = await getCsrfRequestValidationResult(opts, ctx);
+function isValidationResultAllowed(result, opts) {
 	return result === true || result === void 0 && opts.allowRequestsWithoutOriginCheck === true;
 }
-async function getCsrfRequestValidationResult(opts, ctx) {
+function validateCsrfRequest(opts, ctx) {
 	const fetchSite = ctx.request.headers.get("Sec-Fetch-Site");
 	if (fetchSite !== null) return matchValue(opts.secFetchSite ?? "same-origin", fetchSite, ctx);
 	const origin = ctx.request.headers.get("Origin");
@@ -55,7 +65,7 @@ async function getCsrfRequestValidationResult(opts, ctx) {
 	}
 	return isRefererSameOrigin(referer, new URL(ctx.request.url).origin);
 }
-async function matchValue(matcher, value, ctx) {
+function matchValue(matcher, value, ctx) {
 	if (typeof matcher === "function") return matcher(value, ctx);
 	if (Array.isArray(matcher)) return matcher.includes(value);
 	return value === matcher;
@@ -74,7 +84,7 @@ function isRefererSameOrigin(referer, requestOrigin) {
 	const code = referer.charCodeAt(requestOrigin.length);
 	return code === 47 || code === 63 || code === 35;
 }
-async function getFailureResponse(opts, ctx) {
+function getFailureResponse(opts, ctx) {
 	if (typeof opts.failureResponse === "function") return opts.failureResponse(ctx);
 	return opts.failureResponse?.clone() ?? new Response("Forbidden", { status: 403 });
 }

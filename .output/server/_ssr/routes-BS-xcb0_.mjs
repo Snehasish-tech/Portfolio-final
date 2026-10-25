@@ -1,8 +1,8 @@
 import { a as __toESM } from "../_runtime.mjs";
 import { i as performance_default, n as motion, r as AnimatePresence, t as animate } from "../_libs/framer-motion.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { A as Eye, B as CalendarDays, C as Github, D as FolderGit2, E as GitBranch, F as Cloud, G as ArrowUpRight, H as Brain, I as Clock, K as Activity, L as ChevronRight, M as Database, N as Coffee, O as Flame, P as CodeXml, R as ChevronLeft, S as Globe, T as GitCommitHorizontal, U as BadgeCheck, V as Briefcase, W as Award, _ as Mail, a as Trophy, b as Grid3x3, c as Star$1, d as Rocket, f as Palette, g as MapPin, h as Medal, i as Users, j as Download, k as FileText, l as Sparkles, m as Menu, n as X, o as TrendingUp, p as MonitorSmartphone, r as Wrench, s as Terminal, t as Zap, u as Server, v as Linkedin, w as GitPullRequest, x as GraduationCap, y as Layers, z as Calendar } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-d41ZSBMr.js
+import { A as Eye, B as CalendarDays, C as Github, D as FolderGit2, E as GitBranch, F as Cloud, G as Award, H as Brain, I as Clock, K as ArrowUpRight, L as ChevronRight, M as Database, N as Coffee, O as Flame, P as CodeXml, R as ChevronLeft, S as Globe, T as GitCommitHorizontal, U as BookOpen, V as Briefcase, W as BadgeCheck, _ as Mail, a as Trophy, b as Grid3x3, c as Star, d as Rocket, f as Palette, g as MapPin, h as Medal, i as Users, j as Download, k as FileText, l as Sparkles, m as Menu, n as X, o as TrendingUp, p as MonitorSmartphone, q as Activity, r as Wrench, s as Terminal, t as Zap, u as Server, v as Linkedin, w as GitPullRequest, x as GraduationCap, y as Layers, z as Calendar } from "../_libs/lucide-react.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-BS-xcb0_.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var Snehasish_default = "/assets/Snehasish-D00w0_l7.jpeg";
@@ -1198,7 +1198,7 @@ var devStats = [
 		bar: .64
 	},
 	{
-		icon: Star$1,
+		icon: Star,
 		label: "Stars Earned",
 		value: 17,
 		suffix: "",
@@ -1866,24 +1866,11 @@ function TechStack() {
 	const [active, setActive] = (0, import_react.useState)("All");
 	const tabs = (0, import_react.useMemo)(() => ["All", ...techGroups.map((g) => g.group)], []);
 	const total = (0, import_react.useMemo)(() => techGroups.reduce((n, g) => n + g.items.length, 0), []);
-	const allItems = (0, import_react.useMemo)(() => {
-		const seen = /* @__PURE__ */ new Set();
-		const list = [];
-		techGroups.forEach((g) => {
-			g.items.forEach((item) => {
-				if (!seen.has(item)) {
-					seen.add(item);
-					list.push(item);
-				}
-			});
-		});
-		return list;
-	}, []);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		id: "tech",
-		className: "relative overflow-hidden py-10 sm:py-12",
+		className: "relative overflow-hidden py-16",
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-			className: "pointer-events-none absolute inset-x-0 top-1/4 h-[400px]",
+			className: "pointer-events-none absolute inset-x-0 top-1/4 h-[500px]",
 			style: { background: "radial-gradient(ellipse 70% 50% at 50% 50%, color-mix(in oklab, var(--lime) 5%, transparent), transparent 70%)" }
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "relative mx-auto max-w-[1200px] px-5 lg:px-8",
@@ -1898,7 +1885,7 @@ function TechStack() {
 					sub: "Organised by discipline — the languages, frameworks and tools I reach for when building and shipping products."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "mt-6 flex min-h-[40px] flex-wrap items-center justify-center gap-2",
+					className: "mt-8 flex min-h-[40px] flex-wrap items-center justify-center gap-2",
 					children: tabs.map((t) => {
 						const Icon = t === "All" ? Grid3x3 : groupIcons[t] ?? Layers;
 						const count = t === "All" ? total : techGroups.find((g) => g.group === t)?.items.length ?? 0;
@@ -1907,7 +1894,7 @@ function TechStack() {
 							type: "button",
 							onClick: () => setActive(t),
 							"aria-pressed": isActive,
-							className: "relative flex h-9 items-center gap-2 rounded-full px-3.5 text-xs sm:text-sm outline-none transition-transform duration-300 hover:-translate-y-0.5 active:scale-95",
+							className: "relative flex h-10 items-center gap-2 rounded-full px-4 text-sm outline-none transition-transform duration-300 hover:-translate-y-0.5 active:scale-95",
 							children: [isActive ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 								layoutId: "activeTechTabIndicator",
 								className: "absolute inset-0 rounded-full bg-lime shadow-[0_0_20px_rgba(163,230,53,0.4)]",
@@ -1917,12 +1904,12 @@ function TechStack() {
 									damping: 30
 								}
 							}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 rounded-full border border-white/10 bg-white/[0.03] transition-colors hover:border-lime/30 hover:bg-white/[0.06]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-								className: `relative z-10 flex items-center gap-1.5 font-semibold tracking-wide ${isActive ? "text-[#0a0f1e]" : "text-muted-foreground hover:text-lime"}`,
+								className: `relative z-10 flex items-center gap-2 font-semibold tracking-wide ${isActive ? "text-[#0a0f1e]" : "text-muted-foreground hover:text-lime"}`,
 								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: "h-4 w-4" }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: "h-[18px] w-[18px]" }),
 									t,
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: `ml-1 rounded-full px-1.5 py-0.5 font-mono text-[10px] tabular-nums ${isActive ? "bg-[#0a0f1e]/20 text-[#0a0f1e]" : "bg-white/5 text-muted-foreground"}`,
+										className: `ml-1 rounded-full px-2 py-0.5 font-mono text-[10px] tabular-nums ${isActive ? "bg-[#0a0f1e]/20 text-[#0a0f1e]" : "bg-white/5 text-muted-foreground"}`,
 										children: count
 									})
 								]
@@ -1932,23 +1919,16 @@ function TechStack() {
 				}) }),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 					layout: true,
-					className: "mt-8",
+					className: "mt-10 space-y-8",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(AnimatePresence, {
-						mode: "wait",
-						children: active === "All" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
-							variants: containerVariants,
-							initial: "hidden",
-							animate: "show",
-							exit: "exit",
-							className: "grid auto-rows-[54px] grid-cols-2 gap-2.5 sm:grid-cols-4 lg:grid-cols-6",
-							children: allItems.map((name) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(TechCard, { name }, name))
-						}, "all-grid") : techGroups.filter((g) => g.group === active).map((g) => {
+						mode: "popLayout",
+						children: techGroups.filter((g) => active === "All" || active === g.group).map((g) => {
 							const Icon = groupIcons[g.group] ?? Layers;
 							return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.section, {
 								layout: true,
 								initial: {
 									opacity: 0,
-									y: 16
+									y: 30
 								},
 								animate: {
 									opacity: 1,
@@ -1956,9 +1936,18 @@ function TechStack() {
 								},
 								exit: {
 									opacity: 0,
-									y: -10
+									y: -20,
+									filter: "blur(4px)"
 								},
-								transition: { duration: .35 },
+								transition: {
+									duration: .5,
+									ease: [
+										.22,
+										1,
+										.36,
+										1
+									]
+								},
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "flex items-center gap-3",
@@ -1968,14 +1957,14 @@ function TechStack() {
 												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: "h-4 w-4" })
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-												className: "font-display text-lg font-bold tracking-tight text-foreground/90",
+												className: "font-display text-xl font-bold tracking-tight text-foreground/90",
 												children: g.group
 											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-[1px] flex-1 rounded-full bg-gradient-to-r from-border to-transparent" })
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-[2px] flex-1 rounded-full bg-gradient-to-r from-border to-transparent" })
 										]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "mt-1.5 max-w-2xl text-xs sm:text-sm leading-relaxed text-muted-foreground/80",
+										className: "mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground/80",
 										children: g.note
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
@@ -1983,7 +1972,7 @@ function TechStack() {
 										initial: "hidden",
 										animate: "show",
 										exit: "exit",
-										className: "mt-4 grid auto-rows-[54px] grid-cols-2 gap-2.5 sm:grid-cols-4 lg:grid-cols-6",
+										className: "mt-5 grid auto-rows-[54px] grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6",
 										children: g.items.map((name) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(TechCard, { name }, name))
 									})
 								]
@@ -1992,23 +1981,23 @@ function TechStack() {
 					})
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "relative mt-8 sm:mt-10 overflow-hidden rounded-2xl border border-lime/20 bg-[#0a0f1e]/50 p-4 sm:p-6 shadow-[0_0_40px_rgba(163,230,53,0.06)] backdrop-blur-xl sm:flex sm:items-center sm:justify-between",
+					className: "relative mt-14 overflow-hidden rounded-2xl border border-lime/20 bg-[#0a0f1e]/50 p-5 shadow-[0_0_40px_rgba(163,230,53,0.06)] backdrop-blur-xl sm:flex sm:items-center sm:justify-between sm:p-7",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "pointer-events-none absolute inset-0 bg-gradient-to-br from-lime/5 to-transparent opacity-50" }),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "relative z-10 min-w-0",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-								className: "flex items-center gap-2 font-mono text-[11px] font-bold uppercase tracking-[0.2em] text-lime",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "h-3.5 w-3.5 shrink-0 animate-pulse" }), "Currently exploring"]
+								className: "flex items-center gap-2.5 font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-lime",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "h-4 w-4 shrink-0 animate-pulse" }), "Currently exploring"]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "mt-1 text-xs sm:text-sm text-muted-foreground/90",
+								className: "mt-2 text-sm text-muted-foreground/90",
 								children: "Levelling up beyond the frontend — backend systems, cloud, and AI tooling."
 							})]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "relative z-10 mt-3 flex flex-wrap gap-2 sm:mt-0",
+							className: "relative z-10 mt-4 flex flex-wrap gap-2 sm:mt-0",
 							children: learning.map((l) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "cursor-default rounded-full border border-lime/30 bg-lime/10 px-3 py-1 text-xs font-semibold tracking-wide text-lime transition-all duration-300 hover:-translate-y-0.5 hover:border-lime/80 hover:bg-lime/20 hover:shadow-[0_0_15px_rgba(163,230,53,0.2)]",
+								className: "cursor-default rounded-full border border-lime/30 bg-lime/10 px-3 py-1.5 text-sm font-semibold tracking-wide text-lime transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:border-lime/80 hover:bg-lime/20 hover:shadow-[0_0_20px_rgba(163,230,53,0.25)]",
 								children: l
 							}, l))
 						})
@@ -2911,7 +2900,7 @@ var filters = [
 	},
 	{
 		label: "Extracurricular",
-		icon: Star$1
+		icon: Star
 	}
 ];
 function Certificates() {

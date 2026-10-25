@@ -166,6 +166,19 @@ var BadgeCheck = createLucideIcon("badge-check", [["path", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var BookOpen = createLucideIcon("book-open", [["path", {
+	d: "M12 7v14",
+	key: "1akyts"
+}], ["path", {
+	d: "M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z",
+	key: "ruj8y"
+}]]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var Brain = createLucideIcon("brain", [
 	["path", {
 		d: "M12 18V5",
@@ -1097,4 +1110,4 @@ var Zap = createLucideIcon("zap", [["path", {
 	key: "1xq2db"
 }]]);
 //#endregion
-export { Eye as A, CalendarDays as B, Github as C, FolderGit2 as D, GitBranch as E, Cloud as F, ArrowUpRight as G, Brain as H, Clock as I, Activity as K, ChevronRight as L, Database as M, Coffee as N, Flame as O, CodeXml as P, ChevronLeft as R, Globe as S, GitCommitHorizontal as T, BadgeCheck as U, Briefcase as V, Award as W, Mail as _, Trophy as a, Grid3x3 as b, Star as c, Rocket as d, Palette as f, MapPin as g, Medal as h, Users as i, Download as j, FileText as k, Sparkles as l, Menu as m, X as n, TrendingUp as o, MonitorSmartphone as p, Wrench as r, Terminal as s, Zap as t, Server as u, Linkedin as v, GitPullRequest as w, GraduationCap as x, Layers as y, Calendar as z };
+export { Eye as A, CalendarDays as B, Github as C, FolderGit2 as D, GitBranch as E, Cloud as F, Award as G, Brain as H, Clock as I, ArrowUpRight as K, ChevronRight as L, Database as M, Coffee as N, Flame as O, CodeXml as P, ChevronLeft as R, Globe as S, GitCommitHorizontal as T, BookOpen as U, Briefcase as V, BadgeCheck as W, Mail as _, Trophy as a, Grid3x3 as b, Star as c, Rocket as d, Palette as f, MapPin as g, Medal as h, Users as i, Download as j, FileText as k, Sparkles as l, Menu as m, X as n, TrendingUp as o, MonitorSmartphone as p, Activity as q, Wrench as r, Terminal as s, Zap as t, Server as u, Linkedin as v, GitPullRequest as w, GraduationCap as x, Layers as y, Calendar as z };
