@@ -110,7 +110,7 @@ export function Overview() {
                   src={profile.avatar}
                   alt={`Portrait of ${profile.name}`}
                   loading="lazy"
-                  className="max-h-[300px] sm:max-h-[360px] w-full object-cover transition-transform duration-[1.1s] group-hover:scale-105"
+                  className="block aspect-square w-full object-contain"
                 />
                 <div
                   className="pointer-events-none absolute inset-0"
